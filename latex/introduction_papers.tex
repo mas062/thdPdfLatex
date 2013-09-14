@@ -1,0 +1,342 @@
+\chapter{Introduction to the papers}
+
+\pagebreak
+\section{Introduction}
+
+The main scientific part of this thesis consist of five papers. They come in a
+sequence to show the research progress withing this PhD program. Paper I is
+presented in the proceedings of the Computational Methods in Water Resources
+(CMWR) conference in Barcelona, 2010. Utilizing the feed back from that
+conference and including more uncertain parameters in the study ended up in
+paper II presented in the proceedings of the ECMOR XII in Oxford, 2010. Paper
+III includes a detailed study on the flow responses and effect of relative
+permeability on the flow and it is submitted to the International Journal of
+Greenhouse Gas Control (IJGGC). Pressure is an important model response during
+injection operations. Therefore, a special study is dedicated to pressure
+analysis in the system. This is reported in paper IV, which is submitted to the
+IJGGC. Finally, paper V reports modern stochastic techniques used to perform
+detailed quantitative sensitivity analysis and probabilistic risk assessments.
+This paper is submitted to special issue of the IJGGC.
+
+\section{Summary of papers}
+
+%
+% Paper I
+%
+\paperitem{I}
+{Impact of geological heterogeneity on early-stage $\mbox{CO}_2$ plume
+migration}
+{%%%------------PAPER I-------------------%%%
+\textbf{Summary:}
+
+It is a conventional practice in the context of $\mbox{CO}_2$ storage study to
+simplify the geological modeling in order to achieve an easier force balance
+study in the medium. Assuming a homogeneous medium is the first step to quantify
+the time and space scales in $\mbox{CO}_2$ storage problems by a
+dimensionless analysis on the analytical solution of flow equation. However, in
+practice the real flow performance is very much influenced by geological
+heterogeneity. 
+
+We use a set of SAIGUP realizations selected to cover the variability of four
+sedimentological and structural parameters. The selected parameters are
+lobosity, barriers, aggradation angle, progradation direction. Each
+of these parameters varies over three levels, except the progradation direction,
+which includes up-dip and down-dip directions. Combining the available 
+parameters makes 54 realizations.
+
+$30~\mbox{years}$ of injection and $70~\mbox{years}$ of early migration of
+$\mbox{CO}_2$ are simulated and flow responses related to the storage
+capacity and leakage risk objectives are defined and calculated from
+the simulation results. The responses are reported in scatter plots at end of
+injection and end of early migration time. 
+
+This work is specific in examining how heterogeneity influences flow behavior
+by using a number of geological realizations. Flow responses defined in
+this work are specific to $\mbox{CO}_2$ studies and differ from the responses
+used in the original SAIGUP project to study oil recovery. We simulate the
+aquifer average pressure,  model boundary fluxes, residual and mobile CO$_2$
+saturation, and spatial distribution of connected CO$_2$ volumes. These
+responses can be considered to discuss the site storage capacity and risk of
+CO$_2$ leakage to surface. 
+
+\vspace{0.5cm}
+\noindent\textbf{Comments:}
+
+This work initially is presented in Edinburgh 2010 ACM conference, in a
+brief proceedings presentation, and more details of the work are reported in a
+proceedings for CMWR 2010 conference in Barcelona. The aim of this paper is to
+investigate the impact of geological heterogeneity on a typical $\mbox{CO}_2$
+injection problem.
+
+The main concern here is to include realistic geological heterogeneity knowledge
+into flow simulation work-flow, which is specific to the $\mbox{CO}_2$ storage
+problem. Results of this work conclude that the range of variability in flow
+responses indicate the significance of geological heterogeneity in modeling the
+$\mbox{CO}_2$ flow. Geological features are ranked by for their impact on each
+of the defined flow responses and in particular, aggradation angle has shown a
+big impact in most of the responses.
+
+This paper received a comment on lacking the quantitative sensitivity analysis.
+This was added in the later works. 
+
+}%%%------------PAPER I-------------------%%%
+
+
+%
+% Paper II
+%
+\paperitem{II}
+{Impact of geological heterogeneity on early-stage $\mbox{CO}_2$ plume
+migration: sensitivity study}
+{%%%------------PAPER II-------------------%%%
+\textbf{Summary:} 
+
+In this paper, we consider faults in addition to the four geological parameters
+used in Paper I. In the SAIGUP study, fault modeling is performed in an
+intensive variability over structural parameters and transmissibility across the
+fault. In order to keep the work less succinct and conclusive in studying the
+dynamics of flow, we fix the structural variability in its medium level and vary
+the transmissibility over three main levels: unfaulted, open faults and closed
+faults.
+
+The flow responses analyzed are the same as
+  defined in Paper I. In addition, we perform a linear sensitivity analysis for
+the flow responses
+with respect to the geological variations. The outcome of sensitivity analysis
+shows that the flow behavior is highly sensitive to aggradation angle. Barriers
+and faulting will also influence the flow responses significantly. In this
+work, similar to the previous report, we clearly see the range variation in
+flow responses that indicates how significant is to model the geological
+features accurately. 
+
+\vspace{0.5cm}
+\noindent\textbf{Comments:} 
+
+The following issues have been addressed for the works
+reported in this paper:
+
+\begin{itemize}
+
+\item \textit{The SAIGUP realizations}
+ 
+% We use the SAIGUP realizations, which are an invaluable set of geological models
+% created carefully to represent the heterogeneity variations in shallow-marine
+% depositional systems. They are designed for recovery investigations in oil
+% fields. The time and spatial scales are smaller in oil and gas field studies
+% compared to geological $\mbox{CO}_2$ storage. Gravity plays a major role during
+% migration and since it is acting in the vertical direction, special
+% considerations must be taken withing flow modeling process.
+% 
+% The focus in our studies is on injection and early migration phases of
+% $\mbox{CO}_2$ storage. Therefore, the size requirements is reduced down to
+% capture the region influenced by injection well and the medium that allows for
+% evolution of $\mbox{CO}_2$ plumes after injection and before starting the long
+% migrations in the geological beddings. However, the pressure disturbances from
+% injection well go in size beyond the scales of $\mbox{CO}_2$ distributions.
+% Therefore, hydrostatic open boundaries are considered for the SAIGUP
+% realizations to minimize the limitations due to model size.
+
+This paper is presented in ECMOR conference in Oxford, 2010. This is a
+complementary to proceedings works presented in ACM Edinburgh, 2009 and CMWR in
+Barcelona, 2010. 
+
+Topography is a major player in the gravity dominated flow behavior. The SAIGUP
+realizations include variability in topography of the geological layering via
+structural changes due to faults and also barriers in the model. These are good
+enough for early migration when the $\mbox{CO}_2$ and water segregate and plumes
+accumulate below cap-rock and start the longer migration. In the long-term
+migration, top surface geometry is an important geological parameter and
+larger models than the SAIGUP models with a better resolution of the top surface
+are needed to get good predictions of the long-term migration phase. This
+was considered in the next generation of geological studies performed following
+this study \cite{syversveenstudy,nilsen2012impact} under the IGEMS research
+project.
+
+\item \textit{Physical assumptions}
+ 
+The work concentrates on how geological heterogeneity impacts the flow
+performance. We need to measure the volumetric sweep efficiency of $\mbox{CO}_2$
+plumes to evaluate the residual trapping. The most important parameter
+is the rock transmissibility, rather than fluid properties. Including more
+physics in the modeling will add the computational costs specially when the flow
+modeling is used in a sensitivity analysis or risk assessment process.
+Therefore, we used simple fluid models for PVT. 
+
+To accelerate the flow, we used linear relative permeability curves. This
+increases the flow mobility in the low saturation values. Hysteresis effects are
+modeled by changing the endpoints in the relative permeability curves and no
+scanning-curves is considered here. During injection, the main process is
+drainage. After injection, the imbibition process starts and mostly is a
+replacement of $\mbox{CO}_2$ by water due to gravity segregation. This justifies
+the usage of simple hysteresis model, and more detailed study can be done to
+investigate this influence in a quantitative manner. 
+
+\item \textit{Uncertainty considerations}
+
+The geological parameters are changed in value between low and high levels.
+These values are assumed with the same probability, which is a reasonable 
+start point for sensitivity analysis. In general, this probability might
+not be uniform, depending to the regional geology of the storage site.
+
+\end{itemize}
+}%%%------------PAPER II-------------------%%%
+
+
+%
+% Paper III
+%
+\paperitem{III}
+{Impact of geological heterogeneity on early-stage $\mbox{CO}_2$ plume
+migration: sensitivity study}
+{%%%------------PAPER III-------------------%%%
+\textbf{Summary:}
+
+In this paper, we use the same setup that is used in the previous paper. Five
+geological features are examined, which are lobosity, barriers, aggradation
+angle, progradation direction, and faults. Also, the same injection scenario is
+used: $30$ years of $\mbox{CO}_2$ injection and $70$ years of early migration.
+The injector is controlled by a constant rate and no pressure constraint is set
+to allow for all ranges of pressure, including those that are unrealistic.
+Moreover, we define an additional model output that is related to the risk of
+CO$_2$ leakage through any breakings in the cap-rock.
+
+we examine the influence of simplifying assumptions considered in our works
+regarding linearity of relative permeability function. We perform a detailed
+flow analysis on various geological realizations using two different relative
+permeability relations: linear and quadratic functions. The non-linearity in
+relative permeability hinders the flow in the lower saturations values of the
+displaced phase, i.e., water phase. We discuss the influence of curvature on
+$\mbox{CO}_2$ flow dynamics within the aquifer.
+
+
+\vspace{0.5cm}
+\noindent\textbf{Comments:}
+
+Results show that using linear relative permeability function ends up in
+conservative conclusions with respect to $\mbox{CO}_2$ distributions in the
+domain in terms of storage safety. Since computational costs are much lower for
+linear relative permeability scenario than quadratic relative permeability, it
+sounds a good strategy to perform sensitivity analysis by using linear relative
+permeability function on flow responses that are based on $\mbox{CO}_2$
+distribution in the domain.
+
+However, dramatic pressure build-up can happen in the medium during injection
+in the quadratic relative permeability scenario. This suggests that for
+pressure studies we must use more realistic relative permeability functions.
+
+Following this work, a detailed pressure study with more realistic relative
+permeability curves is performed, which is reported in the next paper.
+
+}%%%------------PAPER III-------------------%%%
+
+
+%
+% Paper III
+%
+\paperitem{IV}
+{Geological storage of CO$_2$: heterogeneity impact on pressure behavior}
+{\textbf{Summary:}
+
+After observing the influence of relative permeability curvature on pressure
+response for $\mbox{CO}_2$ injection studies, in this paper we perform a
+detailed pressure study on the chosen geological realizations.
+
+Pressure is an important criteria that can determine the success and failure of
+$\mbox{CO}_2$ storage operations. Over-pressurized injections can induce
+new fractures and open the existing faults and fractures that increases the risk
+of leakage for the mobile $\mbox{CO}_2$ in the domain. On the other
+hand, the pressure disturbance imposed on the system travels within the
+domain beyond the scales of $\mbox{CO}_2$ distribution. If the CO$_2$ is
+injected into a saline aquifer connected to fresh water aquifers, the pressure
+pulse may result in fresh water contaminations by the brine far from the
+injection point. We define specific pressure responses to examine the pressure
+disturbance in the system during injection.
+
+Two injection scenarios are examined for the same $160$ geological realizations
+setup. In the first scenario, the injector is set to a fixed volumetric rate to
+inject the $\mbox{CO}_2$ volume in $30$ years into the domain, allowing for an
+unlimited pressure build-up. In the second scenario, a pressure constraint is
+set on the injector that results in various rate of injection in different
+geological realizations to inject the same amount of $\mbox{CO}_2$ volume
+considered in the first injection scenario. 
+
+\vspace{0.5cm}
+\noindent\textbf{Comments:}
+
+Pressure response sensitivity study with respect to different geological
+features indicates the significance of aggradation angle, progradation
+direction, and faults during injection. A probabilistic pressure analysis is
+also performed based on the $160$ simulations on the available realizations.
+}
+
+
+%
+% Paper IV
+%
+\paperitem{V}
+{Geological storage of $\mbox{CO}_2$: global sensitivity analysis and risk
+assessment using the arbitrary polynomial chaos expansion}
+{\textbf{Summary:}
+
+In this paper, we perform a stochastic sensitivity and risk analysis. We obtain
+a high resolution global sensitivity and probabilistic study on the flow
+responses that are defined and discussed in the previous papers. We choose
+barriers, aggradation angle, and
+faults from the SAIGUP geological parameters. Faults are considered by changing
+the transmissibility value across them, which
+is a continuous parameter. One more parameter is added to the study which is
+common in the literature and models the external pressure support from other
+aquifers attached to the model (regional groundwater effect).
+
+Flow simulation on high resolution variational geology demands a huge
+computational costs. To enhance the calculation speed, we use a data-driven
+method that does not need to solve the full physical flow equations. We
+approximate the flow solver by a response surface method that is a polynomial
+and relates the system output to the input with a minimal computational cost.
+We use the arbitrary polynomial chaos expansion (aPC) to approximate the
+flow responses. The aPC method considers the uncertainty in the input variables.
+
+A global sensitivity analysis is performed by employing Sobol indices that are
+based on variances of responses. The method is shown to be robust in problems
+of high levels of complexity and non-linearity.  
+
+And finally, we perform a Monte-Carlo process using the approximating polynomial
+on a high resolution input variations. This makes it possible to perform a high
+resolution probabilistic study on the flow responses. This way, extreme cases
+can be identified by probability of occurrence.
+
+\vspace{0.5cm}
+\noindent\textbf{Comments:}
+
+In order to implement our stochastic technique, we choose geological parameters
+in this study that can be interpolated between two levels of their values. For
+example, it makes sense to use barriers coverage level of $25\%$ between the low
+($10\%$) and medium ($50\%$) levels used in the previous studies. Some of the
+geological parameters are discrete and can not be interpolated between two
+values. For instance, lobosity can only be varied over three points and we can
+not define a $1.5$-lobe. 
+
+Having a large number of points in the input values interval requires
+intensive geological modelings to be used in the flow simulations. Using the
+data-driven polynomial, the approach only needs evaluating the polynomial in the
+defined values, and there is no need for full geological modeling except in
+the collocation points, i.e., point values that the polynomial coefficients must
+be calculated. 
+
+The work reported here is to demonstrate the work-flow of using the aPC for
+global sensitivity analysis and probabilistic risk assessment. A normal
+work-flow starts by defining the uncertainties in the input parameters and
+follows by building the geological models that are based on those uncertainties.
+To perform this study on the SAIGUP models that are consistent
+with a uniform uncertainty in the geological parameters, with no loss of
+generality, we used uniform uncertainty distributions for our study. However,
+the aPC method is not limited to uniform uncertainty descriptions.
+
+Geological features are ranked based on the sensitivity analysis results. The
+results are in agreement with dynamics of the flow in the aquifer. Aggradation
+angle is the most influential parameter, while the regional groundwater has the
+least influence in the model responses. The study is not limited to the assumed
+uncertainty of input parameters and the conclusion may change for a very
+different uncertainty description. 
+
+}

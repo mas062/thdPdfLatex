@@ -1,0 +1,5 @@
+PWD /cygdrive/c/Users/meisama/Documents/PRJ/ThD/latex
+INPUT /usr/share/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/latex.fmt
+INPUT abstract.tex
+OUTPUT abstract.log

@@ -1,0 +1,1503 @@
+@book{houghton2001climate,
+  title={{Climate change 2001: the scientific basis}},
+  author={Houghton, J.T. and others},
+  volume={881},
+  year={2001},
+  publisher={Cambridge University Press Cambridge}
+}
+
+@book{hitchon1996aquifer,
+  title={{Aquifer disposal of carbon dioxide: hydrodynamic and mineral trapping: proof of concept}},
+  author={Hitchon, B.},
+  isbn={0968084400},
+  year={1996},
+  publisher={Geoscience Pub.}
+}
+
+@article{oladyshkin2011concept,
+author     = {Oladyshkin, S. and Class, H. and Helmig, R. and  W. Nowak},
+title      = {A concept for data-driven uncertainty quantification and its application to carbon dioxide storage in geological formations},
+journal  = {Advances in Water Resources},
+volume = {34},
+publisher = {Elsevier},
+number     = {},
+pages      = {1508--1518},
+year       = {2011},
+doi				 = {10.1016/j.advwatres.2011.08.005}
+}
+
+@article{nordbotten2008semi,
+  title={{A semi-analytical model estimating leakage associated with CO2 storage in large-scale multi-layered geological systems with multiple leaky wells}},
+  author={Nordbotten, JM and Kavetski, D. and Celia, MA and Bachu, S.},
+  journal={Under Review at: Environmental Science and Technology},
+  year={2008}
+}
+
+@article{bachu2000sequestration,
+  title={{Sequestration of $\mbox{CO}_2$  in geological media: criteria and approach for site selection in response to climate change}},
+  author={Bachu, S.},
+  journal={Energy Conversion and Management},
+  volume={41},
+  number={9},
+  pages={953--970},
+  issn={0196-8904},
+  year={2000},
+  publisher={Elsevier}
+}
+
+@article{bachu2002sequestration,
+  title={{Sequestration of CO2 in geological media in response to climate change: road map for site selection using the transform of the geological space into the CO2 phase space}},
+  author={Bachu, S.},
+  journal={Energy Conversion and management},
+  volume={43},
+  number={1},
+  pages={87--102},
+  issn={0196-8904},
+  year={2002},
+  publisher={Elsevier}
+}
+
+@article{dutton2003reservoir,
+  title={{Reservoir characterization of a Permian deep-water sandstone, East Ford field, Delaware basin, Texas}},
+  author={Dutton, S.P. and Flanders, W.A. and Barton, M.D.},
+  journal={AAPG bulletin},
+  volume={87},
+  number={4},
+  pages={609-628},
+  issn={0149-1423},
+  year={2003},
+  publisher={Am Assoc Petrol Geol}
+}
+
+
+@article{cook2000putting,
+  title={{Putting it back where it came from: Is geological disposal of carbon dioxide an option for Australia}},
+  author={Cook, PJ and Rigg, A. and Bradshaw, J.},
+  journal={Australian Petroleum Production and Exploration Association Journal},
+  volume={1},
+  year={2000}
+}
+
+@Article{ oldenburg2010comments,
+	title = {{Comments on Economides and Ehlig-Economides," Sequestering carbon dioxide in a closed underground volume," SPE 124430, October 2009}},
+	author = "C. Oldenburg",
+	year = "2010"
+}
+
+@article{flett2007heterogeneous,
+  title={{Heterogeneous saline formations for carbon dioxide disposal: Impact of varying heterogeneity on containment and trapping}},
+  author={Flett, M. and Gurton, R. and Weir, G.},
+  journal={Journal of Petroleum Science and Engineering},
+  volume={57},
+  number={1-2},
+  pages={106--118},
+  issn={0920-4105},
+  year={2007},
+  publisher={Elsevier}
+}
+
+@conference{kumar2004reservoir,
+  title={{Reservoir simulation of CO2 storage in deep saline aquifers}},
+  author={Kumar, A. and Noh, M. and Pope, GA and Sepehrnoori, K. and Bryant, S. and Lake, LW},
+  booktitle={SPE/DOE Symposium on Improved Oil Recovery},
+  year={2004}
+}
+
+@article{flett2007heterogeneous,
+  title={{Heterogeneous saline formations for carbon dioxide disposal: Impact of varying heterogeneity on containment and trapping}},
+  author={Flett, M. and Gurton, R. and Weir, G.},
+  journal={Journal of Petroleum Science and Engineering},
+  volume={57},
+  number={1-2},
+  pages={106--118},
+  issn={0920-4105},
+  year={2007},
+  publisher={Elsevier}
+}
+
+@article{juanes2006impact,
+  title={{Impact of relative permeability hysteresis on geological CO2 storage}},
+  author={Juanes, R. and Spiteri, EJ and Orr Jr, FM and Blunt, MJ},
+  journal={Water Resour. Res},
+  volume={42},
+  pages={W12418},
+  year={2006}
+}
+
+@article{bachu2003screening,
+  title={{Screening and ranking of sedimentary basins for sequestration of CO2 in geological media in response to climate change}},
+  author={Bachu, S.},
+  journal={Environmental Geology},
+  volume={44},
+  number={3},
+  pages={277--289},
+  issn={0943-0105},
+  year={2003},
+  publisher={Springer}
+}
+
+@article{caers2002multiple,
+  title={{Multiple-point geostatistics: a quantitative vehicle for integrating geologic analogs into multiple reservoir models}},
+  author={Caers, J. and Zhang, T.},
+  journal={AAPG},
+  year={2002}
+}
+
+@conference{allinson2002co2,
+  title={{CO2 Geological Storage Economics}},
+  author={Allinson, G. and Nguyen, V.},
+  booktitle={International Conference on Greenhouse Gas Control Technologies},
+  volume={6},
+  pages={2002},
+  year={2002}
+}
+
+@article{izgec2008co,
+  title={{CO 2 Injection into Saline Carbonate Aquifer Formations II: Comparison of Numerical Simulations to Experiments}},
+  author={Izgec, O. and Demiral, B. and Bertin, H. and Akin, S.},
+  journal={Transport in Porous Media},
+  volume={73},
+  number={1},
+  pages={57--74},
+  issn={0169-3913},
+  year={2008},
+  publisher={Springer}
+}
+
+@article{bouc2010co2,
+  title={{CO2 geological storage safety assessment: methodological developments}},
+  author={Bouc, O. and Bellefant, G. and Dubois, D. and Guyonnet, D. and Rohmer, J. and Gastine, M. and Wertz, F. and Fabriol, H.},
+  year={2010}
+}
+
+@article{green2010effect,
+  title={{Effect of Vertical Heterogeneity on Long-Term Migration of CO 2 in Saline Formations}},
+  author={Green, C.P. and Ennis-King, J.},
+  journal={Transport in porous media},
+  volume={82},
+  number={1},
+  pages={31--47},
+  issn={0169-3913},
+  year={2010},
+  publisher={Springer}
+}
+%
+@book{nordbotten2004sequestration,
+  title={{Sequestration of Carbon in Saline Aquifers Mathematical and Numerical Analysis}},
+  author={Nordbotten, J.M.},
+  isbn={8292160256},
+  year={2004},
+  publisher={The University of Bergen}
+}
+
+@article{bachu2008co2,
+  title={{CO2 storage in geological media: Role, means, status and barriers to deployment}},
+  author={Bachu, S.},
+  journal={Progress in Energy and Combustion Science},
+  volume={34},
+  number={2},
+  pages={254--273},
+  issn={0360-1285},
+  year={2008},
+  publisher={Elsevier}
+}
+
+@article{howell2008sedimentological,
+  title={{Sedimentological parameterization of shallow-marine reservoirs}},
+  author={Howell, J.A. and Skorstad, A. and MacDonald, A. and Fordham, A. and Flint, S. and Fjellvoll, B. and Manzocchi, T.},
+  journal={Petroleum Geoscience},
+  volume={14},
+  number={1},
+  pages={17-34},
+  issn={1354-0793},
+  year={2008}
+}
+
+@article{manzocchi2008sensitivity,
+  title={{Sensitivity of the impact of geological uncertainty on production from faulted and unfaulted shallow-marine oil reservoirs: objectives and methods}},
+  author={Manzocchi, T. and Carter, J.N. and Skorstad, A. and Fjellvoll, B. and Stephen, K.D. and Howell, JA and Matthews, J.D. and Walsh, J.J. and Nepveu, M. and Bos, C. and others},
+  journal={Petroleum Geoscience},
+  volume={14},
+  number={1},
+  pages={3-11},
+  issn={1354-0793},
+  year={2008}
+}
+
+@article{matthews2008assessing,
+  title={{Assessing the effect of geological uncertainty on recovery estimates in shallow-marine reservoirs: the application of reservoir engineering to the SAIGUP project}},
+  author={Matthews, J.D. and Carter, J.N. and Stephen, K.D. and Zimmerman, R.W. and Skorstad, A. and Manzocchi, T. and Howell, J.A.},
+  journal={Petroleum Geoscience},
+  volume={14},
+  number={1},
+  pages={35-44},
+  issn={1354-0793},
+  year={2008}
+}
+
+@article{gasda2009vertical,
+  title={{Vertical equilibrium with sub-scale analytical methods for geological CO 2 sequestration}},
+  author={Gasda, SE and Nordbotten, JM and Celia, MA},
+  journal={Computational Geosciences},
+  volume={13},
+  number={4},
+  pages={469--481},
+  issn={1420-0597},
+  year={2009},
+  publisher={Springer}
+}
+
+@conference{ashraf2010impact,
+  title={{Impact of geological heterogeneity on early-stage CO2 plume migration}},
+  author={Ashraf, M. and Lie, K.A. and Nilsen, H.M. and Nordbotten, J.M. and Skorstad, A.},
+  booktitle={CMWR},
+  year={2010}
+}
+
+@conference{ashraf2012impact,
+  title={{Impact of geological heterogeneity on early-stage CO2 plume migration:Sensitivity analysis}},
+  author={Ashraf, M. and Lie, K.A. and Nilsen and Skorstad, A.},
+  booktitle={ready for submission},
+  year={2010}
+}
+
+@article{eaton2006importance,
+  title={{On the importance of geological heterogeneity for flow simulation}},
+  author={Eaton, T.T.},
+  journal={Sedimentary Geology},
+  volume={184},
+  number={3-4},
+  pages={187--201},
+  issn={0037-0738},
+  year={2006},
+  publisher={Elsevier}
+}
+
+@conference{spiteri2005relative,
+  title={{Relative-Permeability Hysteresis: Trapping Models and Application to Geological CO2 Sequestration}},
+  author={Spiteri, E. and Juanes, R. and Blunt, M. and Orr, F.},
+  booktitle={SPE Annual Technical Conference and Exhibition},
+  year={2005}
+}
+
+@article{juanes2006impact,
+  title={{Impact of relative permeability hysteresis on geological CO2 storage}},
+  author={Juanes, R. and Spiteri, EJ and Orr Jr, FM and Blunt, MJ},
+  journal={Water Resour. Res},
+  volume={42},
+  pages={W12418},
+  year={2006}
+}
+
+@article{karlsen2001operator,
+  title={{Operator splitting methods for systems of convection-diffusion equations: nonlinear error mechanisms and correction strategies}},
+  author={Karlsen, K.H. and Lie, K.A. and Natvig, JR and Nordhaug, H.F. and Dahle, H.K.},
+  journal={Journal of Computational Physics},
+  volume={173},
+  number={2},
+  pages={636--663},
+  issn={0021-9991},
+  year={2001},
+  publisher={Elsevier}
+}
+
+@article{holden2000operator,
+  title={{Operator splitting methods for degenerate convection--diffusion equations II: numerical examples with emphasis on reservoir simulation and sedimentation}},
+  author={Holden, H. and Karlsen, K.H. and Lie, K.A.},
+  journal={Computational geosciences},
+  volume={4},
+  number={4},
+  pages={287--322},
+  issn={1420-0597},
+  year={2000},
+  publisher={Springer}
+}
+
+@article{brooks1964hydraulic,
+  title={{Hydraulic properties of porous media}},
+  author={Brooks, RH and Corey, A.T.},
+  journal={Hydrology Papers, Colorado State University},
+  number={March},
+  year={1964}
+}
+
+@article{corey1954interrelation,
+  title={{The interrelation between gas and oil relative permeabilities}},
+  author={Corey, A.T.},
+  journal={Producers Monthly},
+  volume={19},
+  number={1},
+  pages={38--41},
+  year={1954}
+}
+
+@article{lucier2008assessing,
+  title={{Assessing the economic feasibility of regional deep saline aquifer CO2 injection and storage: A geomechanics-based workflow applied to the Rose Run sandstone in Eastern Ohio, USA}},
+  author={Lucier, A. and Zoback, M.},
+  journal={International Journal of Greenhouse Gas Control},
+  volume={2},
+  number={2},
+  pages={230--247},
+  issn={1750-5836},
+  year={2008},
+  publisher={Elsevier}
+}
+
+@article{lucier2006geomechanical,
+  title={{Geomechanical aspects of CO2 sequestration in a deep saline reservoir in the Ohio River Valley region}},
+  author={Lucier, A. and Zoback, M. and Gupta, N. and Ramakrishnan, TS},
+  journal={Environmental Geosciences},
+  volume={13},
+  number={2},
+  pages={85},
+  issn={1075-9565},
+  year={2006},
+  publisher={Am Assoc Petrol Geol}
+}
+
+@article{rutqvist2006modeling,
+  title={{Modeling of geomechanical proceses during injection in a multilayered reservoir-caprock system and implications on site characterization}},
+  author={Rutqvist, J. and Birkholzer, J. and Tsang, C.F.},
+  year={2006}
+}
+
+@article{zoback2003determination,
+  title={{Determination of stress orientation and magnitude in deep wells}},
+  author={Zoback, MD and Barton, CA and Brudy, M. and Castillo, DA and Finkbeiner, T. and Grollimund, BR and Moos, DB and Peska, P. and Ward, CD and Wiprut, DJ},
+  journal={International Journal of Rock Mechanics and Mining Sciences},
+  volume={40},
+  number={7-8},
+  pages={1049--1076},
+  issn={1365-1609},
+  year={2003},
+  publisher={Elsevier}
+}
+
+@book{zoback2007reservoir,
+  title={{Reservoir geomechanics}},
+  author={Zoback, M.D.},
+  isbn={0521770696},
+  year={2007},
+  publisher={Cambridge Univ Pr}
+}
+
+@article{juanes2006impact,
+  title={{Impact of relative permeability hysteresis on geological CO2 storage}},
+  author={Juanes, R. and Spiteri, EJ and Orr Jr, FM and Blunt, MJ},
+  journal={Water Resour. Res},
+  volume={42},
+  pages={W12418},
+  year={2006}
+}
+
+@article{phsGeo,
+  title={Causes of Climate Change},
+  author={M. Pidwirny},
+  journal={Fundamentals of Physical Geography},
+  volume={http://www.physicalgeography.net/fundamentals/7y.html},
+  number={},
+  pages={},
+  year={2006},
+  publisher={}
+}
+
+@article{nasaref,
+  title={Global Climate Change},
+  author={NASA},
+  journal={Earth Science Communications Team},
+  volume={http://climate.nasa.gov/causes/},
+  number={},
+  pages={},
+  year={},
+  publisher={}
+}
+
+@TechReport{eurobarometer,
+ author = {EUROBAROMETER},
+ title = {Public Awareness and Acceptance of CO2 capture and storage},
+ institution = {European Commission},
+ year = {2011},
+ OPTkey = {},
+ OPTtype = {},
+ OPTnumber = {},
+ OPTaddress = {},
+ OPTmonth = {},
+ OPTnote = {},
+ OPTannote = {},
+ OPTurl = {},
+ OPTdoi = {},
+ OPTissn = {},
+ OPTlocalfile = {},
+ OPTabstract = {},
+}
+
+
+@TechReport{stateRpt,
+ author = {Michael Blohm},
+ title = {Sustainability Criteria and CCS in Germany},
+ institution = {Federal Ministry for the Environment, Nature Conservation and Nuclear Safety},
+ year = {2007},
+ OPTkey = {Unit KII1 National Climate Change Program},
+ OPTtype = {},
+ OPTnumber = {},
+ OPTaddress = {},
+ OPTmonth = {},
+ OPTnote = {},
+ OPTannote = {},
+ OPTurl = {},
+ OPTdoi = {},
+ OPTissn = {},
+ OPTlocalfile = {},
+ OPTabstract = {},
+}
+
+@inproceedings{saltelli4global,
+  title={Global sensitivity analysis: an introduction},
+  author={Saltelli, A.},
+  booktitle={Proc. 4th International Conference on Sensitivity Analysis of Model Output},
+  pages={27--43},
+  year={},
+  publisher={}
+}
+
+@book{saltelli2007global,
+  title={Global sensitivity analysis: the primer},
+  author={Saltelli, A.},
+  isbn={978-047-005-997-5},
+  year={2007},
+  publisher={Wiley}
+}
+@book{OladyshkinNowak_InTech2012,
+  title={Polynomial response surfaces for probabilistic risk assessment and risk control via robust design. Risk Assessment / Book 1},
+  author={Oladyshkin, S. and Nowak. W},
+  isbn={979-953-307-765-8},
+  year={2012},
+  publisher={InTech}
+}
+
+@inproceedings{reuter2008global,
+  title={Global sensitivity analysis in view of nonlinear structural behavior},
+  author={Reuter, U. and Liebscher, M.},
+  booktitle={Proceedings of the 7th LS-Dyna Forum, Bamberg},
+  year={2008}
+}
+
+@article{oladyshkinintegrative,
+author     = {Oladyshkin, S. and Class, H. and Helmig, R. and  W. Nowak},
+title      = {An integrative approach to robust design and probabilistic risk assessment for $\mbox{CO}_{2}$ storage in geological formations},
+journal  = {Computational Geosciences},
+volume = {15},
+number     = {3},
+publisher = {Springer},
+pages      = {565-577},
+year       = {2011},
+doi	   = {10.1007/s10596-011-9224-8}
+}
+
+@article{sobol2001global,
+  title={Global sensitivity indices for nonlinear mathematical models and their Monte Carlo estimates},
+  author={Sobol, I.M.},
+  journal={Mathematics and Computers in Simulation},
+  volume={55},
+  number={1-3},
+  pages={271--280},
+  year={2001},
+  publisher={Elsevier}
+}
+
+@article{crestaux2009polynomial,
+  title={Polynomial chaos expansion for sensitivity analysis},
+  author={Crestaux, T. and others},
+  journal={Reliability Engineering \& System Safety},
+  volume={94},
+  number={7},
+  pages={1161--1172},
+  year={2009},
+  publisher={Elsevier}
+}
+
+
+@article{Wiener1938,
+author     = {Wiener, N.},
+title      = {The homogeneous chaos},
+journal  = {Am. J. Math},
+volume = {60},
+number     = {},
+pages      = {897--936},
+year       = {1938}
+}
+
+@article{OladNowakBarros_AWR2011,
+author     = {Oladyshkin, S. and de Barros, F. P. J. and Nowak, W.},
+title      = {Global sensitivity analysis: a flexible and efficient framework with an example from stochastic hydrogeology},
+journal  = {Advances in Water Resources},
+volume = {In Press},
+publisher = {Elsevier},
+number     = {},
+pages      = {},
+year       = {2011},
+doi        = {10.1016/j.advwatres.2011.11.001}
+}
+
+@ARTICLE{Zhang_Lu_2004_JCP,
+  author     = {Zhang, D. and Lu, Z.},
+  year       = {2004},
+  title      = {An efficient, high-order perturbation approach for flow in random media via Karhunen-Loeve and polynomial expansions},
+  journal    = {Journal of Computational Physics},
+  volume     = {194},
+  number     = {},
+  pages      = {773--794}
+}
+
+
+@article{foo_pcm_JCP2010,
+  title={{Multi-element probabilistic collocation method in high dimensions}},
+  author={Foo, J. and Karniadakis, G.E.},
+  journal={Journal of Computational Physics},
+  volume={229},
+  number={5},
+  pages={1536--1557},
+  issn={0021-9991},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@ARTICLE{Fajraoui_al_2011_WRR,
+  author     = {Fajraoui, N. and Ramasomanana, F. and Younes, A. and  Mara, T. A.and  Ackerer, P. and  Guadagnini, A.},
+  year       = {2011},
+  title      = {Use of Global Sensitivity Analysis and Polynomial Chaos Expansion for Interpretation of Non-reactive Transport Experiments in Laboratory-Scale Porous Media},
+  journal    = {Water Resour. Res.},
+  volume     = {},
+  number     = {doi:10.1029/2010WR009639},
+  pages      = {}
+}
+
+@article{Ghanem_Spanos_1990_PC_in_SFEM,
+   author    = {R. Ghanem and P. D. Spanos},
+   title     = {Polynomial Chaos in Stochastic Finite Elements},
+   journal   = {Journal of Applied Mechanics},
+   year      = {1990},
+   volume    = {57},
+   pages     = {197-202}
+}
+
+@book{Ghanem_Spanos_1991_SFEM_book,
+   author    = {R. G. Ghanem and P. D. Spanos},
+   title     = {Stochastic Finite Elements: A Spectral Approach},
+   year      = {1991},
+   publisher = {Springer-Verlag},
+   address   = {New York}
+}
+
+
+@article{Keese2003,
+author     = {Keese, A. and Matthies, H. G.},
+title      = {Sparse quadrature as an alternative to MC for stochastic finite element techniques},
+journal  = {Proc. Appl. Math. Mech.},
+volume = {3},
+number     = {},
+pages      = {493--494},
+year       = {2003}
+}
+
+@article{nLi2007,
+author     = {Li, H. and Zhang, D.},
+title      = {Probabilistic collocation method for flow in porous media: Comparisons with other stochastic methods},
+journal  = {Water Resources Research},
+volume = {43},
+number     = {},
+pages      = {44--48},
+year       = {2007}
+}
+
+@article{Isukapalli1998,
+author     = {Isukapalli, S., S. and Roy, A. and Georgopoulos, P., G.},
+title      = {Stochastic Response Surface Methods (SRSMs) for uncertainty propagation: Application to environmental and biological systems},
+journal  = {Risk Analysis},
+volume = {18},
+number     = {3},
+pages      = {351--363},
+year       = {1998}
+}
+
+
+@article{Ghanem1993,
+author     = {Ghanem, R. and Spanos, P.},
+title      = {A stochastic galerkin expansion for nonlinear random vibration analysis},
+journal  = {Probabilistic Engineering Mechanics},
+volume = {8},
+number     = {},
+pages      = {255--264},
+year       = {1993}
+}
+
+@article{Matthies2005,
+author     = {Matthies, H., G. and Keese., A.},
+title      = {Galerkin methods for linear and nonlinear elliptic stochastic partial differential equations},
+journal  = {Comp. Meth. Appl. Mech. Engrg.},
+volume = {194},
+number     = {},
+pages      = {1295--1331},
+year       = {2005}
+}
+
+@article{Xiu2003,
+author     = {Xiu, D. and Karniadakis, G. E.},
+title      = {Modeling uncertainty in flow simulations via generalized polynomial chaos},
+journal  = {Journal of Computational Physics},
+volume = {187},
+number     = {},
+pages      = {137--167},
+year       = {2003}
+}
+
+@book{Villadsen1978,
+author     = {Villadsen, J. and Michelsen, M. L.},
+title      = {Solution of differential equation models by polynomial approximation},
+publisher = {Prentice-Hall},
+pages      = {446},
+year       = {1978}
+}
+
+
+@book{Abramowitz1965,
+author     = {Abramowitz, M. and Stegun, I., A.},
+title      = {Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables},
+publisher = {New York: Dover},
+pages      = {1146},
+year       = {1965}
+}
+
+@article{Morris1991,
+  title={Morris Factorial Sampling Plans for Preliminary Computational Experiments},
+  author={Morris, M.,D.},
+  journal={Technometrics},
+  number={33},
+  pages={161--174},
+  year={1991},
+}
+
+
+@Article{Nowak_2009_BUEL,
+author = "W. Nowak",
+title = "Best unbiased ensemble linearization and the Quasi-Linear
+{Kalman} Ensemble Generator",
+journal = "Water Resour. Res.",
+year = "2009",
+volume = "45",
+number = "W04431",
+pages = "",
+doi = "10.1029/2008WR007328"
+}
+
+@article{Jang1994,
+  title={Reliability analysis of contaminant transport in saturated porous media.},
+  author={Jang, Y.,S. and Sitar, N. and Kiureghian, A.,D.},
+  journal={Water Resources Research},
+  volume={30},
+  number={8},
+  pages={2435-2448},
+  year={1994},
+}
+
+@book{OladyshkinNowak_InTech2012,
+  title={Polynomial response surfaces for probabilistic risk assessment and risk control via robust design. Risk Assessment / Book 1},
+  author={Oladyshkin, S. and Nowak. W},
+  isbn={979-953-307-765-8},
+  year={2012},
+  publisher={InTech}
+}
+
+@article{walker2003defining,
+  title={Defining uncertainty: a conceptual basis for uncertainty management in model-based decision support},
+  author={Walker, W.E. and Harremoes, P. and Rotmans, J. and Van der Sluijs, JP and Van Asselt, MBA and Janssen, P. and Von Krauss, M.P.K.},
+  journal={Integrated Assessment},
+  volume={4},
+  number={1},
+  pages={5--17},
+  year={2003},
+  publisher={Taylor \& Francis}
+}
+
+@article{kovscek2005geologic,
+  title={Geologic storage of carbon dioxide and enhanced oil recovery. I. Uncertainty quantification employing a streamline based proxy for reservoir flow simulation},
+  author={Kovscek, AR and Wang, Y.},
+  journal={Energy conversion and management},
+  volume={46},
+  number={11},
+  pages={1920--1940},
+  year={2005},
+  publisher={Elsevier}
+}
+
+@article{brennan2010probabilistic,
+  title={A probabilistic assessment methodology for the evaluation of geologic carbon dioxide storage},
+  author={Brennan, S.T. and Burruss, R.C. and Merrill, M.D. and Freeman, P.A. and Ruppert, L.F.},
+  journal={US Geological Survey Open-File Report},
+  volume={1127},
+  pages={31},
+  year={2010}
+}
+
+@book{houghton2001climate,
+  title={Climate change 2001: the scientific basis},
+  author={Houghton, J.T. and others},
+  volume={881},
+  year={2001},
+  publisher={Cambridge University Press Cambridge}
+}
+
+@article{hitchon1999sedimentary,
+  title={Sedimentary basins and greenhouse gases: a serendipitous association},
+  author={Hitchon, B. and Gunter, WD and Gentzis, T. and Bailey, RT},
+  journal={Energy Conversion and Management},
+  volume={40},
+  number={8},
+  pages={825--843},
+  year={1999},
+  publisher={Elsevier}
+}
+
+@article{bradshaw2001geological,
+  title={Geological sequestration of carbon dioxide},
+  author={Bradshaw, J. and Cook, P.},
+  journal={Environmental Geosciences},
+  volume={8},
+  number={3},
+  pages={149},
+  year={2001},
+  publisher={Am Assoc Petrol Geol}
+}
+
+@inproceedings{bashore1993importance,
+  title={The importance of the geological model for reservoir characterization using geostatistical techniques and the impact on subsequent fluid flow},
+  author={Bashore, WM and Araktingi, UG and Levy, M. and Schweller, WJ},
+  booktitle={SPE Annual Technical Conference and Exhibition},
+  year={1993}
+}
+
+@inproceedings{melick2009incorporating,
+  title={Incorporating Geologic Heterogeneity in 3D Basin-Scale Models for $\mbox{CO}_2$ Sequestration: Examples From the Powder River Basin, NE Wyoming and SE Montana},
+  author={Melick, J. and Gardner, M. and Uland, M.},
+  booktitle={SPE International Conference on $\mbox{CO}_2$ Capture, Storage, and Utilization},
+  year={2009}
+}
+
+@inproceedings{milliken2008effect,
+  title={The effect of geologic parameters and uncertainties on subsurface flow: deepwater depositional systems},
+  author={Milliken, W. and Levy, M. and Strebelle, S. and Zhang, Y.},
+  booktitle={SPE Western Regional and Pacific Section AAPG Joint Meeting},
+  year={2008}
+}
+
+@article{foukal2006variations,
+  title={Variations in solar luminosity and their effect on the Earth's climate},
+  author={Foukal, P. and Fr{\"o}hlich, C. and Spruit, H. and Wigley, TML},
+  journal={Nature},
+  volume={443},
+  number={7108},
+  pages={161--166},
+  year={2006},
+  publisher={Nature Publishing Group}
+}
+
+@article{cavanagh2011pressurization,
+  title={Pressurization and brine displacement issues for deep saline formation $\mbox{CO}_{2}$ storage},
+  author={Cavanagh, A. and Wildgust, N.},
+  journal={Energy Procedia},
+  volume={4},
+  pages={4814--4821},
+  year={2011},
+  publisher={Elsevier}
+}
+
+
+@article{cailly2005geological,
+  title={Geological Storage of $\mbox{CO}_2$: A State-of-the-Art of Injection Processes and Technologies},
+  author={Cailly, B. and Le Thiez, P. and Egermann, P. and Audibert, A. and Vidal-Gilbert, S. and Longaygue, X.},
+  journal={Oil \& Gas Science and Technology},
+  volume={60},
+  number={3},
+  pages={517-525},
+  year={2005},
+  publisher={}
+}
+
+@article{zhou2008method,
+  title={A method for quick assessment of $\mbox{CO}_{2}$ storage capacity in closed and semi-closed saline formations},
+  author={Zhou, Q. and Birkholzer, J.T. and Tsang, C.F. and Rutqvist, J.},
+  journal={International Journal of Greenhouse Gas Control},
+  volume={2},
+  number={4},
+  pages={626--639},
+  year={2008},
+  publisher={Elsevier}
+}
+
+@article{kopp2009investigations1,
+  title={Investigations on $\mbox{CO}_{2}$ storage capacity in saline aquifers:: Part 1. Dimensional analysis of flow processes and reservoir characteristics},
+  author={Kopp, A. and Class, H. and Helmig, R.},
+  journal={International Journal of Greenhouse Gas Control},
+  volume={3},
+  number={3},
+  pages={263--276},
+  year={2009},
+  publisher={Elsevier}
+}
+
+@article{kopp2009investigations2,
+  title={Investigations on $\mbox{CO}_{2}$ storage capacity in saline aquifers--Part 2: Estimation of storage capacity coefficients},
+  author={Kopp, A. and Class, H. and Helmig, R.},
+  journal={International Journal of Greenhouse Gas Control},
+  volume={3},
+  number={3},
+  pages={277--287},
+  year={2009},
+  publisher={Elsevier}
+}
+
+@article{geoquest2007eclipse,
+  title={Eclipse Reference Manual},
+  author={Geoquest, S.},
+  journal={Schlumberger Information Solution (Geoquest)},
+  year={2007}
+}
+
+@article{le2010corrective,
+  title={Corrective measures based on pressure control strategies for $\mbox{CO}_{2}$ geological storage in deep aquifers},
+  author={Le Guenan, T. and Rohmer, J.},
+  journal={International Journal of Greenhouse Gas Control},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@article {rutqvist2002cap,
+   author = {Rutqvist, J. and Tsang, C.F.},
+   title = {A study of caprock hydromechanical changes associated with $\mbox{CO}_{2}$ injection into a brine formation},
+   journal = {Environmental Geology},
+   publisher = {Springer Berlin / Heidelberg},
+   issn = {0943-0105},
+   keyword = {Earth and Environmental Science},
+   pages = {296-305},
+   volume = {42},
+   issue = {2},
+   url = {http://dx.doi.org/10.1007/s00254-001-0499-2 },
+   note = {10.1007/s00254-001-0499-2 },
+   year = {2002}
+}
+
+@article{rutqvist2007,
+title = "Estimating maximum sustainable injection pressure during geological sequestration of $\mbox{CO}_{2}$ using coupled fluid flow and geomechanical fault-slip analysis",
+journal = "Energy Conversion and Management",
+volume = "48",
+number = "6",
+pages = "1798-1807",
+year = "2007",
+issn = "0196-8904",
+author = "J. Rutqvist and J. Birkholzer and F. Cappa and C.-F. Tsang",
+}
+
+@article{LGH1993959,
+title = "The conditions limiting $\mbox{CO}_{2}$ storage in aquifers",
+journal = "Energy Conversion and Management",
+volume = "34",
+number = "9-11",
+pages = "959-966",
+year = "1993",
+issn = "0196-8904",
+doi = "10.1016/0196-8904(93)90042-9",
+author = "L.G.H. van der Meer",
+keywords = "Carbon dioxide storage",
+keywords = "aquifers",
+keywords = "limiting conditions"
+}
+
+@article{LGH1992611,
+title = "Investigations regarding the storage of carbon dioxide in aquifers in the {Netherlands}",
+journal = "Energy Conversion and Management",
+volume = "33",
+number = "5-8",
+pages = "611-618",
+year = "1992",
+issn = "0196-8904",
+doi = "10.1016/0196-8904(92)90063-3",
+url = "http://www.sciencedirect.com/science/article/pii/0196890492900633",
+author = "L.G.H. van der Meer",
+keywords = "Carbon dioxide storage",
+keywords = "aquifers",
+keywords = "displacement",
+keywords = "geochemical",
+keywords = "environmental"
+}
+
+@article{nicot2008evaluation,
+  title="Evaluation of large-scale $\mbox{CO}_2$ storage on fresh-water sections of aquifers: an example from the {Texas} {Gulf} {Coast} {Basin}",
+  author="Nicot, J.P.",
+  journal="International Journal of Greenhouse Gas Control",
+  volume="2",
+  number="4",
+  pages="582--593",
+  year="2008",
+  publisher="Elsevier"
+}
+
+@inproceedings{saltelli4global,
+  title={Global sensitivity analysis: an introduction},
+  author={Saltelli, A.},
+  booktitle={Proc. 4th International Conference on Sensitivity Analysis of Model Output},
+  pages={27--43},
+  year={},
+  publisher={}
+}
+
+@book{OladyshkinNowak_InTech2012,
+  title={Polynomial response surfaces for probabilistic risk assessment and risk control via robust design. Risk Assessment / Book 1},
+  author={Oladyshkin, S. and Nowak. W},
+  isbn={979-953-307-765-8},
+  year={2012},
+  publisher={InTech}
+}
+
+@inproceedings{reuter2008global,
+  title={Global sensitivity analysis in view of nonlinear structural behavior},
+  author={Reuter, U. and Liebscher, M.},
+  booktitle={Proceedings of the 7th LS-Dyna Forum, Bamberg},
+  year={2008}
+}
+
+@article{sobol2001global,
+  title={Global sensitivity indices for nonlinear mathematical models and their Monte Carlo estimates},
+  author={Sobol, I.M.},
+  journal={Mathematics and Computers in Simulation},
+  volume={55},
+  number={1-3},
+  pages={271--280},
+  year={2001},
+  publisher={Elsevier}
+}
+
+@article{crestaux2009polynomial,
+  title={Polynomial chaos expansion for sensitivity analysis},
+  author={Crestaux, T. and others},
+  journal={Reliability Engineering \& System Safety},
+  volume={94},
+  number={7},
+  pages={1161--1172},
+  year={2009},
+  publisher={Elsevier}
+}
+
+
+@article{Wiener1938,
+author     = {Wiener, N.},
+title      = {The homogeneous chaos},
+journal  = {Am. J. Math},
+volume = {60},
+number     = {},
+pages      = {897--936},
+year       = {1938}
+}
+
+@article{OladNowakBarros_AWR2011,
+author     = {Oladyshkin, S. and de Barros, F. P. J. and Nowak, W.},
+title      = {Global sensitivity analysis: a flexible and efficient framework with an example from stochastic hydrogeology},
+journal  = {Advances in Water Resources},
+volume = {In Press},
+publisher = {Elsevier},
+number     = {},
+pages      = {},
+year       = {2011}
+doi				 = {10.1016/j.advwatres.2011.11.001}
+}
+
+@ARTICLE{Zhang_Lu_2004_JCP,
+  author     = {Zhang, D. and Lu, Z.},
+  year       = {2004},
+  title      = {An efficient, high-order perturbation approach for flow in random media via Karhunen-Loeve and polynomial expansions},
+  journal    = {Journal of Computational Physics},
+  volume     = {194},
+  number     = {},
+  pages      = {773--794}
+}
+
+
+@article{foo_pcm_JCP2010,
+  title={{Multi-element probabilistic collocation method in high dimensions}},
+  author={Foo, J. and Karniadakis, G.E.},
+  journal={Journal of Computational Physics},
+  volume={229},
+  number={5},
+  pages={1536--1557},
+  issn={0021-9991},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@ARTICLE{Fajraoui_al_2011_WRR,
+  author     = {Fajraoui, N. and Ramasomanana, F. and Younes, A. and  Mara, T. A.and  Ackerer, P. and  Guadagnini, A.},
+  year       = {2011},
+  title      = {Use of Global Sensitivity Analysis and Polynomial Chaos Expansion for Interpretation of Non-reactive Transport Experiments in Laboratory-Scale Porous Media},
+  journal    = {Water Resour. Res.},
+  volume     = {},
+  number     = {doi:10.1029/2010WR009639},
+  pages      = {}
+}
+
+@article{Ghanem_Spanos_1990_PC_in_SFEM,
+   author    = {R. Ghanem and P. D. Spanos},
+   title     = {Polynomial Chaos in Stochastic Finite Elements},
+   journal   = {Journal of Applied Mechanics},
+   year      = {1990},
+   volume    = {57},
+   pages     = {197-202}
+}
+
+@book{Ghanem_Spanos_1991_SFEM_book,
+   author    = {R. G. Ghanem and P. D. Spanos},
+   title     = {Stochastic Finite Elements: A Spectral Approach},
+   year      = {1991},
+   publisher = {Springer-Verlag},
+   address   = {New York}
+}
+
+@book{Villadsen1978,
+author     = {Villadsen, J. and Michelsen, M. L.},
+title      = {Solution of differential equation models by polynomial approximation},
+publisher = {Prentice-Hall},
+pages      = {446},
+year       = {1978}
+}
+
+
+@book{Abramowitz1965,
+author     = {Abramowitz, M. and Stegun, I., A.},
+title      = {Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables},
+publisher = {New York: Dover},
+pages      = {1146},
+year       = {1965}
+}
+
+@article{Morris1991,
+  title={Morris Factorial Sampling Plans for Preliminary Computational Experiments},
+  author={Morris, M.,D.},
+  journal={Technometrics},
+  number={33},
+  pages={161--174},
+  year={1991},
+}
+
+
+@Article{Nowak_2009_BUEL,
+author = "W. Nowak",
+title = "Best unbiased ensemble linearization and the Quasi-Linear
+{Kalman} Ensemble Generator",
+journal = "Water Resour. Res.",
+year = "2009",
+volume = "45",
+number = "W04431",
+pages = "",
+doi = "10.1029/2008WR007328"
+}
+
+@article{Jang1994,
+  title={Reliability analysis of contaminant transport in saturated porous media.},
+  author={Jang, Y.,S. and Sitar, N. and Kiureghian, A.,D.},
+  journal={Water Resources Research},
+  volume={30},
+  number={8},
+  pages={2435-2448},
+  year={1994},
+}
+
+@book{OladyshkinNowak_InTech2012,
+  title={Polynomial response surfaces for probabilistic risk assessment and risk control via robust design. Risk Assessment / Book 1},
+  author={Oladyshkin, S. and Nowak. W},
+  isbn={979-953-307-765-8},
+  year={2012},
+  publisher={InTech}
+}
+
+@article{kovscek2005geologic,
+  title={Geologic storage of carbon dioxide and enhanced oil recovery. I. Uncertainty quantification employing a streamline based proxy for reservoir flow simulation},
+  author={Kovscek, AR and Wang, Y.},
+  journal={Energy conversion and management},
+  volume={46},
+  number={11},
+  pages={1920--1940},
+  year={2005},
+  publisher={Elsevier}
+}
+
+@article{brennan2010probabilistic,
+  title={A probabilistic assessment methodology for the evaluation of geologic carbon dioxide storage},
+  author={Brennan, S.T. and Burruss, R.C. and Merrill, M.D. and Freeman, P.A. and Ruppert, L.F.},
+  journal={US Geological Survey Open-File Report},
+  volume={1127},
+  pages={31},
+  year={2010}
+}
+
+@book{bear1988dynamics,
+  title={Dynamics of fluids in porous media},
+  author={Bear, J.},
+  year={1988},
+  publisher={Dover publications}
+}
+
+@book{muskatflow,
+  title={The Flow of Homogeneous Fluids Through Porous Media},
+  author={Muskat, M.},
+  year={1937},
+  publisher={Mac Graw Hill, New York}
+}
+
+@book{sahimi2011flow,
+  title={Flow and transport in porous media and fractured rock: From classical methods to modern approaches},
+  author={Sahimi, M.},
+  year={2011},
+  publisher={Wiley-VCH}
+}
+
+@article{greenwood1969compressibility,
+  title={The compressibility of gaseous mixtures of carbon dioxide and water between 0 and 500 bars pressure and 450 and 800 centigrade},
+  author={Greenwood, HJ},
+  journal={Am. J. Sci},
+  volume={267},
+  pages={191--208},
+  year={1969}
+}
+
+@article{duan2006equation,
+  title={Equation of state of the H2O, CO2, and H2O-CO2 systems up to 10 GPa and 2573.15 K: Molecular dynamics simulations with ab initio potential surface},
+  author={Duan, Z. and Zhang, Z.},
+  journal={Geochimica et cosmochimica acta},
+  volume={70},
+  number={9},
+  pages={2311--2324},
+  year={2006},
+  publisher={Elsevier}
+}
+@misc{aavatsmark2004bevarelsesmetoder,
+  title={Bevarelsesmetoder for elliptiske di erensialligninger},
+  author={Aavatsmark, I.},
+  howpublished={\url{http://www.mi.uib.no/~aavat/elliptisk.pdf}},
+  journal={University of Bergen}, 
+  year={2004}
+
+}
+@misc{aavatsmark2004bevarelsesmetoderHP,
+  title={Bevarelsesmetoder for hyperbolske differensialligninger},
+  author={Aavatsmark, I.},
+  howpublished={\url{http://www.mi.uib.no/~aavat/hyperbolsk.pdf}},
+  journal={University of Bergen},
+  year={2004}  
+}
+
+@book{celia2011geological,
+  title={Geological Storage of CO2: Modeling Approaches for Large-Scale Simulation},
+  author={Celia, M.A. and Nordbotten, J.M.},
+  year={2011},
+  publisher={Wiley}
+}
+
+@article{yortsos1983analytical,
+  title={An analytical solution for linear waterflood including the effects of capillary pressure},
+  author={Yortsos, YC and Fokas, AS},
+  journal={Old SPE Journal},
+  volume={23},
+  number={1},
+  pages={115--124},
+  year={1983},
+  publisher={Society of Petroleum Engineers}
+}
+
+@article{yortsos1983analytical,
+  title={An analytical solution for linear waterflood including the effects of capillary pressure},
+  author={Yortsos, YC and Fokas, AS},
+  journal={Old SPE Journal},
+  volume={23},
+  number={1},
+  pages={115--124},
+  year={1983},
+  publisher={Society of Petroleum Engineers}
+}
+
+@article{allen1986theoretical,
+  title={Theoretical and Experimental Studies of Rate-Dependent Two-Phase Immiscible Flow},
+  author={Allen, FR and Puckett, DA},
+  journal={SPE Production Engineering},
+  volume={1},
+  number={1},
+  pages={62--74},
+  year={1986},
+  publisher={Society of Petroleum Engineers}
+}
+
+@inproceedings{dong1999effect,
+  title={Effect of capillary forces on immiscible displacement in porous media},
+  author={Dong, M. and Dullien, FAL},
+  booktitle={SPE Annual Technical Conference and Exhibition},
+  year={1999}
+}
+
+@article{yortsos1983analytical,
+  title={An analytical solution for linear waterflood including the effects of capillary pressure},
+  author={Yortsos, YC and Fokas, AS},
+  journal={Old SPE Journal},
+  volume={23},
+  number={1},
+  pages={115--124},
+  year={1983},
+  publisher={Society of Petroleum Engineers}
+}
+
+@article{rapoport1953properties,
+  title={Properties of linear waterfloods},
+  author={Rapoport, LA and Leas, WJ},
+  journal={Trans. AIME},
+  volume={198},
+  number={1953},
+  pages={139--148},
+  year={1953}
+}
+
+@article{fayers1959effect,
+  title={The effect of capillary pressure and gravity on two-phase fluid flow in a porous medium},
+  author={Fayers, FJ and Sheldon, JW},
+  journal={Trans. AIME},
+  volume={216},
+  pages={147},
+  year={1959}
+}
+
+@inproceedings{farajzadeh2011analytical,
+  title={An Analytical Method for Predicting the Performance of Gravitationally-Unstable Flow in Heterogeneous Media},
+  author={Farajzadeh, R. and Bruining, J.},
+  booktitle={SPE EUROPEC/EAGE Annual Conference and Exhibition},
+  year={2011}
+}
+
+@inproceedings{rosado2007analysis,
+  title={Analysis of capillary, gravity and viscous forces effects in oil/water displacement},
+  author={Rosado-Vazquez, F. and Rangel-German, E. and Rodriguez-De La Garza, F.},
+  booktitle={International Oil Conference and Exhibition in Mexico},
+  year={2007}
+}
+
+@article{yang1992analytical,
+  title={An Analytical Solution to Two-Phase Flow in Porous Media and its Application to Water Coning},
+  author={Yang, W.},
+  journal={SPE Reservoir Eng. J., 1},
+  volume={38},
+  year={1992}
+}
+
+@inproceedings{chen1990integral,
+  title={An Integral equation formulation for two-phase flow and other nonlinear flow problems through porous media},
+  author={Chen, Z. and Bodvarsson, GS and Witherspoon, PA},
+  booktitle={SPE Annual Technical Conference and Exhibition},
+  year={1990}
+}
+
+@article{bentsen1993effect,
+  title={Effect of neglecting viscous coupling and dynamic capillary pressure on the one-dimensional flow of two immiscible phases through a porous medium},
+  author={Bentsen, R.G.},
+  journal={SPE paper},
+  number={026016},
+  year={1993}
+}
+
+@article{alkan2010impact,
+  title={Impact of Capillary Pressure, Salinity and In situ Conditions on CO 2 Injection into Saline Aquifers},
+  author={Alkan, H. and Cinar, Y. and {\"U}lker, EB},
+  journal={Transport in porous media},
+  volume={84},
+  number={3},
+  pages={799--819},
+  year={2010},
+  publisher={Springer}
+}
+
+@article{nordbotten2005injection,
+  title={Injection and storage of CO 2 in deep saline aquifers: Analytical solution for CO 2 plume evolution during injection},
+  author={Nordbotten, J.M. and Celia, M.A. and Bachu, S.},
+  journal={Transport in Porous Media},
+  volume={58},
+  number={3},
+  pages={339--360},
+  year={2005},
+  publisher={Springer}
+}
+@misc{krLib,
+author = {Benson Lab, Stanford University},
+title = {Relative Pereability Explorer(RPE)},
+howpublished={\url{
+http://pangea.stanford.edu/research/bensonlab/relperm/index.html }}
+}
+
+@article{gunter1997aquifer,
+  title={Aquifer disposal of CO 2-rich greenhouse gases: extension of the time scale of experiment for CO 2-sequestering reactions by geochemical modelling},
+  author={Gunter, WD and Wiwehar, B. and Perkins, EH},
+  journal={Mineralogy and Petrology},
+  volume={59},
+  number={1},
+  pages={121--140},
+  year={1997},
+  publisher={Springer}
+}
+
+@article{eleniuseffects,
+  title={Effects of a capillary transition zone on the stability of a diffusive boundary layer},
+  author={Elenius, M.T. and NORDBOTTEN, J. and Kalisch, H.}
+}
+
+@article{hassanzadeh2005modelling,
+  title={Modelling of Convective Mixing in CO Storage},
+  author={Hassanzadeh, H. and Pooladi-Darvish, M. and Keith, D.},
+  journal={Journal of Canadian Petroleum Technology},
+  volume={44},
+  number={10},
+  year={2005},
+  publisher={Society of Petroleum Engineers}
+}
+
+@article{elenius2012time,
+  title={On the time scales of nonlinear instability in miscible displacement porous media flow},
+  author={Elenius, M.T. and Johannsen, K.},
+  journal={Computational Geosciences},
+  pages={1--11},
+  year={2012},
+  publisher={Springer}
+}
+
+@article{moll2011field,
+  title={Field-case simulation of $\mbox{CO}_2$ plume migration using
+vertical-equilibrium models},
+  author={M{\o}ll Nilsen, H. and Herrera, P.A. and Ashraf, M. and Ligaarden, I.
+and Iding, M. and Hermanrud, C. and Lie, K.A. and Nordbotten, J.M. and Dahle,
+H.K. and Keilegavlen, E.},
+  journal={Energy Procedia},
+  volume={4},
+  pages={3801--3808},
+  year={2011},
+  publisher={Elsevier}
+}
+
+@article{lie2010accurate,
+  title={Accurate Discretization of Vertically-Averaged Models of
+$\mbox{CO}_2$ Plume Migration},
+  author={Lie, K.A. and Ligaarden, I.S. and Nilsen, H.M.},
+  journal={ECMOR XII--12th European Conference on the
+Mathematics of Oil Recovery, EAGE, Oxford, UK},
+  year={2010}
+}
+
+@article{binning1999practical,
+  title={Practical implementation of the fractional flow approach to multi-phase
+flow simulation},
+  author={Binning, P. and Celia, M.A.},
+  journal={Advances in water resources},
+  volume={22},
+  number={5},
+  pages={461--478},
+  year={1999},
+  publisher={Elsevier}
+}
+
+
+@article{class2009benchmark,
+  title={A benchmark study on problems related to $\mbox{CO}_2$ storage in
+geologic formations},
+  author={Class, H. and Ebigbo, A. and Helmig, R. and Dahle, H.K. and
+Nordbotten, J.M. and Celia, M.A. and Audigane, P. and Darcis, M. and Ennis-King,
+J. and Fan, Y. and others},
+  journal={Computational Geosciences},
+  volume={13},
+  number={4},
+  pages={409--434},
+  year={2009},
+  publisher={Springer}
+}
+
+@article{grayderivation,
+  title={Derivation of vertical equilibrium models for $\mbox{CO}_2$ migration
+from pore scale equations},
+  author={GRAY, W.G. and HERRERA, P.A. and GASDA, S.E. and DAHLE, H.K.},
+  journal={International Journal of Numerical Analysis and Modeling},
+  year={2011}
+}
+
+@inproceedings{ligaarden2010numerical,
+  title={Numerical aspects of using vertical equilibrium models for simulating
+$\mbox{CO}_2$ sequestration},
+  author={Ligaarden, I. and Nilsen, HM},
+  booktitle={Proceedings of ECMOR XII--12th European Conference on the
+Mathematics of Oil Recovery, EAGE, Oxford, UK},
+  year={2010}
+}
+
+@article{syversveenstudy,
+  title={A Study on How Top-Surface Morphology Influences the Storage Capacity
+of CO 2 in Saline Aquifers},
+  author={Syversveen, A.R. and Nilsen, H.M. and Lie, K.A. and Tveranger, J. and
+Abrahamsen, P.},
+  journal={Geostatistics Oslo 2012},
+  pages={481--492},
+  year={2012},
+  publisher={Springer}
+}
+
+@inproceedings{elenius2010co2,
+  title={$\mbox{CO}_2$ trapping in sloping aquifers: High resolution numerical
+simulations},
+  author={Elenius, M.T. and Tchelepi, H.A. and Johannsen, K.},
+  booktitle={XVIII International Conference on Water Resources, CIMNE,
+Barcelona},
+  year={2010}
+}
+@article{arwade2010variance,
+  title={Variance decomposition and global sensitivity for structural systems},
+  author={Arwade, S.R. and Moradi, M. and Louhghalam, A.},
+  journal={Engineering Structures},
+  volume={32},
+  number={1},
+  pages={1--10},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@article{lie2011open,
+  title={Open-source MATLAB implementation of consistent discretisations on
+complex grids},
+  author={Lie, K.A. and Krogstad, S. and Ligaarden, I.S. and Natvig, J.R. and
+Nilsen, H.M. and Skaflestad, B.},
+  journal={Computational Geosciences},
+  pages={1--26},
+  year={2011},
+  publisher={Springer}
+}
+
+@misc{mrst,
+author = {SINTEF Applied Matemathics},
+title = {MATLAB Reservoir Simulation Toolbox},
+howpublished= {\url {http://http://www.sintef.no/MRST}}
+}
+
+@inproceedings{hadley1956theoretical,
+  title={A theoretical and experimental study of the steady state capillary end
+effect},
+  author={Hadley, GF and Handy, LL},
+  booktitle={Fall Meeting of the Petroleum Branch of AIME},
+  year={1956}
+}
+
+@article{nilsen2012impact,
+  title={Impact of top-surface morphology on CO< sub> 2</sub> storage capacity},
+  author={Nilsen, H.M. and Syversveen, A.R. and Lie, K.A. and Tveranger, J. and
+Nordbotten, J.M.},
+  journal={International Journal of Greenhouse Gas Control},
+  volume={11},
+  pages={221--235},
+  year={2012},
+  publisher={Elsevier}
+}

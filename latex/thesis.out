@@ -1,0 +1,36 @@
+\BOOKMARK [0][-]{chapter*.1}{Scientific environment}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{Acknowledgements}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 3
+\BOOKMARK [0][-]{chapter*.4}{List of papers}{}% 4
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 5
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Carbon storage}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.3}{Modeling procedure}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.4}{Uncertainty Sources}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.5}{Geological modeling}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.5.1}{Geological description}{section.1.5}% 11
+\BOOKMARK [2][-]{subsection.1.5.2}{Geological parameters}{section.1.5}% 12
+\BOOKMARK [1][-]{section.1.6}{Flow equations}{chapter.1}% 13
+\BOOKMARK [2][-]{subsection.1.6.1}{Single phase flow}{section.1.6}% 14
+\BOOKMARK [2][-]{subsection.1.6.2}{Two-phase flow}{section.1.6}% 15
+\BOOKMARK [1][-]{section.1.7}{Flow regimes}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.7.1}{Injection and early migration}{section.1.7}% 17
+\BOOKMARK [2][-]{subsection.1.7.2}{Long term migration}{section.1.7}% 18
+\BOOKMARK [1][-]{section.1.8}{Vertical averaging}{chapter.1}% 19
+\BOOKMARK [1][-]{section.1.9}{Flow modeling}{chapter.1}% 20
+\BOOKMARK [2][-]{subsection.1.9.1}{Numerical scheme}{section.1.9}% 21
+\BOOKMARK [2][-]{subsection.1.9.2}{Flow scenarios}{section.1.9}% 22
+\BOOKMARK [2][-]{subsection.1.9.3}{Flow responses}{section.1.9}% 23
+\BOOKMARK [1][-]{section.1.10}{Sensitivity and risk analysis}{chapter.1}% 24
+\BOOKMARK [2][-]{subsection.1.10.1}{Stochastic analysis}{section.1.10}% 25
+\BOOKMARK [2][-]{subsection.1.10.2}{Arbitrary polynomial chaos expansion}{section.1.10}% 26
+\BOOKMARK [2][-]{subsection.1.10.3}{Sensitivity analysis}{section.1.10}% 27
+\BOOKMARK [2][-]{subsection.1.10.4}{Risk analysis}{section.1.10}% 28
+\BOOKMARK [1][-]{section.1.11}{Implementation of work-flow}{chapter.1}% 29
+\BOOKMARK [0][-]{chapter.2}{Introduction to the papers}{}% 30
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 31
+\BOOKMARK [1][-]{section.2.2}{Summary of papers}{chapter.2}% 32
+\BOOKMARK [0][-]{chapter.3}{Scientific results}{}% 33
+\BOOKMARK [1][-]{section.3.1}{Impact of geological heterogeneity on early-stage CO2 plume migration: pressure behavior study}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.2}{Geological storage of CO2: heterogeneity impact on pressure behavior}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.3}{Geological storage of CO2: global sensitivity analysis and risk assessment using the arbitrary polynomial chaos expansion }{chapter.3}% 36

@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Cygwin)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: scientific_environment.aux
+A level-1 auxiliary file: acknowledgements.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: listofpublications.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: introduction_papers.aux
+A level-1 auxiliary file: papers.aux
+A level-1 auxiliary file: appendixA.aux
+The style file: acm.bst
+Database file #1: thesis.bib
+Warning--empty journal in eleniuseffects
+Warning--empty journal in iaeScenario
+Warning--empty journal in sneider2000seals
+You've used 78 entries,
+            2293 wiz_defined-function locations,
+            988 strings with 18741 characters,
+and the built_in function-call counts, 25293 in all, are:
+= -- 2332
+> -- 1321
+< -- 0
++ -- 562
+- -- 466
+* -- 2058
+:= -- 4180
+add.period$ -- 231
+call.type$ -- 78
+change.case$ -- 454
+chr.to.int$ -- 0
+cite$ -- 81
+duplicate$ -- 869
+empty$ -- 2077
+format.name$ -- 466
+if$ -- 5127
+int.to.chr$ -- 0
+int.to.str$ -- 78
+missing$ -- 83
+newline$ -- 390
+num.names$ -- 156
+pop$ -- 527
+preamble$ -- 1
+purify$ -- 384
+quote$ -- 0
+skip$ -- 432
+stack$ -- 0
+substring$ -- 1419
+swap$ -- 153
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 296
+warning$ -- 3
+while$ -- 235
+width$ -- 80
+write$ -- 754
+(There were 3 warnings)
