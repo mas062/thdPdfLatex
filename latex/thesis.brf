@@ -18,7 +18,6 @@
 \backcite {caers2002multiple}{{7}{1.5}{section.1.5}}
 \backcite {caers2002multiple}{{7}{1.5}{section.1.5}}
 \backcite {eaton2006importance}{{7}{1.5}{section.1.5}}
-\backcite {sneider2000seals}{{7}{1.5.1}{subsection.1.5.1}}
 \backcite {bachu2000sequestration}{{7}{1.5.1}{subsection.1.5.1}}
 \backcite {hovorka2004impact}{{8}{1.5.1}{figure.caption.10}}
 \backcite {riddiford2004monitoring}{{9}{1.5.1}{figure.caption.10}}
@@ -27,11 +26,12 @@
 \backcite {lindeberg1997escape}{{9}{1.5.1}{figure.caption.10}}
 \backcite {van1995co}{{9}{1.5.1}{figure.caption.10}}
 \backcite {flett2007heterogeneous}{{9}{1.5.1}{figure.caption.10}}
-\backcite {howell2008sedimentological}{{10}{1.5.2}{subsection.1.5.2}}
+\backcite {howell2008sedimentological}{{9}{1.5.2}{subsection.1.5.2}}
+\backcite {manzocchi2008sensitivity}{{9}{1.5.2}{subsection.1.5.2}}
+\backcite {matthews2008assessing}{{9}{1.5.2}{subsection.1.5.2}}
+\backcite {matthews2008assessing}{{9}{1.5.2}{subsection.1.5.2}}
+\backcite {manzocchi2008sensitivity}{{10}{1.5}{figure.caption.11}}
 \backcite {manzocchi2008sensitivity}{{10}{1.5.2}{subsection.1.5.2}}
-\backcite {matthews2008assessing}{{10}{1.5.2}{subsection.1.5.2}}
-\backcite {manzocchi2008sensitivity}{{10}{1.5.2}{subsection.1.5.2}}
-\backcite {manzocchi2008sensitivity}{{11}{1.5}{figure.caption.11}}
 \backcite {bear1988dynamics}{{16}{1.6.1}{equation.1.6.2}}
 \backcite {muskatflow}{{18}{1.6.1}{equation.1.6.9}}
 \backcite {sahimi2011flow}{{18}{1.6.1}{equation.1.6.10}}
