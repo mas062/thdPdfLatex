@@ -561,12 +561,7 @@ For more information about the geological modeling, see the special issue of the
 \section{Flow equations}
 \label{sec:FlowEquations}
 After introducing the parameters that make our geological model, we need to
-define the flow problem. In this section we discuss various formulations of the
-governing equations describing single and two phase flow in porous medium. We
-introduce the functionalities and axillary equations required to close the flow
-equation system. This section also includes a brief mathematical discussion on
-the flow equations. We discuss various flow regimes in the medium in the next
-section.
+define the flow problem. In this section we discuss various formulations of the governing equations describing single and two phase flow in porous medium. Solution to these type of equations is implemented in the ECLIPSE black-oil simulator that we use to model the flow. We introduce the functionalities and axillary equations required to close the flow equation system. This section also includes a brief mathematical discussion on the flow equations. We discuss various flow regimes in the medium in the next section.
 
 \subsection{Single phase flow}
 
@@ -1895,6 +1890,172 @@ together.}
 % \includegraphics[width=0.7\textwidth,natwidth=1848bp, natheight=837bp]{./figurer/C02332_FS_UG_STL.jpg}\\(d)
 % \end{tabular}
 % \end{figure}
+
+\subsection{ECLIPSE input file}
+\label{eclDataFile}
+
+In this section, important parts of the ECLIPSE input files that are used in modeling the flow are given. We will go through different sections of the ECLIPSE input file. It is assumed that the reader is familiar with the syntax and terminology used in the ECLIPSE simulation. See \cite{sis2007eclipse} for more information about ECLIPSE keywords. We use the verson 2009 of ECLIPSE-100 black-oil module.
+
+Several flow scenarios were examined before concluding in a few number of scenarios to be used in the study. Two main scenarios are considered that differ mainly in defining the well operational specifications. We will explain more about these cases in the SCHEDULE section. Only the important parts of the input file are given such that it is possible to reproduce the runs.
+
+The model starts by specifying the general simulation settings: grid dimensions, phases involed in the study, simulation start date, and so on. We consider no mass exchange between water and \coo. Therefore, it is enough to represent the flow by oil-water system where oil represents the \coo\ phase. We use \coo\ properties for oil:  
+\begin{lstlisting}
+RUNSPEC 
+DIMENS --Grid dimensions
+40 120 20 / 
+--Two-phase flow problem with no mass exchange
+WATER 
+OIL --CO2 is treated as OIL and CO2 properties used for it.
+METRIC --Metric unit system
+START --Simulation start date 
+1 'JAN' 2000 /  
+\end{lstlisting}
+Then, the grid information are given for each realization. The set of keywords generated in the SAIGUP study are included in the input file. Each included file contains data for a specific keyword. Each file is named after the keyword name it includes with the extension 'INC'. For example, 'PORO.INC' contains the PORO keyword, which contains the porosity value for each cell in the model. Only two INCLUDE keywords are printed  here to improve the readability of the code. In the second INCLUDE we provide the pore volume multipliers for the cells on the boundary of the model. This is used to represent hydrostatic open boundaries for three sides of the model.
+\begin{lstlisting}
+GRID 
+INCLUDE -- Rock properties are included for each realization
+'COORD.INC'/'ZCORN.INC'/'ACTNUM.INC'/'NTG.INC'/'PORO.INC'/
+'PERMX.INC'/'PERMY.INC'/'PERMZ.INC'/
+'MULTX.INC'/'MULTY.INC'/'MULTZ.INC'/
+INCLUDE --Pore volume multipliers for the cells in the boundary
+'MULTPV.INC'/ --1e6 and 1e3 values are used in different parts of the boundary.
+\end{lstlisting}
+In the EDIT section, we provide the fault transmissibility multipliers for each faulted case.
+\begin{lstlisting}
+EDIT
+INCLUDE
+'EDITNNC.INC'/ 
+\end{lstlisting}
+In the PROPS section the relative permeability data are provided in two sets of tables with two different endpoints for \coo\ to consider the hysteresis effect. In the SOLUTION section, we use the first table to initialize the model with $100\%$ water everywhere, and in the SCHEDULE section we use the second table to consider the residual \coo\ in a drainage process followed by an imibibition.  In the presented scenario, linear relative permeabilities are used. Another scenario contains quadratic relative permeabilities that are given to the model similarly. Zero capillary pressure is used here. PVT data for \coo(modeled by OIL) and water phases, fluid viscosities, densities, and the rock-fluid compressibility models are provided here.  
+\begin{lstlisting}
+PROPS 
+SWFN 
+--  Sw    Krw    Pcow 
+    0.2   0.0     0 
+    1     1.0     0 
+/ --First table is used for time step zero
+    0.2   0.0     0 
+    0.8   1.0     0 
+/ --Second table is used for the simulation
+SOF2       
+--  So    Kro     
+    0.000 0.0000 
+    0.800 1.0000 
+/ --First table is used for time step zero 
+    0.200 0.0000 
+    0.800 1.0000 
+/ --Second table is used for the simulation
+
+PVTW --Water PVT model
+    200.0 1.0  3.03E-06  0.4  0.0 / 
+PVDO -- CO2 PVT model
+    0.0   1.1  0.04 
+    400.0 0.95 0.04 
+/ 
+ROCK --rock-fluid compressibility model
+ 400.0   0.30E-06 / 
+DENSITY --Phase densities
+ 700  1033   0.044/ 
+\end{lstlisting}
+In the REGIONS section we define different domains in the model. We specifay the main domain that excludes the cells considered to represent the open boundaries. This is later used in the calculations of flow responses. Also, the saturation table is assigned here to be used in the initialization of the model as explained earlier.
+\begin{lstlisting}
+ REGIONS 
+INCLUDE 
+'../../../../../INC/LRGNS.INC'/ 
+SATNUM 
+96000*1/ 
+\end{lstlisting}
+The model is initialized here for the first time step by considering the hydrostatic equilibrium in medium prior to \coo\ injection. 
+\begin{lstlisting}
+SOLUTION 
+--     DATUMz  Pi@DATUM   WOC    Pc@WOC  GOC  Pc@GOC 
+EQUIL 
+        2000       250    100      0     0    0     / 
+\end{lstlisting}
+In the SUMMARY section we specify the output vectors to be used in our analysis.
+\begin{lstlisting}
+SUMMARY 
+--  FIELD DATA 
+FPR 
+FOIP 
+FWIP 
+--  REGION DATA 
+ROIP 
+/ 
+RWIP 
+/ 
+RWSAT 
+/ 
+RPR 
+/ 
+--  WELL DATA 
+WBHP 
+/ 
+WOIR 
+/ 
+WVIR 
+/ 
+\end{lstlisting}
+Finally and in the main part of the model, we define the simulation scenario by providing the injector completion specifications and injection plan for the well. Here we see the SCHEDULE scetion that is considered for fixed injection rate over $30$ years. 
+\begin{lstlisting}
+SCHEDULE 
+SATNUM  --The second saturation table is assigned here to consider the hysteresis effects. 
+96000*2/ 
+WELSPECS --Well drilling information
+'I'  'G'   6  60  1*  'OIL'  / 
+/ 
+COMPDAT --Well completion information
+'I       '   6   60     17  20 'OPEN'   0  .0   0.1/ 
+/ 
+WCONINJE --Well injection plan
+'I' 'OIL' 'OPEN' 'RESV' 1*  3650.0 / 
+/ 
+RPTRST 
+BASIC = 3 FREQ=1 FLOWS / 
+TSTEP 
+0.1/ 
+TSTEP   
+120*90 / 
+WCONINJE --Well is shut-in after 30 years
+'I' 'OIL' 'SHUT' 'RESV' 1* 0.0 / 
+/ 
+TSTEP   
+280*90 / 
+END 
+\end{lstlisting}
+In other scenario we control the well by pressure constraint and we continue the injection until the aimed total \coo\ volume is injected in the aquifer:
+\begin{lstlisting}
+SCHEDULE
+SATNUM --The second saturation table is assigned here to consider the hysteresis effects.
+96000*2/  
+WELSPECS --Well drilling information
+'I'  'G'   6  60  1*  'OIL'  /
+/
+COMPDAT --Well completion information
+'I       '   6   60     17  20 'OPEN'   3  .0   0.1/
+/
+WCONINJE --The injector is set to inject conditioned by a pressure lower than 400 bar
+'I' 'OIL' 'OPEN' 'RESV' 1*  3650.0 400/
+/
+RPTRST
+BASIC = 3 FREQ=8 FLOWS /
+ACTION --Stop the well as soon as the total injected volume is 40000000 m3
+STPINJ FOIT > 40000000 /
+WCONINJE
+'I' 'OIL' 'SHUT' 'RESV' 1* 0.0 /
+/
+ENDACTIO
+TSTEP
+0.1/
+TSTEP --The simulation continues for a total 100 years
+120*90 /
+RPTRST
+BASIC=3 FREQ=8/
+TSTEP
+280*90 /
+END
+\end{lstlisting}
+We used a similar scenario to the first scenario presented here with small modifications for the stochastic analysis that we will introduce in the next section.
 
 \section{Sensitivity and risk analysis}
 \label{sec:StochasticAnalysis}
