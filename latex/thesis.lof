@@ -7,45 +7,45 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Geological sequestration is a proposed solution for mitigating the industrial $\unhbox \voidb@x \hbox {CO}_2$ emissions.\relax }}{4}{figure.caption.8}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Modeling procedure diagram.\relax }}{5}{figure.caption.9}
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Heterogeneities in fluvial and beach depositions. Arrow in Figure (b) shows that the deposition mass is less heterogeneous than the fluvial systems.\relax }}{8}{figure.caption.10}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Stratigraphic heterogeneity levels in lateral and vertical directions. Modified from \cite {manzocchi2008sensitivity}.\relax }}{10}{figure.caption.11}
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Unfaulted fine grid perspective view. Colors depict rock types, see Figures \ref {fig:finUnf} and \ref {fig:facies}.\relax }}{11}{figure.caption.12}
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Perspective view of the rock type variations for a selected case mapped on a uniform grid.\relax }}{11}{figure.caption.13}
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Six different rock types used in modeling the stratigraphic heterogeneities. Compare to Figure \ref {fig:finUnf}\relax }}{12}{figure.caption.14}
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Histogram of lateral transmissibility for different facies and the entire fine model for a selected case. Scales are logarithmic in units cP$.$m$^3$/day/bar.\relax }}{13}{figure.caption.15}
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Logarithmic of lateral transmissibility plotted for four layers in fine grid versus their representative layer in the coarse grid. Plots are top view and units are cP$.$m$^3$/day/bar.\relax }}{14}{figure.caption.16}
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Top view illustration of faults used in the faulted grids. The fault plotted in red corresponds to the upper boundary of the model on the crest.\relax }}{14}{figure.caption.17}
-\contentsline {figure}{\numberline {1.12}{\ignorespaces Lobosity levels are defined based on the shoreline shape, which is caused by the interplay between fluvial and wave forces.\relax }}{15}{figure.caption.18}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Stratigraphic heterogeneity levels in lateral and vertical directions. Modified from \cite {manzocchi2008sensitivity}.\relax }}{11}{figure.caption.12}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Unfaulted fine grid perspective view. Colors depict rock types, see Figures \ref {fig:finUnf} and \ref {fig:facies}.\relax }}{11}{figure.caption.13}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Perspective view of the rock type variations for a selected case mapped on a uniform grid.\relax }}{12}{figure.caption.14}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Six different rock types used in modeling the stratigraphic heterogeneities. Compare to Figure \ref {fig:finUnf}\relax }}{12}{figure.caption.15}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Histogram of lateral transmissibility for different facies and the entire fine model for a selected case. Scales are logarithmic in units cP$.$m$^3$/day/bar.\relax }}{13}{figure.caption.16}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Logarithmic of lateral transmissibility plotted for four layers in fine grid versus their representative layer in the coarse grid. Plots are top view and units are cP$.$m$^3$/day/bar.\relax }}{14}{figure.caption.17}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Top view illustration of faults used in the faulted grids. The fault plotted in red corresponds to the upper boundary of the model on the crest.\relax }}{14}{figure.caption.18}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Lobosity levels are defined based on the shoreline shape, which is caused by the interplay between fluvial and wave forces.\relax }}{15}{figure.caption.19}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Lob1.}}}{15}{subfigure.12.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Lob2.}}}{15}{subfigure.12.2}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Lob3.}}}{15}{subfigure.12.3}
-\contentsline {figure}{\numberline {1.13}{\ignorespaces Barrier levels caused by periodic floods.\relax }}{15}{figure.caption.19}
-\contentsline {figure}{\numberline {1.14}{\ignorespaces Aggradation angle levels.\relax }}{16}{figure.caption.20}
-\contentsline {figure}{\numberline {1.15}{\ignorespaces Progradation levels.\relax }}{16}{figure.caption.21}
-\contentsline {figure}{\numberline {1.16}{\ignorespaces Flow domain and boundaries.\relax }}{17}{figure.caption.22}
-\contentsline {figure}{\numberline {1.17}{\ignorespaces Permeability is an indication of how easy it is for the fluids to flow trough the medium.\relax }}{17}{figure.caption.23}
-\contentsline {figure}{\numberline {1.18}{\ignorespaces Wettability and interfacial tension in water-$\unhbox \voidb@x \hbox {CO}_2$ system. Water is the wetting phase in this example.\relax }}{18}{figure.caption.24}
-\contentsline {figure}{\numberline {1.19}{\ignorespaces Multi-phase flow in the pore scale.\relax }}{19}{figure.caption.25}
-\contentsline {figure}{\numberline {1.20}{\ignorespaces Two-phase flow and relative permeability.\relax }}{19}{figure.caption.26}
-\contentsline {figure}{\numberline {1.21}{\ignorespaces Capillary pressure can be expressed as a function of wetting saturation. The plot is a typical curve of capillary pressure function with a maximum of $P_{c\unhbox \voidb@x \hbox {max}}$\relax }}{20}{figure.caption.27}
-\contentsline {figure}{\numberline {1.22}{\ignorespaces Capillary pressure distribution in the transition zone.\relax }}{20}{figure.caption.28}
-\contentsline {figure}{\numberline {1.23}{\ignorespaces Saturation distribution in the capillary transition zone.\relax }}{21}{figure.caption.29}
-\contentsline {figure}{\numberline {1.24}{\ignorespaces Flow regimes in geological $\unhbox \voidb@x \hbox {CO}_2$ storage.\relax }}{26}{figure.caption.32}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Injection and early migration flow regime.}}}{26}{subfigure.24.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Long-term migration flow regime.}}}{26}{subfigure.24.2}
-\contentsline {figure}{\numberline {1.25}{\ignorespaces Hydrostatic equilibrium condition results in three zones: the $\unhbox \voidb@x \hbox {CO}_2$ zone with thickness $h_{co_2}$, the water table with thickness $h_{w}$, and the capillary transition zone $h_{pc}$.\relax }}{28}{figure.caption.33}
-\contentsline {figure}{\numberline {1.26}{\ignorespaces Transmissibility calculation for two cells $\unhbox \voidb@x \hbox {a}$ and $\unhbox \voidb@x \hbox {b}$.\relax }}{29}{figure.caption.34}
-\contentsline {figure}{\numberline {1.27}{\ignorespaces Well modeling inside a simulation cell.\relax }}{30}{figure.caption.35}
-\contentsline {figure}{\numberline {1.28}{\ignorespaces Top, bottom, and upper side boundaries are closed and the rest are open to the flow.\relax }}{31}{figure.caption.36}
-\contentsline {figure}{\numberline {1.29}{\ignorespaces External pressure drive.\relax }}{32}{figure.caption.37}
-\contentsline {figure}{\numberline {1.30}{\ignorespaces Mobile and residual CO$_2$ volume.\relax }}{32}{figure.caption.38}
-\contentsline {figure}{\numberline {1.31}{\ignorespaces We use a $2\unhbox \voidb@x \hbox {D}$ Gaussian distribution for leakage probability on the cap-rock.\relax }}{33}{figure.caption.39}
-\contentsline {figure}{\numberline {1.32}{\ignorespaces Transmissibility in the vertical direction for two selected cases. The left plots correspond to case A in Table \ref {tab:AaB}, and the right plots belong to case B. Colors are in log scale and the scale in Figures (a) and (b) are powers of ten in cP$.$m$^3$/day/bar units.\relax }}{35}{figure.caption.41}
-\contentsline {figure}{\numberline {1.33}{\ignorespaces Transmissbility in the lateral direction for two selected cases. The left plots correspond to case A in Table \ref {tab:AaB}, and the right plots belong to case B. Colors are in log scale and the scale in Figures (a) and (b) are powers of ten in cP$.$m$^3$/day/bar units.\relax }}{36}{figure.caption.42}
-\contentsline {figure}{\numberline {1.34}{\ignorespaces CO$_2$\ distribution at the end of injection for two selected cases. The left plots correspond to case A in Table \ref {tab:AaB}, and the right plots belong to case B.\relax }}{37}{figure.caption.43}
-\contentsline {figure}{\numberline {1.35}{\ignorespaces CO$_2$\ distribution at the end of simulation for two selected cases. The left plots correspond to case A in Table \ref {tab:AaB}, and the right plots belong to case B.\relax }}{38}{figure.caption.44}
-\contentsline {figure}{\numberline {1.36}{\ignorespaces Flow sign in the Y direction at the end of injection for two selected cases. The left plots correspond to case A in Table \ref {tab:AaB}, and the right plots belong to case B. Blue color corresponds to down-dip direction, red to up-dip direction, and green represents the stagnant fluid.\relax }}{39}{figure.caption.45}
-\contentsline {figure}{\numberline {1.37}{\ignorespaces Marker codes used to plot the simulation results of all cases together.\relax }}{40}{figure.caption.46}
-\contentsline {figure}{\numberline {1.38}{\ignorespaces Marker codes used to plot the simulation results of all cases together.\relax }}{40}{figure.caption.47}
-\contentsline {figure}{\numberline {1.39}{\ignorespaces Flow-chart of work process implemented in an automated procedure.\relax }}{46}{figure.caption.48}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Barrier levels caused by periodic floods.\relax }}{15}{figure.caption.20}
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Aggradation angle levels.\relax }}{16}{figure.caption.21}
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Progradation levels.\relax }}{16}{figure.caption.22}
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Flow domain and boundaries.\relax }}{17}{figure.caption.23}
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Permeability is an indication of how easy it is for the fluids to flow trough the medium.\relax }}{18}{figure.caption.24}
+\contentsline {figure}{\numberline {1.18}{\ignorespaces Wettability and interfacial tension in water-$\unhbox \voidb@x \hbox {CO}_2$ system. Water is the wetting phase in this example.\relax }}{19}{figure.caption.25}
+\contentsline {figure}{\numberline {1.19}{\ignorespaces Multi-phase flow in the pore scale.\relax }}{19}{figure.caption.26}
+\contentsline {figure}{\numberline {1.20}{\ignorespaces Two-phase flow and relative permeability.\relax }}{20}{figure.caption.27}
+\contentsline {figure}{\numberline {1.21}{\ignorespaces Capillary pressure can be expressed as a function of wetting saturation. The plot is a typical curve of capillary pressure function with a maximum of $P_{c\unhbox \voidb@x \hbox {max}}$\relax }}{21}{figure.caption.28}
+\contentsline {figure}{\numberline {1.22}{\ignorespaces Capillary pressure distribution in the transition zone.\relax }}{21}{figure.caption.29}
+\contentsline {figure}{\numberline {1.23}{\ignorespaces Saturation distribution in the capillary transition zone.\relax }}{22}{figure.caption.30}
+\contentsline {figure}{\numberline {1.24}{\ignorespaces Flow regimes in geological $\unhbox \voidb@x \hbox {CO}_2$ storage.\relax }}{27}{figure.caption.33}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Injection and early migration flow regime.}}}{27}{subfigure.24.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Long-term migration flow regime.}}}{27}{subfigure.24.2}
+\contentsline {figure}{\numberline {1.25}{\ignorespaces Hydrostatic equilibrium condition results in three zones: the $\unhbox \voidb@x \hbox {CO}_2$ zone with thickness $h_{co_2}$, the water table with thickness $h_{w}$, and the capillary transition zone $h_{pc}$.\relax }}{29}{figure.caption.34}
+\contentsline {figure}{\numberline {1.26}{\ignorespaces Transmissibility calculation for two cells $\unhbox \voidb@x \hbox {a}$ and $\unhbox \voidb@x \hbox {b}$.\relax }}{30}{figure.caption.35}
+\contentsline {figure}{\numberline {1.27}{\ignorespaces Well modeling inside a simulation cell.\relax }}{31}{figure.caption.36}
+\contentsline {figure}{\numberline {1.28}{\ignorespaces Top, bottom, and upper side boundaries are closed and the rest are open to the flow.\relax }}{33}{figure.caption.37}
+\contentsline {figure}{\numberline {1.29}{\ignorespaces External pressure drive.\relax }}{33}{figure.caption.38}
+\contentsline {figure}{\numberline {1.30}{\ignorespaces Mobile and residual CO$_2$ volume.\relax }}{34}{figure.caption.39}
+\contentsline {figure}{\numberline {1.31}{\ignorespaces We use a $2\unhbox \voidb@x \hbox {D}$ Gaussian distribution for leakage probability on the cap-rock.\relax }}{35}{figure.caption.40}
+\contentsline {figure}{\numberline {1.32}{\ignorespaces Transmissibility in the vertical direction for two selected cases. The left plots correspond to case A in Table \ref {tab:AaB}, and the right plots belong to case B. Colors are in log scale and the scale in Figures (a) and (b) are powers of ten in cP$.$m$^3$/day/bar units.\relax }}{36}{figure.caption.42}
+\contentsline {figure}{\numberline {1.33}{\ignorespaces Transmissbility in the lateral direction for two selected cases. The left plots correspond to case A in Table \ref {tab:AaB}, and the right plots belong to case B. Colors are in log scale and the scale in Figures (a) and (b) are powers of ten in cP$.$m$^3$/day/bar units.\relax }}{37}{figure.caption.43}
+\contentsline {figure}{\numberline {1.34}{\ignorespaces CO$_2$\ distribution at the end of injection for two selected cases. The left plots correspond to case A in Table \ref {tab:AaB}, and the right plots belong to case B.\relax }}{38}{figure.caption.44}
+\contentsline {figure}{\numberline {1.35}{\ignorespaces CO$_2$\ distribution at the end of simulation for two selected cases. The left plots correspond to case A in Table \ref {tab:AaB}, and the right plots belong to case B.\relax }}{39}{figure.caption.45}
+\contentsline {figure}{\numberline {1.36}{\ignorespaces Flow sign in the Y direction at the end of injection for two selected cases. The left plots correspond to case A in Table \ref {tab:AaB}, and the right plots belong to case B. Blue color corresponds to down-dip direction, red to up-dip direction, and green represents the stagnant fluid.\relax }}{40}{figure.caption.46}
+\contentsline {figure}{\numberline {1.37}{\ignorespaces Marker codes used to plot the simulation results of all cases together.\relax }}{41}{figure.caption.47}
+\contentsline {figure}{\numberline {1.38}{\ignorespaces Marker codes used to plot the simulation results of all cases together.\relax }}{41}{figure.caption.48}
+\contentsline {figure}{\numberline {1.39}{\ignorespaces Flow-chart of work process implemented in an automated procedure.\relax }}{47}{figure.caption.49}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

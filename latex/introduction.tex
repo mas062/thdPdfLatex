@@ -351,7 +351,30 @@ to provide realistic variations of reservoir heterogeneities.  All models are co
 Figure \ref{fig:facies} shows the spatial distribution of the six modelled facies in the selected realization, and Figure \ref{fig:kxh} shows the histogram of lateral transmissibility within each facies and the total model in the logarithm scale. Each facies is modeled separately in some levels of upscaling starting from the lamina scales, before populating on the fine grid. Flow based upscaling techniques are used, and the suitability of the methods depends on the balance of
 forces. When the medium is conductive due to high permeability, the viscous dominated steady state method is used. In the rocks with lower transmissibility where the capillary forces are dominant, the capillary equilibrium is assumed \cite{manzocchi2008sensitivity}.
 
-On the last step, the fine populated grid is mapped on to the coarse grid that is to be used for the flow solver. Since the grid size in the fine model is too expensive computationally for flow simulations, the lateral dimension is doubled in each cell while every four layers are lumped into one layer in the vertical direction. Figure \ref{fig:upsat} shows the top view of lateral transmissibility in logarithmic scale for four consecutive layers of a selected case, and their corresponding upscaled layer in the coarse grid.
+On the last step, the fine populated grid is mapped on to the coarse grid that is to be used for the flow solver. Since the grid size in the fine model is too expensive computationally for flow simulations, the lateral dimension is doubled in each cell while every four layers are lumped into one layer in the vertical direction. Figure \ref{fig:upsat} shows the top view of lateral transmissibility in logarithmic scale for four consecutive layers of a selected case, and their corresponding upscaled layer in the coarse grid. Table \ref{tab:grids} shows the grid specifications in the coarse and fine SAIGUP models.
+
+A detailed discussion about the upscaling the Sedimentological and structural parameters for SAIGUP simulation models can be found at \cite{manzocchi2008sensitivity}.
+
+\begin{table}[tbp]
+  \centering
+  \caption{Grid specifications for fine and coarse scales in the SAIGUP modeling process.}
+  \label{tab:grids}
+  \small
+  \medskip\renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{|p{.35\linewidth}|p{.15\linewidth}|p{.15\linewidth}|}
+    \hline
+    Parameter &  Fine Scale& Coarse Scale\\ \hline
+    Number of cells in the x direction & $80$&$40$\\% \hline
+    Number of cells in the y direction & $240$&$120$\\% \hline
+    Number of cells in the z direction & $80$&$20$\\% \hline
+    Number of total cells & $1,500,000$&$96,000$\\% \hline
+    Number of active cells& $1,500,000$&$79,000$\\% \hline
+	Model x dimension& $3~km$&$3~km$\\% \hline
+	Model y dimension& $9~km$&$9~km$\\% \hline	
+	Model z dimension& $80~m$&$80~m$\\% \hline	
+    \hline
+  \end{tabular}\renewcommand{\arraystretch}{1}
+\end{table}
 
 \begin{figure}
 \centering
@@ -531,6 +554,9 @@ through heterogeneities (Fig.~\ref{fig:proLvl}).
   \label{fig:proLvl}
 %
 \end{figure}
+
+\vspace{1cm}
+For more information about the geological modeling, see the special issue of the Petroleum Geosciences that is devoted to the SAIGUP study \cite{matthews2008assessing}. One selected realization of the SAIGUP models is available for download \cite{saigupModel} and this model is used as an example in MATLAB Reservoir Simulation Toolbox (MRST) \cite{mrstSaigup}. 
 
 \section{Flow equations}
 \label{sec:FlowEquations}
@@ -1484,15 +1510,19 @@ be modified for more general cases.
 
 \subsection{Flow scenarios}
 
-All of the SAIGUP realizations have dimensions of
-$3~\mbox{km}~\times~9~\mbox{km}~\times~80~\mbox{m}$, which is enough to capture
-variations in the designed geological features. While the volume of the
-realizations is large enough to capture major parts of the injected volume, the
-pressure disturbance imposed by the injector can go beyond this
-scale. To compensate for the size, we choose hydrostatics boundary conditions
-for the models. The open boundaries are modeled by considering a huge pore
-volume for the outer cells in the model that represent the boundary. Figure
-\ref{fig:BDRY} shows the boundary condition defined in the model. 
+% All of the SAIGUP realizations have dimensions of
+% $3~\mbox{km}~\times~9~\mbox{km}~\times~80~\mbox{m}$, which is enough to capture
+% variations in the designed geological features. While the volume of the
+% realizations is large enough to capture major parts of the injected volume, the
+% pressure disturbance imposed by the injector can go beyond this
+% scale. To compensate for the size, we choose hydrostatics boundary conditions
+% for the models. The open boundaries are modeled by considering a huge pore
+% volume for the outer cells in the model that represent the boundary. Figure
+% \ref{fig:BDRY} shows the boundary condition defined in the model. 
+
+All of the SAIGUP realizations have dimensions of $3~\mbox{km}~\times~9~\mbox{km}~\times~80~\mbox{m}$. The model spatial scales capture the typical geological features in a shallow-marine system, such as shore-line shape and aggradation angle variations. Various scales of heterogeneity can considerably impact the flow behavior. The considered grid resolution in the lateral dimension is appropriate for simulating the interaction of the heterogeneities in the medium with the \coo\ plume.  However, in the vertical scale the study can be improved by using a higher grid resolution. Variations in the vertical direction exist in considerably smaller scales than the lateral direction. In particular, this is more crucial for the long-term migration of \coo\, where  a thin plume of \coo\ migrates beneath a sealing layer due to the buoyancy forces.
+
+The model dimensions are appropriate for studying the spatial distribution of \coo\ in the medium during injection and early migration periods. However, a detailed pressure study requires larger scales than what is used here. Flow analysis on the SAIGUP scale indicates that some of the geological parameters are more influential for the pressure response than others. We investigate the operational concerns  related to pressure build-up for typical injection scenarios and we develop mitigation plans in our study. However, the conclusions on pressure response sensitivity to geological parameters are more qualitative and instructive. Though, we perform an extensive probabilistic analysis on the \coo\ pressure behavior in the medium that can be applied in a further study with specific concerns about the pressure analysis.   
 
 The choice of open boundary is not valid in domains that are bounded by structural seals. In fact, for the close and semi-close domains the pressure is a main control on the storage capacity along with other parameters. We assume open boundaries, and the results of our study can change significantly by choosing different boundary condition. On the other hand, representing the boundary by large pore volumes on the outer closed cells makes the pressure to relax earlier than it does in a large infinite domain. Therefore, the pressure responses in our study, which are already extreme in many cases due to heterogeneity, can be magnified when it is run in huge sized models.
 
