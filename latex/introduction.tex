@@ -2515,9 +2515,19 @@ resulting in a high resolution output probability distribution.
 %
 \end{figure}
 
-\section{Implementation of work-flow}
-\label{sec:ImplementationWorkFlow}
+\section{General summary}
+\label{sec:generalSummary}
 
+The work objectives have been two folds:
+\begin{itemize}
+\item Assessing the significance of geological modeling in \coo\ injection and early migration studies.
+\item Introducing a frame-work for extensive realistic sensitivity analysis and risk assessment of geological \coo\ storage.
+\end{itemize}
+
+The significance of geological uncertainty is discussed by extensive study on \coo\ flow in different geological models. Sensitivity analysis and risk assessment have resulted in ranking of the studied geological parameters for various flow responses in the medium. The work-flow implemented in this work is a stepwise procedure that can be generalized to be used in any similar large scale analysis.
+
+\subsection{Implementation of the work-flow}
+\label{sec:implementationWorkflow}
 This thesis incorporated working with large number of realizations, various flow
 scenarios, and different procedures and softwares. While the study progresses,
 new ideas and challenges rises that require manipulation of parts of the
@@ -2542,8 +2552,44 @@ work-flow. The design is made such that the work-flow is flexible and general.
 Some research has been done by replacing the commercial simulator with in-house
 simulators at SINTEF, but the main study was performed using a commercial standard simulator. 
 
+\subsection{Generic application of results}
+\label{genericApply}
+
+The main focus of the work has been about realistic modeling of geology and applying a mathematical tool to perform sensitivity analysis and probabilistic risk study of geological uncertainty effects on the success of \coo\ storage. There are some limitations in the work-flow that needs to be considered when this work is to be consulted for any similar study.  
+
+First limitation is the SAIGUP model size. The SAIGUP models were designed for a water-flooding scenario. Therefor, the injection pressure in the medium is balanced by the drainage via production wells. The oil-water distribution in the medium has been plausibly studied in the interaction of flow with different scales of geological heterogeneities in the model. The main concern in the SAIGUP study has been the ultimate oil recovery in the medium and the study had no focus on pressure issues due to injection.
+
+The concerns in \coo\ injection projects include the distribution of \coo\ in the medium. In addition, the pressure study is significant in \coo\ storage, because an over-pressurized injection can introduce breakings in the sealing cap-rock that is aimed to be used for structural strapping of \coo. On the other hand, it is more feasible to use minimum number of wells to minimize the costs of the project and also the risk of \coo\ leakage via drilled wells after they are abandoned. Therefor, a typical injection scenario include few number of injector with no production well to balance the injection pressure.
+
+The elliptic nature of pressure equation and the small comprehensibilities of the medium result in a large pressure influenced area around the injector. Therefor, the pressure related studies need a large size of model to study the influence of the impulse imposed by the injector on the entire region connected to that impulse.
+
+To overcome this limitation in the SAIGUP models, we exaggerated the volume of the cells in the boundaries of the model that are supposed to be open. The large pore volumes on the boundaries avoid extreme pressure build-up due to injecting in a closed system. On the other hand, the study is limited to the region near the well. Since the high pressures are happening near the injector, this is more interesting to study for a pressure build-up rather than looking at the entire region influenced by the injection pressure.
+
+The pressure behavior is very senisitive to the way the boundaries are defined. In reality, there are different systems of aquifers. Some of them are large with huge pore-volumes. To model these aquifers, we can use smaller size models with open boundaries. However, some aquifers are medium and small in size. To model these aquifers, we can assume semi-close and close boundaries. For any aquifer system, we can define the boundary by exaggerating the pore volume of the cells on the boundaries of the model. The transmissbilites of the boundary cells can be also modified to represent the size of the aquifer system. This controls the amount of pressure relaxation in the medium through the boundaries. If \coo\ exists in the boundaries, relative permeability functions at the boundary can be modified in addition to the transmissibilities. 
+
+The open boundaries in our study are considered to be fully open. This makes the pressure to relax through the boundaries and the results of our pressure study are influenced by this choice. While we have observed a considerable portion of cases with a extreme pressures due to heterogeneity effects, the pressures reported in our study are moderate compared to not fully opened boundaries. The sensitivity analysis is based on comparing cases for their pressure values. Therefor, the outcome of sensitivity analysis should be valid regardless of the boundary choices. The size limitation in the SAIGUP models resulted in an extension to the current study in a project, which is called IGEMS \cite{syversveenstudy}, that considered a larger model size.   
+
+Another issue to be mentioned is the assumption for geological uncertainties that are used in the stochastic analysis. We consider near uniform distributions for the probabilities of uncertain parameter values. While there is no loss of generality, there are too comments that could improve our analysis:
+
+\begin{itemize}
+\item In general, the uncertainty probability can be different than uniform distribution. Actually, these information are very case dependent and can change from one location to another.
+\item One advantage of the aPC method is the flexibility to apply for arbitrary forms of uncertainty data. Choosing various distributions for the geological parameters would be more demonstrative of the aPC method strength. 
+\end{itemize}
+
+Choosing uniform uncertainty distributions for our study is due to our limitation to use the SAIGUP models that are made based on equi-probable values for the geological uncertain parameters. A general stochastic process using the aPC must be considered in the following steps:
+
+\begin{itemize}
+\item Use the techniques from the aPC to derive appropriate sample points
+    for geological parameters.
+\item Construct geological models at these sample points.
+\item Perform flow simulations for each sample point.
+\item Construct the proxy model.
+\item Perform global sensitivity analysis using the Sobol indexes method and the proxy model. 
+\item Perform the Monte-Carlo study to look at uncertainty and risk assessment.
+\end{itemize}
+
 One thing to notice in Figure  \ref{fig:encl} is the link between designing
-geological realizations and implementation of aPCE method. The sensitvity analysis and risk assessment procedure
+geological realizations and implementation of aPCE method. The sensitivity analysis and risk assessment procedure
 must start from the 'aPCE' box in Figure  \ref{fig:encl}, by finding the collocation points from the given geological
 uncertainty, and then based on those collocation points we design the
 geological realizations. However, for the availability of a large set of SAIGUP realizations that were generated before this study, our start point was from the 'Geological Realization' box in Figure \ref{fig:encl}. This change in start point resulted in assuming a given geological uncertainty knowledge that suits the SAIGUP geological design. Nevertheless, we practice the procedure in a scope of geological modeling and flow analysis that is novel in its kind and can be consulted for further extensive studies.

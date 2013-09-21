@@ -27,7 +27,9 @@
 \contentsline {subsection}{\numberline {1.10.2}Arbitrary polynomial chaos expansion}{45}{subsection.1.10.2}
 \contentsline {subsection}{\numberline {1.10.3}Sensitivity analysis}{47}{subsection.1.10.3}
 \contentsline {subsection}{\numberline {1.10.4}Risk analysis}{49}{subsection.1.10.4}
-\contentsline {section}{\numberline {1.11}Implementation of work-flow}{50}{section.1.11}
+\contentsline {section}{\numberline {1.11}General summary}{50}{section.1.11}
+\contentsline {subsection}{\numberline {1.11.1}Implementation of the work-flow}{50}{subsection.1.11.1}
+\contentsline {subsection}{\numberline {1.11.2}Generic application of results}{51}{subsection.1.11.2}
 \contentsline {chapter}{\numberline {2}Introduction to the papers}{53}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{54}{section.2.1}
 \contentsline {section}{\numberline {2.2}Summary of papers}{54}{section.2.2}

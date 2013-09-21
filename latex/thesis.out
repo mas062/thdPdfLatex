@@ -27,11 +27,13 @@
 \BOOKMARK [2][-]{subsection.1.10.2}{Arbitrary polynomial chaos expansion}{section.1.10}% 27
 \BOOKMARK [2][-]{subsection.1.10.3}{Sensitivity analysis}{section.1.10}% 28
 \BOOKMARK [2][-]{subsection.1.10.4}{Risk analysis}{section.1.10}% 29
-\BOOKMARK [1][-]{section.1.11}{Implementation of work-flow}{chapter.1}% 30
-\BOOKMARK [0][-]{chapter.2}{Introduction to the papers}{}% 31
-\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 32
-\BOOKMARK [1][-]{section.2.2}{Summary of papers}{chapter.2}% 33
-\BOOKMARK [0][-]{chapter.3}{Scientific results}{}% 34
-\BOOKMARK [1][-]{section.3.1}{Impact of geological heterogeneity on early-stage CO2 plume migration: pressure behavior study}{chapter.3}% 35
-\BOOKMARK [1][-]{section.3.2}{Geological storage of CO2: heterogeneity impact on pressure behavior}{chapter.3}% 36
-\BOOKMARK [1][-]{section.3.3}{Geological storage of CO2: global sensitivity analysis and risk assessment using the arbitrary polynomial chaos expansion }{chapter.3}% 37
+\BOOKMARK [1][-]{section.1.11}{General summary}{chapter.1}% 30
+\BOOKMARK [2][-]{subsection.1.11.1}{Implementation of the work-flow}{section.1.11}% 31
+\BOOKMARK [2][-]{subsection.1.11.2}{Generic application of results}{section.1.11}% 32
+\BOOKMARK [0][-]{chapter.2}{Introduction to the papers}{}% 33
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 34
+\BOOKMARK [1][-]{section.2.2}{Summary of papers}{chapter.2}% 35
+\BOOKMARK [0][-]{chapter.3}{Scientific results}{}% 36
+\BOOKMARK [1][-]{section.3.1}{Impact of geological heterogeneity on early-stage CO2 plume migration: pressure behavior study}{chapter.3}% 37
+\BOOKMARK [1][-]{section.3.2}{Geological storage of CO2: heterogeneity impact on pressure behavior}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.3}{Geological storage of CO2: global sensitivity analysis and risk assessment using the arbitrary polynomial chaos expansion }{chapter.3}% 39
