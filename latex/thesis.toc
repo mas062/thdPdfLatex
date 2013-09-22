@@ -33,7 +33,7 @@
 \contentsline {chapter}{\numberline {2}Introduction to the papers}{53}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{54}{section.2.1}
 \contentsline {section}{\numberline {2.2}Summary of papers}{54}{section.2.2}
-\contentsline {chapter}{\numberline {3}Scientific results}{59}{chapter.3}
-\contentsline {section}{\numberline {3.1}Impact of geological heterogeneity on early-stage $\unhbox \voidb@x \hbox {CO}_2$ plume migration: pressure behavior study}{61}{section.3.1}
-\contentsline {section}{\numberline {3.2}Geological storage of CO$_2$: heterogeneity impact on pressure behavior}{65}{section.3.2}
-\contentsline {section}{\numberline {3.3}Geological storage of CO$_2$: global sensitivity analysis and risk assessment using the arbitrary polynomial chaos expansion }{69}{section.3.3}
+\contentsline {chapter}{\numberline {3}Scientific results}{61}{chapter.3}
+\contentsline {section}{\numberline {3.1}Impact of geological heterogeneity on early-stage $\unhbox \voidb@x \hbox {CO}_2$ plume migration: pressure behavior study}{63}{section.3.1}
+\contentsline {section}{\numberline {3.2}Geological storage of CO$_2$: heterogeneity impact on pressure behavior}{67}{section.3.2}
+\contentsline {section}{\numberline {3.3}Geological storage of CO$_2$: global sensitivity analysis and risk assessment using the arbitrary polynomial chaos expansion }{71}{section.3.3}
