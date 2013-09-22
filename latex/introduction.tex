@@ -1961,11 +1961,11 @@ In the REGIONS section we define different domains in the model. We specifay the
 \begin{lstlisting}
  REGIONS 
 INCLUDE 
-'../../../../../INC/LRGNS.INC'/ 
+'LRGNS.INC'/ 
 SATNUM 
 96000*1/ 
 \end{lstlisting}
-The model is initialized here for the first time step by considering the hydrostatic equilibrium in medium prior to \coo\ injection. 
+The model is initialized here for the first time step by considering the hydrostatic equilibrium in the medium prior to \coo\ injection. 
 \begin{lstlisting}
 SOLUTION 
 --     DATUMz  Pi@DATUM   WOC    Pc@WOC  GOC  Pc@GOC 
@@ -1996,7 +1996,7 @@ WOIR
 WVIR 
 / 
 \end{lstlisting}
-Finally and in the main part of the model, we define the simulation scenario by providing the injector completion specifications and injection plan for the well. Here we see the SCHEDULE scetion that is considered for fixed injection rate over $30$ years. 
+Finally and in the main part of the model, we define the simulation scenario by providing the injector completion specifications and injection plan for the well. Here we see the SCHEDULE scetion that is considered for fixed injection rate over $30$ years, followed by $70$ years of early migration. 
 \begin{lstlisting}
 SCHEDULE 
 SATNUM  --The second saturation table is assigned here to consider the hysteresis effects. 
@@ -2005,7 +2005,7 @@ WELSPECS --Well drilling information
 'I'  'G'   6  60  1*  'OIL'  / 
 / 
 COMPDAT --Well completion information
-'I       '   6   60     17  20 'OPEN'   0  .0   0.1/ 
+'I'  6   60     17  20 'OPEN'   0  .0   0.1/ 
 / 
 WCONINJE --Well injection plan
 'I' 'OIL' 'OPEN' 'RESV' 1*  3650.0 / 
@@ -2023,7 +2023,7 @@ TSTEP
 280*90 / 
 END 
 \end{lstlisting}
-In other scenario we control the well by pressure constraint and we continue the injection until the aimed total \coo\ volume is injected in the aquifer:
+In the other scenario we control the well by pressure constraint and we continue the injection until the aimed total \coo\ volume is injected in the aquifer, or the simulation time reaches $100$ years:
 \begin{lstlisting}
 SCHEDULE
 SATNUM --The second saturation table is assigned here to consider the hysteresis effects.
@@ -2032,7 +2032,7 @@ WELSPECS --Well drilling information
 'I'  'G'   6  60  1*  'OIL'  /
 /
 COMPDAT --Well completion information
-'I       '   6   60     17  20 'OPEN'   3  .0   0.1/
+'I'   6   60     17  20 'OPEN'   3  .0   0.1/
 /
 WCONINJE --The injector is set to inject conditioned by a pressure lower than 400 bar
 'I' 'OIL' 'OPEN' 'RESV' 1*  3650.0 400/
@@ -2055,7 +2055,7 @@ TSTEP
 280*90 /
 END
 \end{lstlisting}
-We used a similar scenario to the first scenario presented here with small modifications for the stochastic analysis that we will introduce in the next section.
+We used a similar to the first scenario presented here with small modifications for the stochastic analysis that we will introduce in the next section.
 
 \section{Sensitivity and risk analysis}
 \label{sec:StochasticAnalysis}
@@ -2555,19 +2555,22 @@ simulators at SINTEF, but the main study was performed using a commercial standa
 \subsection{Generic application of results}
 \label{genericApply}
 
-The main focus of the work has been about realistic modeling of geology and applying a mathematical tool to perform sensitivity analysis and probabilistic risk study of geological uncertainty effects on the success of \coo\ storage. There are some limitations in the work-flow that needs to be considered when this work is to be consulted for any similar study.  
+The main focus of the work is two folds:
+\begin{itemize}
+\item Significance of geological uncertainty in the early stages of \coo\ storage operations.
+\item Applying a mathematical tool to perform sensitivity analysis and probabilistic risk study for assessing the geological uncertainty impacts on the success of \coo\ storage. 
+\end{itemize}
+We rank the most influential geological parameters. The demonstrated work-flow can be used in any study concerning the site selection and early stages of \coo\ storage. However, there are some limitations in our presentation of the work-flow that needs to be considered when this work is to be consulted for any similar study.  
 
 First limitation is the SAIGUP model size. The SAIGUP models were designed for a water-flooding scenario. Therefor, the injection pressure in the medium is balanced by the drainage via production wells. The oil-water distribution in the medium has been plausibly studied in the interaction of flow with different scales of geological heterogeneities in the model. The main concern in the SAIGUP study has been the ultimate oil recovery in the medium and the study had no focus on pressure issues due to injection.
 
-The concerns in \coo\ injection projects include the distribution of \coo\ in the medium. In addition, the pressure study is significant in \coo\ storage, because an over-pressurized injection can introduce breakings in the sealing cap-rock that is aimed to be used for structural strapping of \coo. On the other hand, it is more feasible to use minimum number of wells to minimize the costs of the project and also the risk of \coo\ leakage via drilled wells after they are abandoned. Therefor, a typical injection scenario include few number of injector with no production well to balance the injection pressure.
+The pressure study is significant in the geological \coo\ storage, because an over-pressurized injection can introduce breakings in the sealing cap-rock that is aimed to be used for structural strapping of \coo. On the other hand, it is more feasible to use minimum number of wells to minimize the costs of the project and also the risk of \coo\ leakage via drilled wells after they are abandoned. Therefor, a typical injection scenario include few number of injectors with no production well to balance the injection pressure. The elliptic nature of pressure equation and the small compressibility of the medium result in a large area influenced by injection pressure. Therefor, the pressure related studies need a large size of model to study the influence of the impulse imposed by the injector on the entire region connected to that impulse.
 
-The elliptic nature of pressure equation and the small comprehensibilities of the medium result in a large pressure influenced area around the injector. Therefor, the pressure related studies need a large size of model to study the influence of the impulse imposed by the injector on the entire region connected to that impulse.
-
-To overcome this limitation in the SAIGUP models, we exaggerated the volume of the cells in the boundaries of the model that are supposed to be open. The large pore volumes on the boundaries avoid extreme pressure build-up due to injecting in a closed system. On the other hand, the study is limited to the region near the well. Since the high pressures are happening near the injector, this is more interesting to study for a pressure build-up rather than looking at the entire region influenced by the injection pressure.
+To overcome this limitation in the SAIGUP models, we exaggerated the volume of the cells in the boundaries of the model that are supposed to be open. The large pore volumes on the boundaries avoid extreme pressure build-up due to injecting in a closed system. On the other hand, the study is limited to the region near the well. Since the high pressures are happening near the injector, this is more interesting to study for a pressure build-up around the well rather than looking at the entire region influenced by the injection pressure.
 
 The pressure behavior is very senisitive to the way the boundaries are defined. In reality, there are different systems of aquifers. Some of them are large with huge pore-volumes. To model these aquifers, we can use smaller size models with open boundaries. However, some aquifers are medium and small in size. To model these aquifers, we can assume semi-close and close boundaries. For any aquifer system, we can define the boundary by exaggerating the pore volume of the cells on the boundaries of the model. The transmissbilites of the boundary cells can be also modified to represent the size of the aquifer system. This controls the amount of pressure relaxation in the medium through the boundaries. If \coo\ exists in the boundaries, relative permeability functions at the boundary can be modified in addition to the transmissibilities. 
 
-The open boundaries in our study are considered to be fully open. This makes the pressure to relax through the boundaries and the results of our pressure study are influenced by this choice. While we have observed a considerable portion of cases with a extreme pressures due to heterogeneity effects, the pressures reported in our study are moderate compared to not fully opened boundaries. The sensitivity analysis is based on comparing cases for their pressure values. Therefor, the outcome of sensitivity analysis should be valid regardless of the boundary choices. The size limitation in the SAIGUP models resulted in an extension to the current study in a project, which is called IGEMS \cite{syversveenstudy}, that considered a larger model size.   
+The open boundaries in our study are considered to be fully open. This makes the pressure to relax through the boundaries and the results of our pressure study are influenced by this choice. While we have observed a considerable portion of cases with extreme pressures due to heterogeneity effects, the pressures reported in our study are moderate compared to not fully opened boundaries. The sensitivity analysis is based on comparing cases for their pressure values. Therefor, the outcome of sensitivity analysis should be valid regardless of the boundary choices. The size limitation in the SAIGUP models resulted in an extension to the current study in a project, which is called IGEMS \cite{syversveenstudy}, that considered a larger model size.   
 
 Another issue to be mentioned is the assumption for geological uncertainties that are used in the stochastic analysis. We consider near uniform distributions for the probabilities of uncertain parameter values. While there is no loss of generality, there are too comments that could improve our analysis:
 
@@ -2585,7 +2588,7 @@ Choosing uniform uncertainty distributions for our study is due to our limitatio
 \item Perform flow simulations for each sample point.
 \item Construct the proxy model.
 \item Perform global sensitivity analysis using the Sobol indexes method and the proxy model. 
-\item Perform the Monte-Carlo study to look at uncertainty and risk assessment.
+\item Perform the Monte-Carlo using the aPC study to assess the uncertainty and risk.
 \end{itemize}
 
 One thing to notice in Figure  \ref{fig:encl} is the link between designing
