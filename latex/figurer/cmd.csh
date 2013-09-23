@@ -1,0 +1,11 @@
+#! /usr/bin
+epstopdf C02222p100_slcy.eps
+epstopdf C02222p30_slcy.eps
+epstopdf C02222p5_slcy.eps
+epstopdf C02222p50_slcy.eps
+epstopdf C02222p70_slcy.eps
+epstopdf C03211p100_slcy.eps
+epstopdf C03211p30_slcy.eps
+epstopdf C03211p5_slcy.eps
+epstopdf C03211p50_slcy.eps
+epstopdf C03211p70_slcy.eps

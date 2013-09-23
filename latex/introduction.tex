@@ -1515,11 +1515,11 @@ be modified for more general cases.
 % volume for the outer cells in the model that represent the boundary. Figure
 % \ref{fig:BDRY} shows the boundary condition defined in the model. 
 
-All of the SAIGUP realizations have dimensions of $3~\mbox{km}~\times~9~\mbox{km}~\times~80~\mbox{m}$. The model spatial scales capture the typical geological features in a shallow-marine system, such as shore-line shape and aggradation angle variations. Various scales of heterogeneity can considerably impact the flow behavior. The considered grid resolution in the lateral dimension is appropriate for simulating the interaction of the heterogeneities in the medium with the \coo\ plume.  However, in the vertical scale the study can be improved by using a higher grid resolution. Variations in the vertical direction exist in considerably smaller scales than the lateral direction. In particular, this is more crucial for the long-term migration of \coo\, where  a thin plume of \coo\ migrates beneath a sealing layer due to the buoyancy forces.
+All of the SAIGUP realizations have dimensions of $3~\mbox{km}~\times~9~\mbox{km}~\times~80~\mbox{m}$. The model spatial scales capture the typical geological features in a shallow-marine system, such as shore-line shape and aggradation angle variations. Various scales of heterogeneity can considerably impact the flow behavior. The lateral extent of the model is smaller than the scales used for \coo\ storage studies. In some storgae formations, the lateral extent can go to few hundreds of kilometers. This makes our study limited in the spatial domain around the injector. In the temporal scale, we are more focused on injection and early migration time. We examine a number of injection scenarios to study the spatial distribution of \coo\ in the medium during injection and early migration periods. 
 
-The model dimensions are appropriate for studying the spatial distribution of \coo\ in the medium during injection and early migration periods. However, a detailed pressure study requires larger scales than what is used here. Flow analysis on the SAIGUP scale indicates that some of the geological parameters are more influential for the pressure response than others. We investigate the operational concerns  related to pressure build-up for typical injection scenarios and we develop mitigation plans in our study. However, the conclusions on pressure response sensitivity to geological parameters are more qualitative and instructive. Though, we perform an extensive probabilistic analysis on the \coo\ pressure behavior in the medium that can be applied in a further study with specific concerns about the pressure analysis.   
+Pressure study is essential for injection operations. A detailed pressure study requires larger scales than what is used here. We choose open boundaries for the model to compensate for the actual large extents of a typical storage location. The choice of open boundary is not valid in domains that are bounded by structural seals. In fact, for the close and semi-close domains the pressure is a main control on the storage capacity along with other parameters. The results of our pressure study can change significantly by choosing different boundary conditions. 
 
-The choice of open boundary is not valid in domains that are bounded by structural seals. In fact, for the close and semi-close domains the pressure is a main control on the storage capacity along with other parameters. We assume open boundaries, and the results of our study can change significantly by choosing different boundary condition. On the other hand, representing the boundary by large pore volumes on the outer closed cells makes the pressure to relax earlier than it does in a large infinite domain. Therefore, the pressure responses in our study, which are already extreme in many cases due to heterogeneity, can be magnified when it is run in huge sized models.
+We represent the boundary by large pore volumes on the outer closed cells and this makes the pressure to relax earlier than it does in a large domain. Even with such artifact, the effect of heterogeneities is clearly seen in a considerable fraction of cases with an extreme pressure build-up. We investigate the operational concerns  related to pressure build-up for typical injection scenarios and we develop mitigation plans in our study. We perform an extensive probabilistic analysis on the \coo\ pressure behavior in the medium that can be applied in a further study with specific concerns about the pressure analysis.   
 
 We consider the injection of $20\%$ of the total pore volume of the model(excluding the large volumes at the boundaries), which amounts to $40~\mbox{MM m}^3$. This volume is injected into all realizations
 in three different scenarios. In the first scenario, the injection is forced to
@@ -1540,7 +1540,7 @@ aquifer. This leads us to the third injection scenario, where the injector is
 controlled by pressure rather than volumetric rate. Thus, injection time is
 variable depending on the injectivity of the medium.
 
-Only one injector is considered in the study. With one injector, it is easier to
+One injector is considered in the study. With one injector, it is easier to
 study the flow behavior and the plume development within the medium. The
 injector is
 located in the flank and to increase the sweep efficiency for the
@@ -1890,6 +1890,54 @@ together.}
 % \includegraphics[width=0.7\textwidth,natwidth=1848bp, natheight=837bp]{./figurer/C02332_FS_UG_STL.jpg}\\(d)
 % \end{tabular}
 % \end{figure}
+
+\begin{figure}
+\begin{tabular}{MMM}
+\textbf{Time} & \textbf{Model A} & \textbf{Model B}\\
+\textbf{$5$ years:}&
+\includegraphics[width=0.35\textwidth]{./figurer/C02222c5_pers}&
+\includegraphics[width=0.35\textwidth]{./figurer/C03211c5_pers}\\
+\textbf{$30$ years:}&
+\includegraphics[width=0.35\textwidth]{./figurer/C02222c30_pers}&
+\includegraphics[width=0.35\textwidth]{./figurer/C03211c30_pers}\\
+\textbf{$50$ years:}&
+\includegraphics[width=0.35\textwidth]{./figurer/C02222c50_pers}&
+\includegraphics[width=0.35\textwidth]{./figurer/C03211c50_pers}\\
+\textbf{$70$ years:}&
+\includegraphics[width=0.35\textwidth]{./figurer/C02222c70_pers}&
+\includegraphics[width=0.35\textwidth]{./figurer/C03211c70_pers}\\
+\textbf{$100$ years:}&
+\includegraphics[width=0.35\textwidth]{./figurer/C02222c100_pers}&
+\includegraphics[width=0.35\textwidth]{./figurer/C03211c100_pers}\\
+%\\(a) $15$ &(b) Perspective view of model B\\
+\end{tabular}
+\caption{Mobile \coo\ distribution at different times for two selected cases. Cases A and B are described in Table \ref{tab:AaB}. Compare with Figures \ref{fig:Kz} and \ref{fig:Ky} for transmissibility values in different directions.}
+\label{fig:COplume}
+\end{figure}
+
+\begin{figure}
+\begin{tabular}{MMM}
+\textbf{Time} & \textbf{Model A} & \textbf{Model B}\\
+\textbf{$5$ years:}&
+\includegraphics[width=0.4\textwidth]{./figurer/C02222p5_slcy}&
+\includegraphics[width=0.4\textwidth]{./figurer/C03211p5_slcy}\\
+\textbf{$30$ years:}&
+\includegraphics[width=0.4\textwidth]{./figurer/C02222p30_slcy}&
+\includegraphics[width=0.4\textwidth]{./figurer/C03211p30_slcy}\\
+\textbf{$50$ years:}&
+\includegraphics[width=0.4\textwidth]{./figurer/C02222p50_slcy}&
+\includegraphics[width=0.4\textwidth]{./figurer/C03211p50_slcy}\\
+% \textbf{$70$ years:}&
+% \includegraphics[width=0.4\textwidth]{./figurer/C02222p70_slcy}&
+% \includegraphics[width=0.4\textwidth]{./figurer/C03211p70_slcy}\\
+\textbf{$100$ years:}&
+\includegraphics[width=0.4\textwidth]{./figurer/C02222p100_slcy}&
+\includegraphics[width=0.4\textwidth]{./figurer/C03211p100_slcy}\\
+%\\(a) $15$ &(b) Perspective view of model B\\
+\end{tabular}
+\caption{Pressure development during injection and early migration. Pressure differences from hydrostatic pressure are shown for two selected cases. Values are in bar. Cases A and B are described in Table \ref{tab:AaB}. Compare with Figures \ref{fig:Kz} and \ref{fig:Ky} for transmissibility values in different directions.}
+\label{fig:COplume}
+\end{figure}
 
 \subsection{ECLIPSE input file}
 \label{eclDataFile}
@@ -2571,6 +2619,8 @@ To overcome this limitation in the SAIGUP models, we exaggerated the volume of t
 The pressure behavior is very senisitive to the way the boundaries are defined. In reality, there are different systems of aquifers. Some of them are large with huge pore-volumes. To model these aquifers, we can use smaller size models with open boundaries. However, some aquifers are medium and small in size. To model these aquifers, we can assume semi-close and close boundaries. For any aquifer system, we can define the boundary by exaggerating the pore volume of the cells on the boundaries of the model. The transmissbilites of the boundary cells can be also modified to represent the size of the aquifer system. This controls the amount of pressure relaxation in the medium through the boundaries. If \coo\ exists in the boundaries, relative permeability functions at the boundary can be modified in addition to the transmissibilities. 
 
 The open boundaries in our study are considered to be fully open. This makes the pressure to relax through the boundaries and the results of our pressure study are influenced by this choice. While we have observed a considerable portion of cases with extreme pressures due to heterogeneity effects, the pressures reported in our study are moderate compared to not fully opened boundaries. The sensitivity analysis is based on comparing cases for their pressure values. Therefor, the outcome of sensitivity analysis should be valid regardless of the boundary choices. The size limitation in the SAIGUP models resulted in an extension to the current study in a project, which is called IGEMS \cite{syversveenstudy}, that considered a larger model size.   
+
+In the vertical scale the study can be improved by using a higher grid resolution. Variations in the vertical direction exist in considerably smaller scales than the lateral direction. In particular, this is more crucial for the long-term migration of \coo\, where  a thin plume of \coo\ migrates beneath a sealing layer due to the buoyancy forces.
 
 Another issue to be mentioned is the assumption for geological uncertainties that are used in the stochastic analysis. We consider near uniform distributions for the probabilities of uncertain parameter values. While there is no loss of generality, there are too comments that could improve our analysis:
 
