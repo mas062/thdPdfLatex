@@ -1223,7 +1223,7 @@ of $\mbox{CO}_2$ in large scale aquifers. This is a specific type of multi-scale
 modeling, at which we work with two models with two and three
 dimensions. A $2\mbox{D}$ model is extracted from the corresponding $3\mbox{D}$ 
 model to reduce the computation costs and in some cases the accuracy can be
-enhanced by reducing the numerical diffusion as we will discuss here.
+enhanced by reducing the numerical diffusion as we will discuss here. This section is discussing the back-ground concept used in \cite{moll2011field} reported in Appendix REF. The vertical equilibrium has been used extensively in the MatMoRA cluster of projects (e.g., MatMoRA \cite{matmora1}, MatMoRA-II \cite{matmora2}, VAMP \cite{vamp}, IGEMS \cite{syversveenstudy}, Numerical \coo\ lab \cite{coolab}). This technique is specially useful when investigating \coo\ injection in larger models, as discussed in Section \ref{sec:flowScenarios}. 
 
 Spatial gradients of flux and pressure appear in the the flow equations can be
 decomposed into lateral and vertical components. For a three dimensional
@@ -1504,22 +1504,13 @@ This equation assumes a vertical well and a diagonal permeability tensor. It can
 be modified for more general cases.
 
 \subsection{Flow scenarios}
+\label{sec:flowScenarios}
 
-% All of the SAIGUP realizations have dimensions of
-% $3~\mbox{km}~\times~9~\mbox{km}~\times~80~\mbox{m}$, which is enough to capture
-% variations in the designed geological features. While the volume of the
-% realizations is large enough to capture major parts of the injected volume, the
-% pressure disturbance imposed by the injector can go beyond this
-% scale. To compensate for the size, we choose hydrostatics boundary conditions
-% for the models. The open boundaries are modeled by considering a huge pore
-% volume for the outer cells in the model that represent the boundary. Figure
-% \ref{fig:BDRY} shows the boundary condition defined in the model. 
-
-All of the SAIGUP realizations have dimensions of $3~\mbox{km}~\times~9~\mbox{km}~\times~80~\mbox{m}$. The model spatial scales capture the typical geological features in a shallow-marine system, such as shore-line shape and aggradation angle variations. Various scales of heterogeneity can considerably impact the flow behavior. The lateral extent of the model is smaller than the scales used for \coo\ storage studies. In some storgae formations, the lateral extent can go to few hundreds of kilometers. This makes our study limited in the spatial domain around the injector. In the temporal scale, we are more focused on injection and early migration time. We examine a number of injection scenarios to study the spatial distribution of \coo\ in the medium during injection and early migration periods. 
+All of the SAIGUP realizations have dimensions of $3~\mbox{km}~\times~9~\mbox{km}~\times~80~\mbox{m}$. The model spatial scales capture the typical geological features in a shallow-marine system, such as shore-line shape and aggradation angle variations. Various scales of heterogeneity can considerably impact the flow behavior. The lateral extent of the model is smaller than the scales used for \coo\ storage studies. In some storage sites, the lateral extent that the \coo\ travels can go to few hundreds of kilometers. This makes our study limited in the spatial domain around the injector. For the same reason, in the temporal scale, we are more focused on injection and early migration time. We examine a number of injection scenarios to study the spatial distribution of \coo\ in the medium during injection and early migration periods.
 
 Pressure study is essential for injection operations. A detailed pressure study requires larger scales than what is used here. We choose open boundaries for the model to compensate for the actual large extents of a typical storage location. The choice of open boundary is not valid in domains that are bounded by structural seals. In fact, for the close and semi-close domains the pressure is a main control on the storage capacity along with other parameters. The results of our pressure study can change significantly by choosing different boundary conditions. 
 
-We represent the boundary by large pore volumes on the outer closed cells and this makes the pressure to relax earlier than it does in a large domain. Even with such artifact, the effect of heterogeneities is clearly seen in a considerable fraction of cases with an extreme pressure build-up. We investigate the operational concerns  related to pressure build-up for typical injection scenarios and we develop mitigation plans in our study. We perform an extensive probabilistic analysis on the \coo\ pressure behavior in the medium that can be applied in a further study with specific concerns about the pressure analysis.   
+We represent the boundary by large pore volumes on the outer closed cells and this makes the pressure to relax earlier than it does in a large domain. Even with such artifact, the effect of heterogeneities is clearly seen in a considerable fraction of cases with an extreme pressure build-up. We investigate the operational concerns  related to pressure build-up for a typical injection scenario. Our pressure study can be used for devising mitigation plans by defining operational constraints for injectors. We perform an extensive probabilistic analysis on the \coo\ pressure behavior in the medium that can be applied in a further study with specific concerns about the pressure analysis.   
 
 We consider the injection of $20\%$ of the total pore volume of the model(excluding the large volumes at the boundaries), which amounts to $40~\mbox{MM m}^3$. This volume is injected into all realizations
 in three different scenarios. In the first scenario, the injection is forced to
@@ -1527,18 +1518,9 @@ finish in
 $30~\mbox{years}$ and the pressure in the system is allowed to rise
 unlimitedly. Linear relative permeability functions are considered in this
 scenario. The purpose of the first scenario is to examine the flow distribution in the medium influenced by geological heterogeneity. Linear assumption for
-relative permeabilities is taken to speed up the flow within the medium. The
-relative permeability curvature has shown a significant influence on the
-pressure behavior during \coo\ injection into the  aquifer. However, \coo\ moving under a cap-rock will effectively have a linear relative permeability.
+relative permeabilities is taken to speed up the flow within the medium. We have used quadratic relative permeability function in another scenario. This scenario has shown a considerable increase in the pressure responses for many cases during \coo\ injection into the  aquifer. This is mainly due to lower \coo\ mobility at low saturations compared to the linear relative permeability. Albeit, the \coo\ moving under a cap-rock will effectively have a linear relative permeability.
 
-In the second scenario, the injector operates with the same fixed rate as in the
-first scenario and the relative permeability curves are chosen to be quadratic
-functions. Quadratic relative permeability curves cause lower flow mobility in
-the medium compared to the linear function, and by forcing the injector with a
-fixed volumetric rate of injection, the pressure rises significantly in the
-aquifer. This leads us to the third injection scenario, where the injector is
-controlled by pressure rather than volumetric rate. Thus, injection time is
-variable depending on the injectivity of the medium.
+The third injection scenario is similar to the first studied scenario, except that the injector is controlled by pressure rather than volumetric rate. Thus, injection time is variable depending on the injectivity of the medium.
 
 One injector is considered in the study. With one injector, it is easier to
 study the flow behavior and the plume development within the medium. The
@@ -2610,15 +2592,17 @@ The main focus of the work is two folds:
 \end{itemize}
 We rank the most influential geological parameters. The demonstrated work-flow can be used in any study concerning the site selection and early stages of \coo\ storage. However, there are some limitations in our presentation of the work-flow that needs to be considered when this work is to be consulted for any similar study.  
 
-First limitation is the SAIGUP model size. The SAIGUP models were designed for a water-flooding scenario. Therefor, the injection pressure in the medium is balanced by the drainage via production wells. The oil-water distribution in the medium has been plausibly studied in the interaction of flow with different scales of geological heterogeneities in the model. The main concern in the SAIGUP study has been the ultimate oil recovery in the medium and the study had no focus on pressure issues due to injection.
+First limitation is the SAIGUP model size. \coo\ storage studies requires large models that can cover the \coo\ spatial traveling extents within the aquifer. Therefore, our study is limited to the domain around the injector.
 
-The pressure study is significant in the geological \coo\ storage, because an over-pressurized injection can introduce breakings in the sealing cap-rock that is aimed to be used for structural strapping of \coo. On the other hand, it is more feasible to use minimum number of wells to minimize the costs of the project and also the risk of \coo\ leakage via drilled wells after they are abandoned. Therefor, a typical injection scenario include few number of injectors with no production well to balance the injection pressure. The elliptic nature of pressure equation and the small compressibility of the medium result in a large area influenced by injection pressure. Therefor, the pressure related studies need a large size of model to study the influence of the impulse imposed by the injector on the entire region connected to that impulse.
+An over-pressurized injection can introduce breakings in the sealing cap-rock that is aimed to be used for structural strapping of \coo. It is more feasible to use minimum number of wells to minimize the costs of the project and also the risk of \coo\ leakage via drilled wells after they are abandoned. Therefor, a typical injection scenario include few number of injectors with no production well to balance the injection pressure. The elliptic nature of pressure equation and the small compressibility of the medium result in a large area influenced by injection pressure. Therefor, the pressure related studies need a large size of model to study the influence of the impulse imposed by the injector on the entire region connected to that impulse.
 
 To overcome this limitation in the SAIGUP models, we exaggerated the volume of the cells in the boundaries of the model that are supposed to be open. The large pore volumes on the boundaries avoid extreme pressure build-up due to injecting in a closed system. On the other hand, the study is limited to the region near the well. Since the high pressures are happening near the injector, this is more interesting to study for a pressure build-up around the well rather than looking at the entire region influenced by the injection pressure.
 
-The pressure behavior is very senisitive to the way the boundaries are defined. In reality, there are different systems of aquifers. Some of them are large with huge pore-volumes. To model these aquifers, we can use smaller size models with open boundaries. However, some aquifers are medium and small in size. To model these aquifers, we can assume semi-close and close boundaries. For any aquifer system, we can define the boundary by exaggerating the pore volume of the cells on the boundaries of the model. The transmissbilites of the boundary cells can be also modified to represent the size of the aquifer system. This controls the amount of pressure relaxation in the medium through the boundaries. If \coo\ exists in the boundaries, relative permeability functions at the boundary can be modified in addition to the transmissibilities. 
+The pressure behavior is very sensitive to the way the boundaries are defined. In reality, there are different systems of aquifers. Some of them are large with huge pore-volumes. To model these aquifers, we can use smaller size models with open boundaries. However, some aquifers are medium and small in size. To model these aquifers, we can assume semi-close and close boundaries. For any aquifer system, we can define the boundary by exaggerating the pore volume of the cells on the boundaries of the model. The transmissbilites of the boundary cells can be also modified to represent the size of the aquifer system. This controls the amount of pressure relaxation in the medium through the boundaries. If \coo\ exists in the boundaries, relative permeability functions at the boundary can be modified in addition to the transmissibilities. 
 
-The open boundaries in our study are considered to be fully open. This makes the pressure to relax through the boundaries and the results of our pressure study are influenced by this choice. While we have observed a considerable portion of cases with extreme pressures due to heterogeneity effects, the pressures reported in our study are moderate compared to not fully opened boundaries. The sensitivity analysis is based on comparing cases for their pressure values. Therefor, the outcome of sensitivity analysis should be valid regardless of the boundary choices. The size limitation in the SAIGUP models resulted in an extension to the current study in a project, which is called IGEMS \cite{syversveenstudy}, that considered a larger model size.   
+The open boundaries in our study are considered to be fully open. This makes the pressure to relax through the boundaries and the results of our pressure study are influenced by this choice. While we have observed a considerable portion of cases with extreme pressures due to heterogeneity effects, the pressures reported in our study are moderate compared to not fully opened boundaries. The sensitivity analysis is based on comparing cases for their pressure values. Therefor, the outcome of sensitivity analysis should be valid regardless of the boundary choices. The size limitation in the SAIGUP models resulted in an extension to the current study in a project, which is called IGEMS \cite{syversveenstudy}.
+
+The IGEMS models have larger size compared to the SAIGUP models. There is only one major structural trap in the SAIGUP models that allows for most of the injected \coo\ to accumulate under the cap-rock. This is not sufficient for studying the effect of variations in the top-surface topography on the \coo\ movement in the medium. The IGEMS study has focused on the structural trapping due to deformations in the top-surface morphology and faults. The results show that the structural trapping can be important in the amount of storage due to structural trapping and it can control the speed of the plume migrating under the top sealing cap-rock.   
 
 In the vertical scale the study can be improved by using a higher grid resolution. Variations in the vertical direction exist in considerably smaller scales than the lateral direction. In particular, this is more crucial for the long-term migration of \coo\, where  a thin plume of \coo\ migrates beneath a sealing layer due to the buoyancy forces.
 
