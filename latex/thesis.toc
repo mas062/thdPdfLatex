@@ -36,4 +36,8 @@
 \contentsline {chapter}{\numberline {3}Scientific results}{65}{chapter.3}
 \contentsline {section}{\numberline {3.1}Impact of geological heterogeneity on early-stage $\unhbox \voidb@x \hbox {CO}_2$ plume migration: pressure behavior study}{67}{section.3.1}
 \contentsline {section}{\numberline {3.2}Geological storage of CO$_2$: heterogeneity impact on pressure behavior}{71}{section.3.2}
-\contentsline {section}{\numberline {3.3}Geological storage of CO$_2$: global sensitivity analysis and risk assessment using the arbitrary polynomial chaos expansion }{75}{section.3.3}
+\contentsline {section}{\numberline {3.3}Geological storage of CO$_2$: Application, feasibility and efficiency of global sensitivity analysis and risk assessment using the arbitrary polynomial chaos.}{75}{section.3.3}
+\contentsline {chapter}{\numberline {A}Additional manuscripts not evaluated as part of thesis}{79}{appendix.A}
+\contentsline {section}{\numberline {A.1}Impact of geological heterogeneity on early-stage $\unhbox \voidb@x \hbox {CO}_2$ plume migration}{81}{section.A.1}
+\contentsline {section}{\numberline {A.2}Impact of geological heterogeneity on early-stage $\unhbox \voidb@x \hbox {CO}_2$ plume migration: sensitivity study}{85}{section.A.2}
+\contentsline {section}{\numberline {A.3}Field-case simulation of CO$_2$\ plume migration using vertical-equilibrium models.}{89}{section.A.3}
