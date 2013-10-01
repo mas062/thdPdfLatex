@@ -1216,170 +1216,170 @@ regime.]{\label{fig:injF}\includegraphics[width= 0.41
 \end{figure}
 
 
-\section{Vertical averaging}
+% \section{Vertical averaging}
 
-In this section we discuss the common approach used in modeling the migration
-of $\mbox{CO}_2$ in large scale aquifers. This is a specific type of multi-scale
-modeling, at which we work with two models with two and three
-dimensions. A $2\mbox{D}$ model is extracted from the corresponding $3\mbox{D}$ 
-model to reduce the computation costs and in some cases the accuracy can be
-enhanced by reducing the numerical diffusion as we will discuss here. This section is discussing the back-ground concept used in \cite{moll2011field} reported in Appendix \ref{appendixA}, Chapter \ref{paperC}. The vertical equilibrium has been used extensively in the MatMoRA cluster of projects (e.g., MatMoRA \cite{matmora1}, MatMoRA-II \cite{matmora2}, VAMP \cite{vamp}, IGEMS \cite{syversveenstudy}, Numerical \coo\ lab \cite{coolab}). This technique is specially useful when investigating \coo\ injection in larger models, as discussed in Section \ref{sec:flowScenarios}. 
+% In this section we discuss the common approach used in modeling the migration
+% of $\mbox{CO}_2$ in large scale aquifers. This is a specific type of multi-scale
+% modeling, at which we work with two models with two and three
+% dimensions. A $2\mbox{D}$ model is extracted from the corresponding $3\mbox{D}$ 
+% model to reduce the computation costs and in some cases the accuracy can be
+% enhanced by reducing the numerical diffusion as we will discuss here. This section is discussing the back-ground concept used in \cite{moll2011field} reported in Appendix \ref{appendixA}, Chapter \ref{paperC}. The vertical equilibrium has been used extensively in the MatMoRA cluster of projects (e.g., MatMoRA \cite{matmora1}, MatMoRA-II \cite{matmora2}, VAMP \cite{vamp}, IGEMS \cite{syversveenstudy}, Numerical \coo\ lab \cite{coolab}). This technique is specially useful when investigating \coo\ injection in larger models, as discussed in Section \ref{sec:flowScenarios}. 
 
-Spatial gradients of flux and pressure appear in the the flow equations can be
-decomposed into lateral and vertical components. For a three dimensional
-problem with the set of unit vectors
-$\{\overrightarrow{i},\overrightarrow{j},\overrightarrow{k}\}$, the gradient
-operator can be written as the following:
-\begin{equation}
-    \nabla = \nabla_{\ell} + \nabla_{\\v},
-    \label{eq:grd}
-\end{equation} where:
-\begin{equation}
-    \nabla = \frac{\partial}{\partial x}\overrightarrow{i} +
-\frac{\partial}{\partial y}\overrightarrow{j} +
-\frac{\partial}{\partial z}\overrightarrow{k},
-    \label{eq:grdc}
-\end{equation}
-\begin{equation}
-    \nabla_{\ell} = \frac{\partial}{\partial x}\overrightarrow{i} +
-\frac{\partial}{\partial y}\overrightarrow{j},
-    \label{eq:grdpllc}
-\end{equation}
-\begin{equation}
-    \nabla_{\\v} = \frac{\partial}{\partial z}\overrightarrow{k}.
-    \label{eq:grdvrtc}
-\end{equation} $x$, $y$, and $z$ are the location space components in the three
-directions.
-
-
-The geological formation tops are not necessarily oriented horizontally, but
-they
-are normally close to horizontal. In $\mbox{CO}_2$ storage problems the lateral
-scale is
-orders of magnitude larger than the vertical direction. Therefore, the
-variations in the vertical direction are relatively negligible and for a
-quantity of interest $\Psi$ we have:
-
-\begin{equation}
- \int_{A}\nabla\Psi d\tau >> \int_{\varsigma}\nabla\Psi dz, 
- \label{eq:intPsi}
-\end{equation} where $A$ is an arbitrary horizontal surface in the model and
-$\varsigma$ is the vertical interval of the domain. Hence, with large lateral
-scales we can consider average values across the vertical direction for
-parameters and variables in the flow equations. This reduces the problem from
-$3\mbox{D}$ to $2\mbox{D}$. In this case we need to relate the parameters in
-the two dimensional and three dimensional problems. If this relation is not
-extremely non-linear the flow solutions can be obtained considerably faster on
-a two dimensional problem.
-
-In a distance from the injection point, vertical equilibrium assumption is
-applicable. The density difference between water and $\mbox{CO}_2$ results in a
-rapid
-segregation of the two phases. A layer of $\mbox{CO}_2$ sits on top of water
-table and in
-the presence of considerable capillary forces a capillary transition zone forms
-between water and $\mbox{CO}_2$ zones (Figure \ref{fig:VC}).
-
-The vertical equilibrium assumption facilitates the flow equation averaging
-across the vertical direction $\varsigma$. The phase distribution can be
-calculated from the volume calculations and capillary inverse function for the
-transition zone as mentioned in \ref{sec:FlowEquations}. Phase pressure
-variation versus depth follows the hydrostatic gravitational gradient for each
-phase.
-
-The two dimensional version of flow equation can be written in the following
-form, assuming incompressible fluids \cite{moll2011field,celia2011geological}:
-
-\begin{equation}
- \tilde{\phi}\frac{\partial \tilde{S}_{\alpha}}{\partial
-t}-\nabla_{\ell}\cdot \tilde{v_{\alpha}}=\tilde{\eta}_{\alpha},
-\label{eq:cont_}
-\end{equation} which follows by two dimensional Darcy equation:
-
-\begin{equation}
-\tilde{v}_{\alpha}=-\tilde{K}\tilde{\lambda}_{\alpha}(\nabla_{\ell}
-\tilde{P}_{\alpha}-\tilde{\rho}_{\alpha}\tilde{g}). 
-\label{eq:Darcy_}
-\end{equation}Herein, tilde sign denotes the two dimensional parameter or
-variable that is the vertically averaged of corresponding parameters and
-variables in the three dimensional problem. The averaging over vertical
-direction care defined in the following:
-
-\begin{equation}
-\tilde{\phi}=\frac{1}{H}\int_0^H\phi dz,
-\label{eq:phi_}
-\end{equation}
-\begin{equation}
-\tilde{K}=\frac{1}{H}\int_0^H K dz,
-\label{eq:K_}
-\end{equation}
-\begin{equation}
-\tilde{\lambda_{\alpha}}=\frac{1}{H}K^{-1}\int_0^HK\lambda_{\alpha} dz.
-\label{eq:lambda_}
-\end{equation} Note that $\tilde\lambda_\alpha$ is a tensor, because it is
-defined such that the $2\mbox{D}$ Darcy equation is consistent with the
-$3\mbox{D}$ Darcy equation. The variables in the $2\mbox{D}$ equations are
-defined in the following:
-\begin{equation}
-\tilde{v}_\alpha=\frac{1}{H}\int_0^H v_\alpha dz,
-\label{eq:v_}
-\end{equation}
-\begin{equation}
-\tilde{s}_\alpha=\frac{1}{\tilde{\phi}H}\int_0^H \phi s_\alpha dz,
-\label{eq:s_}
-\end{equation}
-\begin{equation}
-\tilde{P}_\alpha=p_{\alpha}(z_D),
-\label{eq:p_}
-\end{equation}
-\begin{equation}
-\tilde{\eta}_\alpha=\frac{1}{H}\int_0^H \eta_\alpha dz.
-\label{eq:eta_}
-\end{equation} The hydrostatic equilibrium results in a constant phase pressure
-gradient over the vertical direction. Therefor, the phase pressure at any datum
-depth $z_D$ in the medium can be used into the $2\mbox{D}$ flow equations. 
+% Spatial gradients of flux and pressure appear in the the flow equations can be
+% decomposed into lateral and vertical components. For a three dimensional
+% problem with the set of unit vectors
+% $\{\overrightarrow{i},\overrightarrow{j},\overrightarrow{k}\}$, the gradient
+% operator can be written as the following:
+% \begin{equation}
+    % \nabla = \nabla_{\ell} + \nabla_{\\v},
+    % \label{eq:grd}
+% \end{equation} where:
+% \begin{equation}
+    % \nabla = \frac{\partial}{\partial x}\overrightarrow{i} +
+% \frac{\partial}{\partial y}\overrightarrow{j} +
+% \frac{\partial}{\partial z}\overrightarrow{k},
+    % \label{eq:grdc}
+% \end{equation}
+% \begin{equation}
+    % \nabla_{\ell} = \frac{\partial}{\partial x}\overrightarrow{i} +
+% \frac{\partial}{\partial y}\overrightarrow{j},
+    % \label{eq:grdpllc}
+% \end{equation}
+% \begin{equation}
+    % \nabla_{\\v} = \frac{\partial}{\partial z}\overrightarrow{k}.
+    % \label{eq:grdvrtc}
+% \end{equation} $x$, $y$, and $z$ are the location space components in the three
+% directions.
 
 
-\begin{figure}[thb]
- \centering{}
- \includegraphics[width=1\linewidth]{./figurer/VACOL}
- \caption{Hydrostatic equilibrium condition results in three zones:
-the $\mbox{CO}_2$ zone with thickness $h_{co_2}$, the water table with thickness
-$h_{w}$, and the capillary transition zone $h_{pc}$.}
- \label{fig:VC}
-\end{figure}
+% The geological formation tops are not necessarily oriented horizontally, but
+% they
+% are normally close to horizontal. In $\mbox{CO}_2$ storage problems the lateral
+% scale is
+% orders of magnitude larger than the vertical direction. Therefore, the
+% variations in the vertical direction are relatively negligible and for a
+% quantity of interest $\Psi$ we have:
+
+% \begin{equation}
+ % \int_{A}\nabla\Psi d\tau >> \int_{\varsigma}\nabla\Psi dz, 
+ % \label{eq:intPsi}
+% \end{equation} where $A$ is an arbitrary horizontal surface in the model and
+% $\varsigma$ is the vertical interval of the domain. Hence, with large lateral
+% scales we can consider average values across the vertical direction for
+% parameters and variables in the flow equations. This reduces the problem from
+% $3\mbox{D}$ to $2\mbox{D}$. In this case we need to relate the parameters in
+% the two dimensional and three dimensional problems. If this relation is not
+% extremely non-linear the flow solutions can be obtained considerably faster on
+% a two dimensional problem.
+
+% In a distance from the injection point, vertical equilibrium assumption is
+% applicable. The density difference between water and $\mbox{CO}_2$ results in a
+% rapid
+% segregation of the two phases. A layer of $\mbox{CO}_2$ sits on top of water
+% table and in
+% the presence of considerable capillary forces a capillary transition zone forms
+% between water and $\mbox{CO}_2$ zones (Figure \ref{fig:VC}).
+
+% The vertical equilibrium assumption facilitates the flow equation averaging
+% across the vertical direction $\varsigma$. The phase distribution can be
+% calculated from the volume calculations and capillary inverse function for the
+% transition zone as mentioned in \ref{sec:FlowEquations}. Phase pressure
+% variation versus depth follows the hydrostatic gravitational gradient for each
+% phase.
+
+% The two dimensional version of flow equation can be written in the following
+% form, assuming incompressible fluids \cite{moll2011field,celia2011geological}:
+
+% \begin{equation}
+ % \tilde{\phi}\frac{\partial \tilde{S}_{\alpha}}{\partial
+% t}-\nabla_{\ell}\cdot \tilde{v_{\alpha}}=\tilde{\eta}_{\alpha},
+% \label{eq:cont_}
+% \end{equation} which follows by two dimensional Darcy equation:
+
+% \begin{equation}
+% \tilde{v}_{\alpha}=-\tilde{K}\tilde{\lambda}_{\alpha}(\nabla_{\ell}
+% \tilde{P}_{\alpha}-\tilde{\rho}_{\alpha}\tilde{g}). 
+% \label{eq:Darcy_}
+% \end{equation}Herein, tilde sign denotes the two dimensional parameter or
+% variable that is the vertically averaged of corresponding parameters and
+% variables in the three dimensional problem. The averaging over vertical
+% direction care defined in the following:
+
+% \begin{equation}
+% \tilde{\phi}=\frac{1}{H}\int_0^H\phi dz,
+% \label{eq:phi_}
+% \end{equation}
+% \begin{equation}
+% \tilde{K}=\frac{1}{H}\int_0^H K dz,
+% \label{eq:K_}
+% \end{equation}
+% \begin{equation}
+% \tilde{\lambda_{\alpha}}=\frac{1}{H}K^{-1}\int_0^HK\lambda_{\alpha} dz.
+% \label{eq:lambda_}
+% \end{equation} Note that $\tilde\lambda_\alpha$ is a tensor, because it is
+% defined such that the $2\mbox{D}$ Darcy equation is consistent with the
+% $3\mbox{D}$ Darcy equation. The variables in the $2\mbox{D}$ equations are
+% defined in the following:
+% \begin{equation}
+% \tilde{v}_\alpha=\frac{1}{H}\int_0^H v_\alpha dz,
+% \label{eq:v_}
+% \end{equation}
+% \begin{equation}
+% \tilde{s}_\alpha=\frac{1}{\tilde{\phi}H}\int_0^H \phi s_\alpha dz,
+% \label{eq:s_}
+% \end{equation}
+% \begin{equation}
+% \tilde{P}_\alpha=p_{\alpha}(z_D),
+% \label{eq:p_}
+% \end{equation}
+% \begin{equation}
+% \tilde{\eta}_\alpha=\frac{1}{H}\int_0^H \eta_\alpha dz.
+% \label{eq:eta_}
+% \end{equation} The hydrostatic equilibrium results in a constant phase pressure
+% gradient over the vertical direction. Therefor, the phase pressure at any datum
+% depth $z_D$ in the medium can be used into the $2\mbox{D}$ flow equations. 
 
 
-Accuracy of vertical averaging approach within $\mbox{CO}_2$ storage context has
-been
-examined in many works in the literature
-\cite{moll2011field,lie2010accurate,class2009benchmark,grayderivation}. It has
-been shown that vertical averaging is applicable to large scale $\mbox{CO}_2$
-studies. The numerical aspects and speed up of the method compared to three
-dimensional problem are studied in
-\cite{ligaarden2010numerical,grayderivation}, where a second order
-speedup is reported. Lie et al. \cite{lie2010accurate} have shown the
-influence of vertical discretization in the three dimensional models which can
-fail in low resolutions to capture the thin layer of $\mbox{CO}_2$ plume
-migrating beneath the top sealing surface in the formation. The vertical
-averaging approach can handle this issue by considering the water and
-$\mbox{CO}_2$ interface in calculating the vertically averaged parameters in the
-model. A comparison between three and two dimensional models has been done on
-various aspects in \cite{moll2011field}.
+% \begin{figure}[thb]
+ % \centering{}
+ % \includegraphics[width=1\linewidth]{./figurer/VACOL}
+ % \caption{Hydrostatic equilibrium condition results in three zones:
+% the $\mbox{CO}_2$ zone with thickness $h_{co_2}$, the water table with thickness
+% $h_{w}$, and the capillary transition zone $h_{pc}$.}
+ % \label{fig:VC}
+% \end{figure}
 
-The influence of topography in modeling the $\mbox{CO}_2$ migration
-and estimating the storage fate has been shown in
-\cite{syversveenstudy,grayderivation} by examining different geometries and
-heterogeneities in the domain. These conclusions suggest that the significance
-of the model top surface is more than the small order flow in the model vertical
-thickness.
 
-The studies reported in this thesis concern the flow near injector and early
-times of plume development. Therefore vertical equilibrium would benefit larger
-scales with big portion of model in vertical equilibrium. We do our flow
-modeling by including the three dimensions and for the quantitative uncertainty
-analysis we employ a polynomial approximation (Section
-\ref{sec:StochasticAnalysis}).
+% Accuracy of vertical averaging approach within $\mbox{CO}_2$ storage context has
+% been
+% examined in many works in the literature
+% \cite{moll2011field,lie2010accurate,class2009benchmark,grayderivation}. It has
+% been shown that vertical averaging is applicable to large scale $\mbox{CO}_2$
+% studies. The numerical aspects and speed up of the method compared to three
+% dimensional problem are studied in
+% \cite{ligaarden2010numerical,grayderivation}, where a second order
+% speedup is reported. Lie et al. \cite{lie2010accurate} have shown the
+% influence of vertical discretization in the three dimensional models which can
+% fail in low resolutions to capture the thin layer of $\mbox{CO}_2$ plume
+% migrating beneath the top sealing surface in the formation. The vertical
+% averaging approach can handle this issue by considering the water and
+% $\mbox{CO}_2$ interface in calculating the vertically averaged parameters in the
+% model. A comparison between three and two dimensional models has been done on
+% various aspects in \cite{moll2011field}.
+
+% The influence of topography in modeling the $\mbox{CO}_2$ migration
+% and estimating the storage fate has been shown in
+% \cite{syversveenstudy,grayderivation} by examining different geometries and
+% heterogeneities in the domain. These conclusions suggest that the significance
+% of the model top surface is more than the small order flow in the model vertical
+% thickness.
+
+% The studies reported in this thesis concern the flow near injector and early
+% times of plume development. Therefore vertical equilibrium would benefit larger
+% scales with big portion of model in vertical equilibrium. We do our flow
+% modeling by including the three dimensions and for the quantitative uncertainty
+% analysis we employ a polynomial approximation (Section
+% \ref{sec:StochasticAnalysis}).
 
 \section{Flow modeling}
 \label{sec:FolowModeling}
@@ -1557,7 +1557,7 @@ the medium, the more will be the risk of leakage.
 
 \begin{figure}
  \centering{}
- \includegraphics[width=0.6\linewidth]{./figurer/boundaries}
+ \includegraphics[width=0.6\linewidth]{./figurer/boundaries.pdf}
  \caption{Top, bottom, and upper side boundaries are closed and the rest
 are open to the flow.}
  \label{fig:BDRY}

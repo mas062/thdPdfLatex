@@ -7,12 +7,12 @@ default:
 	 bibtex thesis.aux
 	 pdflatex thesis.tex
 	 pdflatex thesis.tex
-thI:
+I:
 	pdflatex thesis-I.tex
 	bibtex thesis-I.aux
 	pdflatex thesis-I.tex
 	pdflatex thesis-I.tex
-thII:
+II:
 	pdflatex thesis-II.tex
 	bibtex thesis-II.aux
 	pdflatex thesis-II.tex

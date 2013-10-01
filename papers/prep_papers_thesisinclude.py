@@ -44,15 +44,17 @@ def PrepPaper(paperIndex):
 		
 		#Crop
 		croppedPDF = "%s-crop.pdf" % pfn.strip(".pdf")
-		CropPDF(pfn, croppedPDF)
-
-		#Convert to PS
-		psName = "page_%i.ps" % pageNum
-		PDFtoPS(croppedPDF, psName)
+		pdfName="page_%i.pdf" % pageNum
+		#CropPDF(pfn, croppedPDF)
+		CropPDF(pfn, pdfName)
+#ADDED BY MEISAM
+		# #Convert to PS
+		# psName = "page_%i.ps" % pageNum
+		# PDFtoPS(croppedPDF, psName)
 		
 		#Remove tmp files
 		os.remove(pfn)
-		os.remove(croppedPDF)
+		#os.remove(croppedPDF)
 
 	#Remove more tmp files
 	os.remove(paper)
