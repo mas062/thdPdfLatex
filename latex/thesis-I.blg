@@ -6,48 +6,49 @@ A level-1 auxiliary file: acknowledgements.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: listofpublications.aux
 A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: introduction_papers.aux
 The style file: acm.bst
 Database file #1: thesis.bib
 Warning--empty journal in iaeScenario
-You've used 82 entries,
+You've used 74 entries,
             2293 wiz_defined-function locations,
-            1001 strings with 19522 characters,
-and the built_in function-call counts, 26035 in all, are:
-= -- 2397
-> -- 1319
+            974 strings with 17843 characters,
+and the built_in function-call counts, 23539 in all, are:
+= -- 2187
+> -- 1158
 < -- 0
-+ -- 560
-- -- 462
-* -- 2069
-:= -- 4279
-add.period$ -- 245
-call.type$ -- 82
-change.case$ -- 464
++ -- 493
+- -- 404
+* -- 1890
+:= -- 3862
+add.period$ -- 221
+call.type$ -- 74
+change.case$ -- 412
 chr.to.int$ -- 0
-cite$ -- 83
-duplicate$ -- 905
-empty$ -- 2197
-format.name$ -- 462
-if$ -- 5310
+cite$ -- 75
+duplicate$ -- 823
+empty$ -- 1995
+format.name$ -- 404
+if$ -- 4805
 int.to.chr$ -- 0
-int.to.str$ -- 82
-missing$ -- 81
-newline$ -- 412
-num.names$ -- 164
-pop$ -- 561
+int.to.str$ -- 74
+missing$ -- 77
+newline$ -- 372
+num.names$ -- 148
+pop$ -- 487
 preamble$ -- 1
-purify$ -- 390
+purify$ -- 346
 quote$ -- 0
-skip$ -- 475
+skip$ -- 415
 stack$ -- 0
-substring$ -- 1437
-swap$ -- 163
+substring$ -- 1365
+swap$ -- 147
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 312
+type$ -- 280
 warning$ -- 1
-while$ -- 243
-width$ -- 84
-write$ -- 795
+while$ -- 225
+width$ -- 76
+write$ -- 722
 (There was 1 warning)
