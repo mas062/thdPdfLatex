@@ -292,7 +292,7 @@ In theory, we prefer a medium that allows for more lateral movement to overcome 
 %\label{}
 %\end{figure}
 
-Over the last two decades, there have been a large number of studies concerning the subsurface storage of \coo. Several authors investigate the efficiency of geological \coo\ storage based on regional data in a specific site location. A case study from the Texas Gulf Coast \cite{hovorka2004impact} investigates the sequestration capacity and efficiency in accordance to the geological heterogeneity. The study performs a site-scale assessment of brine aquifers for geological \coo\ sequestration. Injection is considered in the Frio formation which is a sandstone-rich, high quality rock, overlain by a thick, regionally extensive shale in the upper Texas Gulf Coast. Migration of \coo\ during injection (20 years), and post-injection (40 years) is studied in different geological realizations. The heterogeneity represented by stochastic modeling of geological sediments. Structural heterogeneity is modeled by layers dip angle and faults at different locations. Six models are made based on regional available geological information. The study shows that in a homogeneous rock volume, \coo\ flow paths are dominated by buoyancy, bypassing much of the lateral rock volume. If the permeable rock is inter-bedded with multiple low permeability layers, the flow paths are dispersed, enhancing the lateral movements of  \coo\ and allowing for larger percentage of contact with rock volume. The study suggests that dip angle enhances buoyancy forces and decreases storage capacity, while compartmentalization by faulting appears to increase sequestration capacity at the cost of increased pressure, and consequently, increased risk of \coo\ leakage.
+Over the last two decades, there have been a large number of studies concerning the subsurface storage of \coo. Several authors investigate the efficiency of geological \coo\ storage based on regional data in a specific site location. A case study from the Texas Gulf Coast \cite{hovorka2004impact} investigates the sequestration capacity and efficiency in accordance to the geological heterogeneity. The study performs a site-scale assessment of brine aquifers for geological \coo\ sequestration. Injection is considered in the Frio formation which is a sandstone-rich, high quality rock, overlain by thick, regionally extensive shale in the upper Texas Gulf Coast. Migration of \coo\ during injection (20 years), and post-injection (40 years) is studied in different geological realizations. The heterogeneity represented by stochastic modeling of geological sediments. Structural heterogeneity is modeled by layers dip angle and faults at different locations. Six models are made based on regional available geological information. The study shows that in a homogeneous rock volume, \coo\ flow paths are dominated by buoyancy, bypassing much of the lateral rock volume. If the permeable rock is inter-bedded with multiple low permeability layers, the flow paths are dispersed, enhancing the lateral movements of  \coo\ and allowing for larger percentage of contact with rock volume. The study suggests that dip angle enhances buoyancy forces and decreases storage capacity, while compartmentalization by faulting appears to increase sequestration capacity at the cost of increased pressure, and consequently, increased risk of \coo\ leakage.
 
 A number of pilot sites are established worldwide to test the large-scale injection of \coo\ in the subsurface formation. The In Salah project \cite{riddiford2004monitoring} in Algeria is an industrial-scale injection project into a fracture-influenced, matrix-dominated sandstone formation. The reservoir matrix comprises tidal deltaic sandstone. The project benefits from relatively high level of data acquisition: wireline and LWD well logs, image logs and production and geophysical monitoring \cite{riddiford2004monitoring}. In addition, the most valuable monitoring method has been the use of satellite airborne radar above the injection well. Also, chemical tracers are used in the injected \coo\ to differentiate the natural \coo\ in place from the injected volumes, when the \coo\ breaks through other wells. The detailed analysis highlights the geological controls on the movement and dispersion of \coo\ plumes. The injection is performed via a horizontal well perpendicular to the geomechanical stress field and the faults present in the domain. This, along with the fracture network, enhance the plume migration, which is about three times faster than the flow in a homogeneous domain. Results from In Salah illustrate the value of reducing geological uncertainty by employing sufficient logging tools and monitoring techniques. 
 
@@ -535,7 +535,7 @@ For more information about the geological modeling, see the special issue of the
 \section{Flow equations}
 \label{sec:FlowEquations}
 After introducing the parameters that make our geological model, we need to
-define the flow problem. In this section we discuss various formulations of the governing equations describing single and two phase flow in porous medium. Solution to these type of equations is implemented in the ECLIPSE black-oil simulator that we use to model the flow. We introduce the functionalities and axillary equations required to close the flow equation system. This section also includes a brief mathematical discussion on the flow equations. We discuss various flow regimes in the medium in the next section.
+define the flow problem. In this section we discuss various formulations of the governing equations describing single and two phase flow in porous medium. Solution to this type of equations is implemented in the ECLIPSE black-oil simulator that we use to model the flow. We introduce the functionalities and axillary equations required to close the flow equation system. This section also includes a brief mathematical discussion on the flow equations. We discuss various flow regimes in the medium in the next section.
 
 \subsection{Single phase flow}
 
@@ -1478,7 +1478,7 @@ be modified for more general cases.
 
 All of the SAIGUP realizations have dimensions of $3~\mbox{km}~\times~9~\mbox{km}~\times~80~\mbox{m}$. The model spatial scales capture the typical geological features in a shallow-marine system, such as shore-line shape and aggradation angle variations. Various scales of heterogeneity can considerably impact the flow behavior. The lateral extent of the model is smaller than the scales used for \coo\ storage studies. In some storage sites, the lateral extent that the \coo\ travels can go to hundreds of kilometers. This makes our study limited in the spatial domain around the injector. For the same reason, in the temporal scale, we are more focused on injection and early migration time. We examine a number of injection scenarios to study the spatial distribution of \coo\ in the medium during injection and early migration periods.
 
-Pressure study is essential for injection operations. A detailed pressure study requires larger scales than what are used here. We choose open boundaries for the model to compensate for the actual large extents of a typical storage location. The choice of open boundary is not valid in domains that are bounded by structural seals. In fact, for the close and semi-close domains the pressure is a main control on the storage capacity along with other parameters. The results of our pressure study can change significantly by choosing different boundary conditions. 
+Pressure study is essential for injection operations. A detailed pressure study requires larger scales than what are used here. We choose open boundaries for the model to compensate for the actual large extents of a typical storage location (Figure \ref{fig:BDRY}). The choice of open boundary is not valid in domains that are bounded by structural seals. In fact, for the close and semi-close domains the pressure is a main control on the storage capacity along with other parameters. The results of our pressure study can change significantly by choosing different boundary conditions. 
 
 We represent the boundary by large pore volumes on the outer closed cells and this makes the pressure to relax earlier than it does in a large domain. Even with such artifact, the effect of heterogeneities is clearly seen in a considerable fraction of cases with an extreme pressure build-up. We investigate the operational concerns  related to pressure build-up for a typical injection scenario. Our pressure study can be used for devising mitigation plans by defining operational constraints for injectors. We perform an extensive probabilistic analysis on the \coo\ pressure behavior in the medium that can be applied in further studies with specific concerns about the pressure analysis.   
 
@@ -1572,13 +1572,13 @@ injection and migration problems. Each of these responses are directly or
 indirectly a measure of success for the operation within a specific realization.
 In the following, we give a brief description of each of them:
 
-\textbf{\textit{Boundary fluxes:}} The flux out of open boundaries is a measure
-of sweep efficiency for the
-CO$_2$ plume. Channeling can lead to early CO$_2$ breakthrough at boundaries and
-we prefer cases with less out-fluxes through open boundaries. The out-flux
-through the open boundary that is closer to the injector is a potential
-loss for the injected volume. After the injection stops, some of the CO$_2$ that
-has left the domain comes in again due to gravity segregation effect. 
+%\textbf{\textit{Boundary fluxes:}} The flux out of open boundaries is a measure
+%of sweep efficiency for the
+%CO$_2$ plume. Channeling can lead to early CO$_2$ breakthrough at boundaries and
+%we prefer cases with less out-fluxes through open boundaries. The out-flux
+%through the open boundary that is closer to the injector is a potential
+%loss for the injected volume. After the injection stops, some of the CO$_2$ that
+%has left the domain comes in again due to gravity segregation effect. 
 
 \textbf{\textit{Total mobile and residual $\mbox{CO}_2$ volume:}}
 If the CO$_2$ saturation is below the critical value, it will be immobile in the
@@ -2025,9 +2025,9 @@ We used the first scenario presented here with small modifications for the stoch
 \section{Sensitivity and risk analysis}
 \label{sec:StochasticAnalysis}
 
-Mathematical models developed to approximate the injected $\mbox{CO}_{2}$ in the
+The process of developing mathematical models to approximate the injected $\mbox{CO}_{2}$ in the
 storage sites consist of several steps, including the determination of
-parameters which are the most influential on the model outputs. Sensitivity
+most influential parameters on the model outputs. Sensitivity
 analysis can serve as a guide to any further use of the model.
 
 In the initial sensitivity analysis performed on geological uncertain
@@ -2039,19 +2039,19 @@ We can obtain histograms of response $\Gamma$  for three different levels of
 parameter $\alpha$ (i.e., low, medium, and high) by performing simulations over
 all geological realizations. Measuring the mean response value on
 each histogram results in an average for all cases with a fixed level for
-parameter $\alpha$. Having three average points for low, medium,
+parameter $\alpha$. With three average points for low, medium,
 and high levels of parameter $\alpha$, a line can be fitted to those points 
 that approximates the trend of variations of response $\Gamma$ versus the
-increase in levels of para $\alpha$.
+increase in values of parameter $\alpha$.
 
-Assuming an equal probability for each level, the model output variations are
-examined by looking at each response at two important simulation times, i.e., end of injection and end of simulation. Assessing the uncertainty with input variations over a relatively high resolution demands a fast flow modeler. We use a response surface method that is explained in the next section in details. 
+With an equal probability for each level, the model output variations are
+examined by looking at each response at two important simulation times, i.e., end of injection and end of simulation. We need a fast flow modeler to assess the uncertainty with input variations over a relatively high resolution. We use a response surface method that is explained in the next section in details. 
 
 \subsection{Stochastic analysis}
 
 Phenomenon for which variables are uncertain can be modeled as a stochastic process. Uncertainty reduction in different parts of the modeling requires a better understanding and description of input parameters and dependency rules within
 the system. Parameters can be ranked in the order of their influence on the
-model output. Knowing the most influential parameters helps in treating the
+model output. To know the most influential parameters helps in treating the
 stochastic nature of the process. Sensitivity analysis serves in identification and evaluation of important model
 parameters. 
 
@@ -2065,7 +2065,7 @@ inputs.
 
 \subsection{Arbitrary polynomial chaos expansion}
 
-Our research continues by employing a stochastic response surface method that approximates the flow responses by projecting them on high-dimensional
+Our research continues by employing stochastic response surface method that approximates the flow responses by projecting them on high-dimensional
 polynomials. In particular, we use arbitrary polynomial chaos (aPC) expansions, which consists of orthogonal polynomial bases that are constructed  according
 to the uncertainties in the input parameters. The approach is flexible with
 respect to the quantification of probabilities for uncertain parameters and can
@@ -2074,40 +2074,40 @@ be applied in studies with limited knowledge of probabilities.
 The reduced model approximated by aPC is considerably faster than the original
 detailed one, and thus it  provides a promising start point for global
 sensitivity analysis and probabilistic risk assessment. Variance-based global-sensitivity analysis methods have shown success in non-linear and complex problems \cite{reuter2008global}.
-The system can be decomposed into approximating functions of input parameters, and this makes it easy to implement methods based on variance. The bottle-neck of variance-based approaches can be their computational costs. In our case, the variance in output responses can be set equal to the variance of polynomial components calculated for each input parameters. Polynomials are inexpensive to evaluate compared with a full simulation. This makes it efficient to implement a variance based sensitivity analysis using polynomial approximation. Furthermore, the fact that the response surface has know polynomial properties simplifies the approach significantly. The speed of polynomial approximation makes it feasible to perform an
-intensive probabilistic risk assessment via a Monte-Carlo process over a high resolution input variation.
+The system can be decomposed into approximating functions of input parameters, and this makes it easy to implement methods based on variance. The bottle-neck of variance-based approaches can be their computational costs. In our case, the variance in output responses can be set equal to the variance of polynomial components calculated for each input parameters. Polynomials are inexpensive to evaluate compared with full simulation. This makes it efficient to implement a variance based sensitivity analysis using polynomial approximation. Furthermore, the fact that the response surface has known polynomial properties simplifies the approach significantly. The speed of polynomial approximation makes it feasible to perform an
+intensive probabilistic risk assessment via Monte-Carlo process over high resolution input variation.
 
 Statistical accuracy of a Monte-Carlo process is highly sensitive to the
-resolution of variational inputs. A response surface method assisting a
+resolution of variational inputs. The response surface method assisting the
 Monte-Carlo procedure must be constructed on a dense Cartesian grid, which will
-be computationally demanding. We explore an alternative method, which is a polynomial chaos expansion (PCE), and only
-requires a minimum number of model evaluations to construct the approximating response surface. The approach we use is based on the aPC as described in \cite{oladyshkin2011concept}. The main idea is to construct the approximating response surface by projecting the response on orthogonal polynomial bases within the uncertain parameter space. Therefore, uncertainty in input parameters is involved in the process from the initial steps of the work-flow. This approach is an advanced statistical regression method that offers an efficient and accurate way of including nonlinear effects in stochastic analysis, see e.g., \cite{Zhang_Lu_2004_JCP,foo_pcm_JCP2010, 
-Fajraoui_al_2011_WRR}. The method is examined for accuracy and one attractive
+be computationally demanding. As a result, we explore an alternative method, which is a polynomial chaos expansion (PCE), and it only
+requires a minimum number of model evaluations to construct the approximating response surface. The approach we use is based on the aPC as described in \cite{oladyshkin2011concept}. The main idea is to construct the approximating response surface by projecting the response on orthogonal polynomial bases within the uncertain parameter space. Therefore, uncertainty in input parameters is involved in the process from the initial steps of the work-flow. This approach is an advanced statistical regression method that offers an efficient and accurate way of including nonlinear effects in stochastic analysis \cite{Zhang_Lu_2004_JCP,foo_pcm_JCP2010, 
+Fajraoui_al_2011_WRR}. One attractive
 feature of PCE is the high-order approximation of error propagation as well as its computational speed \cite{oladyshkinintegrative} when compared to Monte-Carlo processes.
 
 Earlier PCE techniques put the restriction of specified types of uncertainty
-distribution functions to be used in the work-flow. In contrast, the arbitrary polynomial chaos (aPC) is flexible to accommodate for a wide range of data
-distribution \cite{oladyshkin2011concept}. The aPC can work even in cases with
-limited uncertainty information reduced in a few statistical moments of samples.
-They can be specified either analytically (as probability density, cumulative
-distribution functions), numerically as histograms, or as raw data sets. In
-terms of performance, the aPC approach shows an improved convergence applied to
+distribution functions to be used in the work-flow. In contrast, the arbitrary polynomial chaos (aPC) is flexible enough to accommodate a wide range of data
+distribution \cite{oladyshkin2011concept}. The aPC can even work in cases with
+limited uncertainty information reduced to a few statistical moments of samples.
+They can be specified either analytically as probability density, or cumulative
+distribution functions, numerically as histograms, or as raw data sets. In
+terms of performance, the aPC approach shows an improved convergence when applied to
 input distributions that fall outside the range of classical PCE.
 
 In general, an approximation of system response $\Gamma$ can be written as a
-function of the uncertain input parameters $\Theta$:
+function of uncertain input parameters $\Theta$:
 
 \begin{equation}
   \Gamma\approx\Upsilon(\Theta).
   \label{eq:1}
 \end{equation} 
 %
-Uncertainty of input parameters $\Theta$ can be represented by a mapping $h$ from
+Uncertainty of input parameters $\Theta$ can be represented by mapping $h$ from
 random variable space $\xi$ to random input space $\Theta$%
 \begin{equation}
   \Theta=h(\xi).
   \label{eq:rand}
-\end{equation} As discussed earlier, $h$ can be an analytical or numerical
+\end{equation} As discussed earlier, $h$ can have an analytical or numerical
 representation.
 
 % Approximation \ref{eq:1} can be expressed in the parametric mathematical form.
@@ -2132,7 +2132,7 @@ representation.
 % non-linear forms.
 
 The responses of the system can be expanded into the
-space of the approximating polynomial bases. This expression is specified by constant coefficients $c_i$:
+space of approximating polynomial bases. This expression is specified by constant coefficients $c_i$:
 %
 \begin{equation}
 \Gamma\approx\underset{i=1}{\overset{n_c}{\sum}}c_{i}\Pi_{i}(\Theta).
@@ -2195,13 +2195,13 @@ only
 demands the existence of a finite number of moments, and does not require the
 exact knowledge or even existence of probability density functions. An
 interesting aspect is that only moments up to twice the order of the expansion
-matter. This means that there is no need for any kind of assumptions for data
+are important. This means that there is no need for any kind of assumption for data
 probability distribution leading to subjectivity artifacts as discussed earlier.
 
 The PCE techniques are divided into intrusive
 \cite{Ghanem1993,Matthies2005,Xiu2003} and non-intrusive
 \cite{Keese2003,Isukapalli1998,nLi2007,oladyshkinintegrative} approaches.
-Intrusive techniques require modifications in the system of governing
+Intrusive techniques require modification of the system of governing
 equations (e.g., the flow model system). In some cases, this can end up in semi-analytical methods that are
 used for simpler stochastic analysis studies (e.g., stochastic Galerkin
 method). However, the intrusive approaches can be very complex and analytically
@@ -2210,7 +2210,7 @@ to intrusive techniques, the non-intrusive methods are vastly used in practical
 studies. These methods do not require any symbolic manipulations of the
 governing equations. The sparse quadrature and the probabilistic collocation
 method (PCM, \cite{nLi2007,oladyshkinintegrative}) are among the non-intrusive
-technique. In a simple sense, PCM can be considered as a mathematically
+techniques. In a simple sense, PCM can be considered as a mathematically
 optimized interpolation of model output for various parameter sets. The
 polynomial interpolation is based on minimal model evaluations in an optimally
 chosen set of parameter locations that are called collocation points. Hence, the challenge in these techniques is to find a balance between accuracy and speed
@@ -2232,7 +2232,7 @@ $M$ of collocation points. This might be used for low-order
 ($1^{st}$, $2^{nd}$) analysis of limited number of parameters. However, for
 a large number of parameters and high order of polynomial approximations, the
 full grid becomes computationally cumbersome. In the collocation approach,
-the minimal set of points is chosen from the most probable regions based on the parameter uncertainty information(See
+the minimal set of points is chosen from the most probable regions based on the parameter uncertainty information (See
 \cite{nLi2007,oladyshkinintegrative,oladyshkin2011concept}). 
 
 We implement the probabilistic collocation method for computing the
@@ -2261,8 +2261,8 @@ Equation~\ref{eq:residual} with  Delta function, the equation reduces to
  \Gamma_{c}-\underset{i=1}{\overset{n_c}{\sum}c_{i}}\Pi_{i}(\Theta_{c})=0.
 \label{eq:solution}
 \end{equation} In this equation, $\Gamma_c$ and $\Theta_c$ are the responses and
-input parameters in the collocation points. Having the $\Theta_c$ chosen based
-on the probability distributions of input parameters, and $\Gamma_c$ from the
+input parameters in the collocation points. If we have $\Theta_c$ chosen based
+on the probability distribution of input parameters, and $\Gamma_c$ from the
 minimal model evaluations on $\Theta_c$, we can solve Equation
 \ref{eq:solution} and find the coefficients $c_i$.
 
@@ -2270,26 +2270,25 @@ minimal model evaluations on $\Theta_c$, we can solve Equation
 \label{Section:SA}
 
 Sensitivity analysis helps in understanding the degree of dependency of system
-responses to the input parameters. When the input parameters are uncertain in
-value, the model predictions will consist of uncertainties that must be
+responses to input parameters. When input parameters are uncertain in
+value, the model prediction will consist of uncertainties that must be
 eliminated for a robust and precise prediction. Therefore, sensitivity analysis
 can be useful both in optimizing the system performance and in studying the
 variation in performance coming from the stochastic nature of the system.
 
 Global sensitivity analysis covers the entire variational space for uncertain
 parameters, while other methods, like the gradient-based methods, are limited
-in the scope influence of the parameters. 
+to the parameters' scope of influence. 
 
 Variance-based methods are very popular among different types of sensitivity
-analysis methods. Variance-based methods provide global sensitivity and work
-for general non-linear problems. When the response is decomposed into simpler
+analysis methods. Variance-based methods provide global sensitivity and are suitable for general non-linear problems. When the response is decomposed into simpler
 components (for instance, polynomial bases), it is easier to decompose the
 unconditional variance in the output into terms due to individual parameters
 and the interaction between them. It is possible then to rank the input
 parameters based on their contribution to the output variance
 \cite{saltelli2007global,reuter2008global}.
 
-Following the linear sensitivity analysis performed initially in the study on
+Following the linear sensitivity analysis initially performed in the study about
 the extensive detailed simulations, we tackle the global sensitivity analysis
 based on the aPC technique. This approach is well described in
 \cite{oladyshkin2011concept,
@@ -2297,18 +2296,18 @@ OladNowakBarros_AWR2011}. Morris method \cite{Morris1991} considers a uniform
 importance of input parameters within predefined intervals. We use a weighted
 global sensitivity in a more flexible approach accounting for arbitrary bounds
 and parameters with different importance defined by weighting functions. The
-big advantage of aPC-based sensitivity methods is their low computational costs
+big advantage of aPC-based sensitivity method is its low computational costs
 for obtaining global sensitivity analysis. The aPC based-method
-places the parameter sets for model evaluation at an optimized spacing in
+places the parameter sets for model evaluation at optimized spacing in
 parameter space. This can be interpreted as fitting polynomials to the model
 response. These polynomials approximate the model over the entire parameter
-space in a weighted least-square sense. This is more beneficial to computing a
+space in weighted least-square sense. This is more beneficial to compute 
 tangent or local second derivatives (compare FORM, SORM methods, e.g.,
 \cite{Jang1994}) that approximate the model well just around one point in the
 parameter space.
  
 As an advantage, in variance based methods one can work with arbitrary system as
-a black-box and calculations are based on inputs and outputs only. More
+a black-box and perform the calculations based on inputs and outputs only. More
 recent works are concerned about expediting calculation pace
 \cite{crestaux2009polynomial,oladyshkin2011concept, OladNowakBarros_AWR2011}.
 The idea is to replace the system with an approximating function which gives
@@ -2339,7 +2338,7 @@ expectation of output $\Gamma$ given $\theta_{i}$ and $\mbox{V}$ is the variance
 operator. Since $\theta_{i}$ can be fixed at any value in its uncertainty
 interval, each of those values produce a distinct expectation
 $\mbox{E}(\Gamma\mid\theta_{i})$. Equation \ref{eq:sob1} is a measure for
-variations of these expectations, which indicates the direct contribution of
+variation of these expectations, which indicates the direct contribution of
 parameter $\theta_i$ in the output variance. For more than one index, a
 higher-order Sobol index can be defined as:\begin{equation}
 S_{ij}=\frac{\mbox{V}[\mbox{E}(\Gamma\mid\theta_{i},\theta_{j})]-\mbox{V}[\mbox{
@@ -2367,7 +2366,7 @@ $\theta_1$, $\theta_2$, and $\theta_3$:
 \label{eq:SobExmple}\end{equation} The Sobol indices can be calculated from
 functions $F$ that are defined based on orthogonality condition used to
 decompose the solution and for input with Gaussian distribution $\Phi_n$ in
-uncertainty domain $R^n$ they are as follows:
+uncertainty domain $R^n$. They are as follows:
 \begin{equation}
 F_0=\int_{R^n}\Gamma(\Theta) \Phi_n(\Theta) d\Theta,
 \label{eq:SobF0}\end{equation}
@@ -2401,7 +2400,7 @@ S_i=\frac{D_i}{D},
 \begin{equation} 
 S_{i,j}=\frac{D_{i,j}}{D}.
 \label{eq:SijDij}\end{equation} Finally, the total Sobol index can be found
-from Equation \ref{eq:totSob}. Applying the calculations of Equations
+from Equation \ref{eq:totSob}. When we perform the calculations of Equations
 \ref{eq:SobF0} to \ref{eq:SobDij} for our example (i.e., the expression in
 Equation \ref{eq:SobExmple}) we can obtain the following Sobol
 indices,
@@ -2423,17 +2422,15 @@ and the total sobol indices are:\\
 $S_{T1}= 0.0012$ & $S_{T2}= 0.9996$ & $S_{T3}= 0.5708$ 
 \end{tabular}.\\ The total Sobol index can be used as a sensitivity
 measure to rank parameters
-for their influence in the results variation. In this example, we can see that
-the ranking that the total Sobol indices suggests is consistent with what can
+for their influence on the results variation. In this example, we can see the ranking that the total Sobol indices suggests is consistent with what can
 be inferred directly from the simple expression in Equation \ref{eq:SobExmple}:
 $\theta_2$ is the most influential parameters, because it appears in three terms,
 and in one of them with a forth degree. Interactions are represented by two
 indices, and $S_{13}$ is zero, because there exist no term in Equation
 \ref{eq:SobExmple} that contains both $\theta_1$ and $\theta_3$.
 
-With known polynomial coefficients, Sobol indices are easy to calculate. When
-the number of parameters is large, it is possible to do initial sensitivity
-analysis with lower degree polynomials to filter out pertinent parameters. Then
+With known polynomial coefficients, Sobol indices are easy to calculate. When the number of parameters is large, it is possible to do initial sensitivity
+analysis with lower degree polynomial to filter out pertinent parameters. Then
 the analysis continues on the filtered parameters with a higher
 degree polynomial approximation.
 %---------------------------
@@ -2461,8 +2458,7 @@ ill-plugged abandoned wells or cracks in the sealing rocks.
 
 We consider looking at responses and the probability of them to happen. We
 initially examine this probability by drawing the histogram of response values
-obtained from detailed simulations on large number of realizations and
-corresponding to important time, like end of injection and end of simulation.
+obtained from detailed simulations on large number of realizations at end of injection and end of simulation.
 Yet larger number of points in the uncertain parameter space are studied
 employing the data-driven aPC method, which requires a considerably shorter time
 for evaluating the responses than what takes for a full simulation. This way it is possible to perform an intensive
@@ -2502,7 +2498,7 @@ available within MATLAB toolboxes, is to use many functions within the
 MATLAB Reservoir Simulation Toolbox (MRST) \cite{lie2011open,mrst} available as
 free and
 open-source software in MATLAB language. For flow simulation a commercial
-software is used, which is a standard simulator for oil and gas industry and
+software is used, which is a standard simulator in oil and gas industry and
 research.
 
 Figure \ref{fig:encl} shows the elements of the work-flow implemented by a large
@@ -2517,27 +2513,27 @@ simulators at SINTEF, but the main study was performed using a commercial standa
 
 We rank the most influential geological parameters. The demonstrated work-flow can be used in any study concerning site selection and early stages of \coo\ storage. However, there are some limitations in our presentation of the work-flow that need to be noted.  
 
-First limitation is the SAIGUP model size. \coo\ storage studies require large models that can cover the \coo\ spatial traveling extents within aquifers. Hence, our study is limited to the domain around the injector.
+First limitation is the SAIGUP model size. \coo\ storage studies require large models that can cover the \coo\ spatial traveling extents within aquifers. Hence, our study is limited to the domain around the injector. Yet, many cases in our study suffer from volumes of injected \coo\ lost via open boundaries. While this can be used as an indication for vertical versus lateral transmissibility, the study can be improved by using larger models. In special cases, realizations are compared at a time after injection that the same amount of injected \coo\ exists in the domain (e.g., the cases compared at $15$ years of injection in the pressure study).
 
 An over-pressurized injection can introduce breakings in the sealing cap-rock that is aimed to be used for structural strapping of \coo. It is more feasible to use minimum number of wells to minimize the costs of the project and also the risk of \coo\ leakage via drilled wells after they are abandoned. Therefor, a typical injection scenario include few number of injectors with no production well to balance the injection pressure. The elliptic nature of pressure equation and the small compressibility of the medium result in a large area influenced by injection pressure. Therefor, the pressure related studies need models with large spatial scales. 
 
-To overcome this limitation in the SAIGUP models, we exaggerated the volume of cells at the model boundaries that are supposed to be open. These large pore volumes avoid extreme pressure build-up due to injecting in a closed system. On the other hand, the study is limited to the region near the well. Since the high pressures are happening near the injector, our study covers the pressure build-up around the well.
+To overcome this limitation in the SAIGUP models, we exaggerated the volume of cells at the model boundaries that are supposed to be open. These large pore volumes avoid extreme pressure build-up due to injecting in a closed system. On the other hand, the study is limited to the region near the well. Since the high pressure is present near the injector, our study covers the pressure build-up around the well.
 
-The pressure behavior is very sensitive to the way the boundaries are defined. In reality, there are different systems of aquifers. Some of them are large with huge pore-volumes. To model these aquifers, we can use smaller models with open boundaries. However, some aquifers are medium and small in size. To model these aquifers, we can assume semi-close and close boundaries. For any aquifer system, we can define the boundary by exaggerating the pore volume of the cells on the boundaries of the model. The transmissbilites of the boundary cells can be also modified to represent the size of the aquifer system. This controls the amount of pressure relaxation in the medium through the boundaries. If \coo\ exists in the boundaries, relative permeability functions at the boundary can be modified in addition to the transmissibilities. 
+The pressure behavior is very sensitive to the way the boundaries are defined. In reality, there are different systems of aquifers; some of them are large with huge pore-volumes. To model these aquifers, we can use smaller models with open boundaries. However, some aquifers are medium and small in size. To model these aquifers, we can assume semi-close and close boundaries. For any aquifer system, we can define the boundary by exaggerating the pore volume of the cells on the boundaries of the model. The transmissbilites of the boundary cells can also be modified to represent the size of the aquifer system. This controls the amount of pressure relaxation in the medium through the boundaries. If \coo\ exists in the boundaries, relative permeability function at the boundary can be modified in addition to the transmissibilities. 
 
-The open boundaries in our study are considered to be fully open. This makes the pressure to relax through the boundaries and the results of our pressure study are influenced by this choice. While we have observed a considerable number of cases with extreme pressures due to heterogeneity effects, the pressures reported in our study are moderate compared to models with not fully opened boundaries. The sensitivity analysis is based on comparing cases for their pressure values. Therefor, the outcome of sensitivity analysis should be valid regardless of the boundary choices. 
+The open boundaries in our study are considered to be fully open. This makes the pressure to relax through the boundaries and mainly, the results of our pressure study are influenced by this choice. While we have observed a considerable number of cases with extreme pressures due to heterogeneity effects, the pressures reported in our study are moderate compared to models with not fully opened boundaries. The sensitivity analysis is based on comparing cases for their pressure values. Therefore, the outcome of sensitivity analysis should be valid regardless of the boundary choices. 
 
-The size limitation in the SAIGUP models resulted in an extension to the current study in a project, which is called IGEMS \cite{syversveenstudy}. The IGEMS models have larger size compared to the SAIGUP models. 
+The size limitation in the SAIGUP models resulted in an extension to the current study in a project, called IGEMS \cite{syversveenstudy}. The IGEMS models have larger size compared to the SAIGUP models. 
 
-The \coo\ storage due to structural trapping in the SAIGUP models is limited to a major fault that allows for most of the injected \coo\ to accumulate under the cap-rock. This is not sufficient for studying the effect of variations in the top-surface topography on the \coo\ movement in the medium. The IGEMS study has focused on the structural trapping due to deformations in the top-surface morphology and faults. The results show that the structural trapping can be important in the amount of storage due to structural trapping and it can control the speed of plume migrating under the top sealing cap-rock.   
+The \coo\ storage due to structural trapping in the SAIGUP models is limited to a major fault that allows for most of the injected \coo\ to accumulate under the cap-rock. This is not sufficient for studying the effect of variations in the top-surface topography on the \coo\ movement in the medium. The IGEMS study has focused on the structural trapping due to deformations in the top-surface morphology and faults. The results show that the structural trapping can be important in the amount of storage and it can control the speed of plume migrating under the top sealing cap-rock.   
 
-In the vertical scale the SAIGUP models can be improved by using a higher grid resolution. Variations in the vertical direction exist in considerably smaller scales than the lateral direction. In particular, this is more crucial for long-term migration of \coo\, where  a thin plume of \coo\ migrates beneath a sealing layer due to buoyancy forces.
+In the vertical scale the SAIGUP models can be improved by using a higher grid resolution. Variation in the vertical direction exists in considerably smaller scales than the lateral direction. In particular, this is more crucial for long-term migration of \coo\, where  a thin plume of \coo\ migrates beneath a sealing layer due to buoyancy forces.
 
-Another issue to be mentioned is the assumption for geological uncertainties that are used in the stochastic analysis. We consider near uniform distributions for the probabilities of uncertain parameter values. While there is no loss of generality, there are too comments that could improve our analysis:
+Another issue to be mentioned is the assumption for geological uncertainties that are used in the stochastic analysis. We consider near uniform distribution for the probability of uncertain parameter values. While there is no loss of generality, these are possible improvements of our analysis:
 
 \begin{itemize}
 \item In general, the uncertainty probability can be different than uniform distribution. These information are very case dependent and can change from one location to another.
-\item One advantage of the aPC method is the flexibility to apply for arbitrary forms of uncertainty data. Choosing various distributions for the geological parameters would be more demonstrative of the aPC method strength. 
+\item One advantage of the aPC method is the flexibility to apply arbitrary forms of uncertainty data. Choosing various distributions for the geological parameters would be more demonstrative of the aPC method strength. 
 \end{itemize}
 
 Choosing uniform uncertainty distributions for our study is due to our limitation to use the SAIGUP models that are made based on equi-probable values for the geological uncertain parameters. A general stochastic process using the aPC must be considered in the following steps:
@@ -2555,4 +2551,4 @@ Choosing uniform uncertainty distributions for our study is due to our limitatio
 One thing to notice in Figure  \ref{fig:encl} is the link between designing geological realizations and implementation of the aPCE method. The sensitivity analysis and risk assessment procedure
 must start from the 'aPCE' box in Figure  \ref{fig:encl}, by finding the collocation points from the given geological
 uncertainty, and then based on those collocation points, we design the
-geological realizations. However, for the availability of a large set of SAIGUP realizations that were generated before this study, our start point was from the 'Geological Realization' box in Figure \ref{fig:encl}. This change in start point resulted in assuming a given geological uncertainty knowledge that suits the SAIGUP geological design. Nevertheless, we practice the procedure in a scope of geological modeling and flow analysis that is novel in its kind and can be consulted for further extensive studies.
+geological realizations. However, for the availability of a large set of SAIGUP realizations that were generated before this study, our start point was from the 'Geological Realization' box in Figure \ref{fig:encl}. This change in start point resulted in assuming a given geological uncertainty knowledge that suits the SAIGUP geological design. Nevertheless, we practice the procedure in thescope of geological modeling and flow analysis that is novel in its kind and can be consulted for further extensive studies.
