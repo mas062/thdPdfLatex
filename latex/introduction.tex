@@ -68,7 +68,7 @@ the medium at different times. This section helps in evaluation of the simplifyi
 The introduction chapter continues in Section~\ref{sec:FolowModeling} by a discussion of flow simulation scenario and assumptions taken in the work. We use a set of flow responses to monitor the performance of the operation in a typical carbon storage process, with a special emphasis on the injection and early migration of $\mbox{CO}_2$ in the medium. Flow dynamics and a linear sensitivity analysis on the simulation results are discussed in this section. 
 
 Section \ref{sec:StochasticAnalysis} provides an overview of the techniques that can be used for fast flow simulations. We use a response surface
-method to evaluate the flow responses. This proxy model is then used in a global sensitivity analysis and Monte-Carlo risk assessment process. At the end of this chapter, an overview of the work-flow and the limiting assumptions made in the study are discussed.
+method to evaluate the flow responses. This proxy model is then used in a global sensitivity analysis and Monte Carlo risk assessment process. At the end of this chapter, an overview of the work-flow and the limiting assumptions made in the study are discussed.
 
 The second chapter consists of a summary of the included papers. A report on the comments and issues regarding each part of the research is given. In the last chapter, we present the scientific results of our studies.  
 
@@ -195,7 +195,7 @@ the operations can be inferred from these responses. Storage capacity, injection
 in two ways: In the first method, we use three-dimensional, two-phase flow simulations on all realizations available for demonstrating the geological variability. In the second method, we employ an
 approximating polynomial to perform global sensitivity analysis and
 stochastic uncertainty studies. Using a relatively fast data-driven method,
-we perform a Monte-Carlo process on $10000$ simulation cases. 
+we perform a Monte Carlo process on $10000$ simulation cases. 
 
 \section{Uncertainty Sources}
 \label{uncertaintySources}
@@ -1357,7 +1357,7 @@ regime.]{\label{fig:injF}\includegraphics[width= 0.41
 
 We use a standard porous media simulator \cite{sis2007eclipse} to solve the flow equations in the
 medium. The simulator is based on finite volume method and the following
-assumptions are taken:
+assumptions are made:
 
 \begin{itemize}
 
@@ -1371,8 +1371,8 @@ critical ${CO}_2$.
 \subsection{Numerical scheme}
 
 The simulator uses a standard two-point finite difference scheme to solve
-Equation \ref{eq:dif2p} on a corner-point grid. The Darcy equation for two-phases can be written in algebraic difference terms. This makes the flow equation into cell $a$ from the
-neighboring cell $b$:
+Equation \ref{eq:dif2p} on a corner-point grid. The Darcy equation for two-phase flow can be expressed based on algebraic difference terms. The equation governing the flow into cell $a$ from the
+neighboring cell $b$ is as follows:
 \begin{equation}
  F_{ab\alpha}=T_{ab}M_{a\alpha}\Delta \psi_{\alpha}.
 \label{eq:eclF}
@@ -1400,6 +1400,7 @@ between the permeability of the cell $K_a $, the mutual area $A_{ab}$ between ce
   \label{eq:tran}
 \end{equation}
 
+
 The mobility term in Equation \ref{eq:eclF} is defined as follows:
 \begin{equation}
  M_{a\alpha}=\frac{k_{r\alpha}}{B_\alpha \mu_\alpha},
@@ -1411,8 +1412,8 @@ formation volume factor of phase $\alpha$, which is defined as :
  B_\alpha=\frac{\mbox{Volume at surface condition}}{\mbox{Volume at formation
 condition}}=\frac{V_{s\alpha}}{V_{r\alpha}}.  
 \end{equation} This definition is connected to compressibility
-of the fluid, i.e., to changes in volume at surface and at the geological formation condition, but it is defined in this way in the simulator to honor cases where a
-fluid like oil loses its dissolved gas while being produced at surface pressure.
+of the fluid, i.e., to changes in volume at the surface and at the geological formation condition, but it is defined in this way in the simulator to consider cases where a
+fluid, such as oil loses its dissolved gas while being produced at surface pressure.
 Since we assume no mass exchange between phases in our study, here the formation
 volume factor works like compressibility of the fluid. Formation volume factor
 is a function of pressure. Slight compressibility is considered for phases in our study, and phase density
@@ -1421,7 +1422,7 @@ is defined as a function of pressure:
  \rho_\alpha(P) =\frac{\rho_{0\alpha}}{B_\alpha(P)}.
  \label{eq:rho}
 \end{equation} Here, $\rho_{0\alpha}$ is the density of phase $\alpha$ at
-surface condition.
+surface conditions.
 
 Wells are defined as sources or sinks in Equation \ref{eq:dif2p}. In reality, wells
 are a void space drilled in the porous medium and the flow into the
@@ -1454,14 +1455,14 @@ injection well-bore, and $M_\alpha$ is the mobility of injection flow into the
 cell. 
 
 A region can be assumed by radius $r_e$ at which the
-pressure is equal to the cell pressure. Approximating the flow near the
-well-bore by Equation \ref{eq:vol}, the transmissibility for this region can be
+pressure is equal to the cell pressure. By approximating the flow near the
+well-bore using Equation \ref{eq:vol}, the transmissibility for this region can be
 found from the analytical solution of Equation \ref{eq:vol}:
 \begin{equation}
  T_w=\frac{K \cdot h}{ln(\frac{r_e}{r_w})},
  \label{eq:Tw}
 \end{equation} where $h$ is the medium
-thickness, $K$ is the medium rock permeability, and $r_{w}$ is the well radius. Here, we assume that the well is completed and connected in the entire thickness $h$ of the cell and there is no skin effect in the well. The Equation \ref{eq:Tw} can be extended to model wells with partial completions and skins. The effective radius $r_{e}$ in Equation \ref{eq:Tw} is estimated from Peaceman formula and can be related to the cell geometry:
+thickness, $K$ is the medium rock permeability, and $r_{w}$ is the well radius. Here, we assume that the well is completed and connected in the entire thickness $h$ of the cell and there is no skin effect in the well. The Equation \ref{eq:Tw} can be extended to model wells with partial completions and skins. The effective radius $r_{e}$ in Equation \ref{eq:Tw} is estimated from the Peaceman formula and can be related to the cell geometry:
 \begin{equation}
 r_e =  0.28\frac{\left[
 \delta_x^2(\frac{K_y}{K_x})^{\frac{1}{2}}+\delta_y^2(\frac{K_x}{K_y})^{\frac{1}{
@@ -1478,21 +1479,20 @@ be modified for more general cases.
 
 All of the SAIGUP realizations have dimensions of $3~\mbox{km}~\times~9~\mbox{km}~\times~80~\mbox{m}$. The model spatial scales capture the typical geological features in a shallow-marine system, such as shore-line shape and aggradation angle variations. Various scales of heterogeneity can considerably impact the flow behavior. The lateral extent of the model is smaller than the scales used for \coo\ storage studies. In some storage sites, the lateral extent that the \coo\ travels can go to hundreds of kilometers. This makes our study limited in the spatial domain around the injector. For the same reason, in the temporal scale, we are more focused on injection and early migration time. We examine a number of injection scenarios to study the spatial distribution of \coo\ in the medium during injection and early migration periods.
 
-Pressure study is essential for injection operations. A detailed pressure study requires larger scales than what are used here. We choose open boundaries for the model to compensate for the actual large extents of a typical storage location (Figure \ref{fig:BDRY}). The choice of open boundary is not valid in domains that are bounded by structural seals. In fact, for the close and semi-close domains the pressure is a main control on the storage capacity along with other parameters. The results of our pressure study can change significantly by choosing different boundary conditions. 
+The study of pressure is essential for injection operations. A detailed pressure study requires larger scales than what are used here. We choose open boundaries for the model to compensate for the actual large extents of a typical storage location (Figure \ref{fig:BDRY}). The choice of open boundary is not valid in domains that are bounded by structural seals. In fact, for the closed and semi-closed domains the pressure is a major control on the storage capacity along with other parameters. The results of our pressure study can change significantly by choosing different boundary conditions. 
 
 We represent the boundary by large pore volumes on the outer closed cells and this makes the pressure to relax earlier than it does in a large domain. Even with such artifact, the effect of heterogeneities is clearly seen in a considerable fraction of cases with an extreme pressure build-up. We investigate the operational concerns  related to pressure build-up for a typical injection scenario. Our pressure study can be used for devising mitigation plans by defining operational constraints for injectors. We perform an extensive probabilistic analysis on the \coo\ pressure behavior in the medium that can be applied in further studies with specific concerns about the pressure analysis.   
 
 We consider the injection of $20\%$ of the total pore volume of the model(excluding the large volumes at the boundaries), which amounts to $40~\mbox{MM m}^3$. This volume is injected into all realizations
 in three different scenarios. In the first scenario, the injection is forced to
 finish in
-$30~\mbox{years}$ and the pressure in the system is allowed to rise
-unlimitedly. Linear relative permeability functions are considered in this
+$30~\mbox{years}$ and an unlimitted pressure rise in the system is permitted. Linear relative permeability functions are considered in this
 scenario. The purpose of the first scenario is to examine the flow distribution in the medium influenced by geological heterogeneity. Linear assumption for
-relative permeabilities is taken to speed up the flow within the medium. We have used quadratic relative permeability function in another scenario. This scenario has shown a considerable increase in the pressure responses for many cases during \coo\ injection into the  aquifer. This is mainly due to lower \coo\ mobility at low saturations compared to the linear relative permeability. Albeit, the \coo\ moving under a cap-rock will effectively have a linear relative permeability.
+relative permeabilities is taken to speed up the flow within the medium. We have used quadratic relative permeability function in the second scenario. This scenario has shown a considerable increase in the pressure responses for many cases during \coo\ injection into the  aquifer. This is mainly due to lower \coo\ mobility at low saturations compared to the linear relative permeability. Albeit, the \coo\ moving under a cap-rock will effectively have a linear relative permeability.
 
 The third injection scenario is similar to the first scenario, except that the injector is controlled by pressure rather than volumetric rate. Thus, injection time is variable depending on the injectivity of the medium.
 
-One injector is considered in the study. With one injector, it is easier to
+Only one injector is considered in the study. With one injector, it is easier to
 study the flow behavior and the plume development within the medium. The
 injector is
 located in the flank and to increase the sweep efficiency for the
@@ -1500,7 +1500,7 @@ up-moving $\mbox{CO}_2$ plume, the injector is connected to the medium (complete
 of
 the aquifer. The injector location and the completed layers are fixed for all of
 the realizations. The studies here aim to identify the influence of uncertainty
-on injectivity and fixing a place for injection helps in achieving this goal. As mentioned earlier, injectivity is a big player in the success of the operations. Uncertainty might be less in the near well-bore region than in the larger scale in the domain, but yet requires costly operation data aquisition. Fixing the location of the well serves specifiying the probability of having a feasible injectivity in different heterogeneities.
+on injectivity and fixing a place for injection helps in achieving this goal. As mentioned earlier, injectivity is a big player in the success of the operations. Uncertainty might be less near the well-bore region than in the larger scale in the domain, but requires costly operation data aquisition. Fixing the location of the well serves to specify the probability of having a feasible injectivity in different heterogeneities.
 
 There are few locations of distorted geometries in the faulted realizations that
 may be considered as structural traps for the injected $\mbox{CO}_2$. The
@@ -1517,13 +1517,13 @@ cap-rock. A small fraction of the injected $\mbox{CO}_2$ will escape through the
 open boundary near the injection well and the rest of it will stay within the
 medium in two forms that we refer to as  mobile and residual volumes. As
 the $\mbox{CO}_2$ moves through the rock, part of it stays in the smaller pores
-by capillary trapping process and can not be discharged by brine. The other
+due to the capillary trapping process and cannot be discharged by brine. The other
 parts move through the larger pores and can be displaced by water in an
 imbibition process. This volume is called mobile. As we are interested in
 storing the $\mbox{CO}_2$ permanently and safely, increasing the trapped volume
 is in line with the objective of minimizing the leakage risk and maximizing the
 storage capacity. Likewise, the more mobile volume of $\mbox{CO}_2$ exists in
-the medium, the more will be the risk of leakage. 
+the medium, the higher will be the risk of leakage. 
 
 \begin{figure}
  \centering{}
@@ -1533,11 +1533,10 @@ are open to the flow.}
  \label{fig:BDRY}
 \end{figure}
 
-Defining the boundary condition of the aquifer of interest can influence the
-flow behavior in the system. Computational costs make it more feasible to model the flow locally and in the
+Defining the boundary conditions of the aquifer of interest can influence flow behavior in the system. Computational costs make it more feasible to model the flow locally and in the
 part of the aquifer that is going through more pronounced changes in flow
 behavior. Therefore, we can choose the boundaries of the model inside the aquifer
-in a volume that is containing the injection wells and the areas effected by
+in a volume that is containing the injection wells and the areas affected by
 them. Hydrostatic open boundary condition is a choice for the system boundaries
 to include the aquifer parts that fall outside the boundaries (Fig.
 \ref{fig:bkw}).
@@ -1546,7 +1545,7 @@ The underground network of aquifer systems can be connected via geological
 channeling and conductive features. Some aquifers might be active and connected
 to the surface and expand in volume by variations in water influx due to 
 seasonal rains. This can impose an external force on the system boundaries
-considered in the storage problem. Fig. \ref{fig:bkw} shows the water influx
+considered in the storage problems. Fig. \ref{fig:bkw} shows the water influx
 through the boundaries of the system due to external aquifer activities. We
 consider the external support by imposing a higher pressure than the hydrostatic
 pressure on the boundary of the model.
@@ -1566,15 +1565,15 @@ pressure on the boundary of the model.
 The primary unknowns in the flow model are the $\mbox{CO}_2$ pressure
 and the saturation distribution at different times. From the simulation
 output, we can derive quantities that
-address the feasibility of $\mbox{CO}_2$ injection,
-these quantities include a number of flow responses related to the $\mbox{CO}_2$
+address the feasibility of $\mbox{CO}_2$ injection.
+These quantities include a number of flow responses related to the $\mbox{CO}_2$
 injection and migration problems. Each of these responses are directly or
 indirectly a measure of success for the operation within a specific realization.
 In the following, we give a brief description of each of them:
 
 %\textbf{\textit{Boundary fluxes:}} The flux out of open boundaries is a measure
 %of sweep efficiency for the
-%CO$_2$ plume. Channeling can lead to early CO$_2$ breakthrough at boundaries and
+%CO$_2$ plume. Channeling can lead to early CO$_2$ breakthrough at the boundaries and
 %we prefer cases with less out-fluxes through open boundaries. The out-flux
 %through the open boundary that is closer to the injector is a potential
 %loss for the injected volume. After the injection stops, some of the CO$_2$ that
@@ -1615,7 +1614,7 @@ plumes, and other statistical parameters.
 % %
 % \end{figure}
 
-\textbf{\textit{Average aquifer pressure:}} Average aquifer pressure is one of
+\textbf{\textit{Average aquifer pressure:}} This is one of
 the most important responses to be
 considered. The pressure response in general shows a sharp jump at the start of
 injection and a declining trend during the injection and plume migration.  
@@ -1628,8 +1627,7 @@ injector. When the injection operation stops, the pressure support will be
 removed and the pressure drops and declines until it reaches equilibrium.
 
 \textbf{\textit{Leakage risk:}} During injection operation the foremost
-important issue is the aquifer pressure
-which as discussed earlier may lead to fractures in the cap-rock. On the other
+important issue is the aquifer pressure, which as discussed earlier, may lead to fractures in the cap-rock. On the other
 hand, the cap-rock break depends on lithology and sealing thickness and differs
 from point to point. Some weaker locations can be the most probable to
 break and start leaking if any mobile CO$_2$ exists there.
@@ -1643,9 +1641,9 @@ assigns a value to each point of the cap-rock, modeling the relative weakness of
 the cap-rock and the medium at that point. If for example both the cap-rock and
 the aquifer are continuous homogeneous layers with constant thickness, then the
 point of cap-rock that sits on the highest point of the injection slice can be
-the most probable place for leakage in case of dramatic pressure increase in the
-well: the stress stream is more in the injection slice and the CO$_2$
-accumulation occurs on the topmost part of the mentioned slice. Then one may
+the most probable place for leakage in the case of dramatic pressure increase in the
+well; the stress stream is more in the injection slice and the CO$_2$
+accumulation occurs on the topmost part of the aforementioned slice. Then one may
 consider a 2D-Gaussian probability distribution on the cap-rock, centered above
 the injection slice.
 
@@ -1661,7 +1659,7 @@ point (Fig. \ref{fig:SLR}). We calculate the probability of each cell in the top
 layer and using the simulation results for the case, we weight it by the CO$_2$
 saturation of that cell and the plume size that the cell is attached to.
 Summing up the values of the topmost cells, we assign a single number to the
-case which we call leakage risk of the case. One may weight the case risk value
+case, which we call leakage risk of the case. One may weight the case risk value
 with the average pressure in the system, such that higher pressure gives a
 bigger weight.
 \vskip 0.5cm
@@ -1842,7 +1840,7 @@ Figure \ref{fig:Pplume} shows the development of pressure in the same cases. We 
 One way to report the described responses and their relations to the uncertain
 parameters in one graph is to use scatter plots. Each case will then be
 represented by a marker sign with attributes dedicated to the set of geological
-parameter levels used in that case. Figure~\ref{fig:codes} shows some of the codes used in the study. That will be used later in the thesis and in the papers reporting our study.
+parameter levels used in that case. Figure~\ref{fig:codes} shows some of the codes used in the study. This will be used later in the thesis and in the papers reporting our study.
 
 
 \begin{figure}
@@ -1859,7 +1857,7 @@ together.}
 \subsection{ECLIPSE input file}
 \label{eclDataFile}
 
-In this section, important parts of the ECLIPSE input files that are used in modeling the flow are given. We will go through different sections of the ECLIPSE input file. It is assumed that the reader is familiar with the syntax and terminology used in the ECLIPSE simulation. See \cite{sis2007eclipse} for more information about ECLIPSE keywords. We use the verson 2009 of ECLIPSE-100 black-oil module.
+In this section, important parts of the ECLIPSE input files that are used in modeling the flow are given. We will go through different sections of the ECLIPSE input file. It is assumed that the reader is familiar with the syntax and terminology used in the ECLIPSE simulation. See \cite{sis2007eclipse} for more information about ECLIPSE keywords. We use the version 2009 of ECLIPSE-100 black-oil module.
 
 Several flow scenarios were examined before concluding in a few number of scenarios to be used in the study. Two main scenarios are considered that differ mainly in defining the well operational specifications. We will explain more about these cases in the SCHEDULE section. Only the important parts of the input file are given such that it is possible to reproduce the runs.
 
@@ -1922,7 +1920,7 @@ ROCK --rock-fluid compressibility model
 DENSITY --Phase densities
  700  1033   0.044/ 
 \end{lstlisting}
-In the REGIONS section we define different domains in the model. We specifay the main domain that excludes the cells considered to represent the open boundaries. This is later used in the calculations of flow responses. Also, the saturation table is assigned here to be used in the initialization of the model as explained earlier.
+In the REGIONS section we define different domains in the model. We specify the main domain that excludes the cells considered to represent the open boundaries. This is later used in the calculations of flow responses. Also, the saturation table is assigned here to be used in the initialization of the model as explained earlier.
 \begin{lstlisting}
  REGIONS 
 INCLUDE 
@@ -1961,7 +1959,7 @@ WOIR
 WVIR 
 / 
 \end{lstlisting}
-Finally and in the main part of the model, we define the simulation scenario by providing the injector completion specifications and injection plan for the well. Here we see the SCHEDULE section that is considered for fixed injection rate over $30$ years, followed by $70$ years of early migration. 
+Finally, in the main part of the model, we define the simulation scenario by providing the injector completion specifications and injection plan for the well. Here we see the SCHEDULE section that is considered for fixed injection rate over $30$ years, followed by $70$ years of early migration. 
 \begin{lstlisting}
 SCHEDULE 
 SATNUM  --The second saturation table is assigned here to consider the hysteresis effects. 
@@ -2020,13 +2018,13 @@ TSTEP
 280*90 /
 END
 \end{lstlisting}
-We used the first scenario presented here with small modifications for the stochastic analysis that we will introduce in the next section.
+We used a similar approach to the first scenario presented here with small modifications for the stochastic analysis that we will introduce in the next section.
 
 \section{Sensitivity and risk analysis}
 \label{sec:StochasticAnalysis}
 
 The process of developing mathematical models to approximate the injected $\mbox{CO}_{2}$ in the
-storage sites consist of several steps, including the determination of
+storage sites consist of several steps. This includes the determination of
 most influential parameters on the model outputs. Sensitivity
 analysis can serve as a guide to any further use of the model.
 
@@ -2072,18 +2070,17 @@ respect to the quantification of probabilities for uncertain parameters and can
 be applied in studies with limited knowledge of probabilities. 
 
 The reduced model approximated by aPC is considerably faster than the original
-detailed one, and thus it  provides a promising start point for global
+detailed one, thus provides a promising start point for global
 sensitivity analysis and probabilistic risk assessment. Variance-based global-sensitivity analysis methods have shown success in non-linear and complex problems \cite{reuter2008global}.
-The system can be decomposed into approximating functions of input parameters, and this makes it easy to implement methods based on variance. The bottle-neck of variance-based approaches can be their computational costs. In our case, the variance in output responses can be set equal to the variance of polynomial components calculated for each input parameters. Polynomials are inexpensive to evaluate compared with full simulation. This makes it efficient to implement a variance based sensitivity analysis using polynomial approximation. Furthermore, the fact that the response surface has known polynomial properties simplifies the approach significantly. The speed of polynomial approximation makes it feasible to perform an
-intensive probabilistic risk assessment via Monte-Carlo process over high resolution input variation.
+The system can be decomposed into approximating functions of input parameters, and this makes it easy to implement methods based on variance. The bottleneck of variance-based approaches can be their computational costs. In our case, the variance in output responses can be set equal to the variance of polynomial components calculated for each input parameter. Polynomials are inexpensive to evaluate compared with full simulation. This makes it efficient to implement a variance based sensitivity analysis using polynomial approximation. Furthermore, the approach has been significantly simplified by the fact that the polynomial properties of the response surface are known. The speed of polynomial approximation makes it feasible to perform an intensive probabilistic risk assessment via a Monte Carlo process over a high-resolution input variation. 
 
-Statistical accuracy of a Monte-Carlo process is highly sensitive to the
+Statistical accuracy of a Monte Carlo process is highly sensitive to the
 resolution of variational inputs. The response surface method assisting the
-Monte-Carlo procedure must be constructed on a dense Cartesian grid, which will
-be computationally demanding. As a result, we explore an alternative method, which is a polynomial chaos expansion (PCE), and it only
+Monte Carlo procedure must be constructed on a dense Cartesian grid, which will
+be computationally demanding. As a result, we explore an alternative method, which is a polynomial chaos expansion (PCE). This method only
 requires a minimum number of model evaluations to construct the approximating response surface. The approach we use is based on the aPC as described in \cite{oladyshkin2011concept}. The main idea is to construct the approximating response surface by projecting the response on orthogonal polynomial bases within the uncertain parameter space. Therefore, uncertainty in input parameters is involved in the process from the initial steps of the work-flow. This approach is an advanced statistical regression method that offers an efficient and accurate way of including nonlinear effects in stochastic analysis \cite{Zhang_Lu_2004_JCP,foo_pcm_JCP2010, 
 Fajraoui_al_2011_WRR}. One attractive
-feature of PCE is the high-order approximation of error propagation as well as its computational speed \cite{oladyshkinintegrative} when compared to Monte-Carlo processes.
+feature of PCE is the high-order approximation of error propagation as well as its computational speed \cite{oladyshkinintegrative} when compared to Monte Carlo processes.
 
 Earlier PCE techniques put the restriction of specified types of uncertainty
 distribution functions to be used in the work-flow. In contrast, the arbitrary polynomial chaos (aPC) is flexible enough to accommodate a wide range of data
@@ -2131,7 +2128,7 @@ representation.
 % can be in different forms, from simple linear mapping to very complicated
 % non-linear forms.
 
-The responses of the system can be expanded into the
+The response of the system can be expanded into the
 space of approximating polynomial bases. This expression is specified by constant coefficients $c_i$:
 %
 \begin{equation}
@@ -2205,7 +2202,7 @@ Intrusive techniques require modification of the system of governing
 equations (e.g., the flow model system). In some cases, this can end up in semi-analytical methods that are
 used for simpler stochastic analysis studies (e.g., stochastic Galerkin
 method). However, the intrusive approaches can be very complex and analytically
-cumbersome and can not be implemented for industrial applications. In contrast
+cumbersome and cannot be implemented for industrial applications. In contrast
 to intrusive techniques, the non-intrusive methods are vastly used in practical
 studies. These methods do not require any symbolic manipulations of the
 governing equations. The sparse quadrature and the probabilistic collocation
@@ -2270,8 +2267,7 @@ minimal model evaluations on $\Theta_c$, we can solve Equation
 \label{Section:SA}
 
 Sensitivity analysis helps in understanding the degree of dependency of system
-responses to input parameters. When input parameters are uncertain in
-value, the model prediction will consist of uncertainties that must be
+responses to input parameters. When the value of the input parameters is uncertain, the model prediction will consist of uncertainties that must be
 eliminated for a robust and precise prediction. Therefore, sensitivity analysis
 can be useful both in optimizing the system performance and in studying the
 variation in performance coming from the stochastic nature of the system.
@@ -2301,7 +2297,7 @@ for obtaining global sensitivity analysis. The aPC based-method
 places the parameter sets for model evaluation at optimized spacing in
 parameter space. This can be interpreted as fitting polynomials to the model
 response. These polynomials approximate the model over the entire parameter
-space in weighted least-square sense. This is more beneficial to compute 
+space in weighted least-square sense. This is beneficial to compute 
 tangent or local second derivatives (compare FORM, SORM methods, e.g.,
 \cite{Jang1994}) that approximate the model well just around one point in the
 parameter space.
@@ -2357,7 +2353,7 @@ i}}{\sum}\underset{_{k\neq i}}{\sum}S_{ijk}+...\label{eq:totSob}\end{equation}
 
 To clarify the subject, we go through a simple analytical example given in
 \cite{arwade2010variance}. Suppose that the exact expression for response
-$\Gamma$ to be known and can be written as a polynomial with parameters
+$\Gamma$ is known and can be written as a polynomial with parameters
 $\theta_1$, $\theta_2$, and $\theta_3$:
  
 \begin{equation}
@@ -2387,7 +2383,7 @@ parameters~$\Theta$.
 Let us denote the variances by $D$:
 \begin{equation}
 D=\mbox{V}[F(\Theta)]=\int F^2(\Theta) d\Theta-F_0,
-\label{eq:SobD}\end{equation} that can be decomposed into 
+\label{eq:SobD}\end{equation} that can be decomposed into: 
 \begin{equation}
 D_i=\int{F_i}^2(\theta_i) d\theta_i,
 \label{eq:SobDi}\end{equation} and
@@ -2462,7 +2458,7 @@ obtained from detailed simulations on large number of realizations at end of inj
 Yet larger number of points in the uncertain parameter space are studied
 employing the data-driven aPC method, which requires a considerably shorter time
 for evaluating the responses than what takes for a full simulation. This way it is possible to perform an intensive
-Monte-Carlo process in a full tensor grid of input parameter variational space,
+Monte Carlo process in a full tensor grid of input parameter variational space,
 resulting in a high resolution output probability distribution.
 
 %---------------------------
