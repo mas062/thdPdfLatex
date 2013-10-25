@@ -2471,7 +2471,7 @@ resulting in a high resolution output probability distribution.
   \centering
   \includegraphics[width=0.65 \linewidth]{./figurer/ENCL} 
   %
-  \caption{Flow-chart of work process implemented in an automated procedure.}
+  \caption{Flowchart of workflow implemented in an automated procedure.}
   \label{fig:encl}
 %
 \end{figure}
@@ -2479,76 +2479,58 @@ resulting in a high resolution output probability distribution.
 \section{General summary}
 \label{sec:generalSummary}
 
-The work objectives have been the following:
+The work objectives were as follows:
 \begin{itemize}
 \item Assessing the significance of geological modeling in early stages of \coo\ storage operations.
-\item Applying a mathematical tool to perform global sensitivity analysis and probabilistic risk study for assessing the geological uncertainty impacts on the success of \coo\ storage.
-\item Introducing a frame-work for extensive realistic geological sensitivity analysis and risk assessment.
+\item Applying a mathematical tool to perform global sensitivity analysis and probabilistic risk assessment of geological uncertainty effects on the success of \coo\ storage.
+\item Introducing a framework for extensive realistic sensitivity analysis and risk assessment of geological \coo\ storage.
 \end{itemize}
 
-The significance of geological uncertainty is discussed by extensive study on \coo\ flow in different geological models. Sensitivity analysis and risk assessment have resulted in ranking of the studied geological parameters for various flow responses in the medium. The work-flow implemented in this work is a stepwise procedure that can be generalized to be used in any similar large scale analysis.
+The significance of geological uncertainty is examined through an extensive study of \coo\ flow in different geological models. Sensitivity analysis and risk assessment provided a ranking of the studied geological parameters for various flow responses in the chosen medium. The workflow implemented in this study is a stepwise procedure that can be generalized for use in any similar large-scale analysis.
 
 \subsection{Implementation of the work-flow}
 \label{sec:implementationWorkflow}
-This thesis incorporated working with large number of realizations, various flow scenarios, and different procedures and soft-wares. While the study was in progress, new ideas and challenges raised that required manipulation of new parts in the work-flow. In order to achieve the defined goals of the research, an automated work-flow was designed that connected different parts of the study. This enhanced the efficiency of performing necessary modifications to the work-flow.
+This thesis incorporated working with a large number of realizations, various flow scenarios, and different procedures and software. While the study was in progress, new ideas and challenges required the manipulation of new steps in the workflow. To achieve the defined goals of the research, an automated workflow was designed that connected different parts of the study. This enhanced the efficiency of performing necessary modifications to the workflow.
 
-MATLAB programming language is used for implementing the work-flow in this
-research. The main reason for this choice, apart from the rich facilities
-available within MATLAB toolboxes, is to use many functions within the 
-MATLAB Reservoir Simulation Toolbox (MRST) \cite{lie2011open,mrst} available as
-free and
-open-source software in MATLAB language. For flow simulation a commercial
-software is used, which is a standard simulator in oil and gas industry and
-research.
+The MATLAB programming language is used for implementing the workflow in this research. The main reason for this choice, apart from the rich facilities available within the MATLAB toolboxes, is to utilize the numerous functions within the MATLAB Reservoir Simulation Toolbox (MRST) that is available as free and open-source software. For flow simulations, commercial software is used, which is a standard simulator for the oil and gas industry and research. 
 
-Figure \ref{fig:encl} shows the elements of the work-flow implemented by a large
-number of MATLAB functions. Functions from MRST at SINTEF and the stochastic
-tools of SIMTECH group in Stuttgart university are utilized and merged into the
-work-flow. The design is made such that the work-flow is flexible and general.
-Some research has been done by replacing the commercial simulator with in-house
-simulators at SINTEF, but the main study was performed using a commercial standard simulator. 
+Figure \ref{fig:encl} shows the workflow elements implemented using numerous MATLAB functions. Functions from MRST at SINTEF and the stochastic tools from the SIMTECH group at Stuttgart University are utilized and merged into the workflow. The workflow design is constructed to be flexible and general. Some research at SINTEF has been performed by replacing the commercial simulator with in-house simulators. However, the main study is performed using a commercial standard simulator.
 
 \subsection{Generic application of results}
 \label{genericApply}
 
-We rank the most influential geological parameters. The demonstrated work-flow can be used in any study concerning site selection and early stages of \coo\ storage. However, there are some limitations in our presentation of the work-flow that need to be noted.  
+We rank the most influential geological parameters for early stages of \coo\ storage operations. The demonstrated workflow can be used in any study concerning the site selection and early stages of geological \coo\ storage. However, there are some limitations in our presentation of the workflow that must be considered when this work is applied in similar studies.  
 
-First limitation is the SAIGUP model size. \coo\ storage studies require large models that can cover the \coo\ spatial traveling extents within aquifers. Hence, our study is limited to the domain around the injector. Yet, many cases in our study suffer from volumes of injected \coo\ lost via open boundaries. While this can be used as an indication for vertical versus lateral transmissibility, the study can be improved by using larger models. In special cases, realizations are compared at a time after injection that the same amount of injected \coo\ exists in the domain (e.g., the cases compared at $15$ years of injection in the pressure study).
+The first limitation is the SAIGUP model size. \coo\ storage studies require large models that can cover the \coo\ spatial traveling extent within the aquifer. Therefore, our study is limited to the domain around the injector.
 
-An over-pressurized injection can introduce breakings in the sealing cap-rock that is aimed to be used for structural strapping of \coo. It is more feasible to use minimum number of wells to minimize the costs of the project and also the risk of \coo\ leakage via drilled wells after they are abandoned. Therefor, a typical injection scenario include few number of injectors with no production well to balance the injection pressure. The elliptic nature of pressure equation and the small compressibility of the medium result in a large area influenced by injection pressure. Therefor, the pressure related studies need models with large spatial scales. 
+An over-pressurized injection can introduce breakings in the sealing cap-rock that is used for structural \coo\ trapping. It is more feasible to use a minimum number of wells to minimize the project costs and the risk of \coo\ leakage through abandoned wells. Therefore, a typical injection scenario includes a few injectors with no production well to balance the injection pressure. The elliptic nature of the pressure equation and the small compressibility of the medium produce a large area influenced by the injection pressure. Therefore, pressure-related studies require a large model domain to study the effect of the impulse imposed by the injector on the entire region connected to the impulse.
 
-To overcome this limitation in the SAIGUP models, we exaggerated the volume of cells at the model boundaries that are supposed to be open. These large pore volumes avoid extreme pressure build-up due to injecting in a closed system. On the other hand, the study is limited to the region near the well. Since the high pressure is present near the injector, our study covers the pressure build-up around the well.
+To overcome this limitation in the SAIGUP models, we exaggerated the cell volumes at the model boundaries that are supposed to be open. The large pore volumes on the boundaries avoid extreme pressure build-up caused by injecting into a closed system. However, the study is limited to the region near the well. Because the high pressures occur near the injector, it is more interesting to study pressure build-up around the well rather than examining the entire region influenced by the injection pressure.
 
-The pressure behavior is very sensitive to the way the boundaries are defined. In reality, there are different systems of aquifers; some of them are large with huge pore-volumes. To model these aquifers, we can use smaller models with open boundaries. However, some aquifers are medium and small in size. To model these aquifers, we can assume semi-close and close boundaries. For any aquifer system, we can define the boundary by exaggerating the pore volume of the cells on the boundaries of the model. The transmissbilites of the boundary cells can also be modified to represent the size of the aquifer system. This controls the amount of pressure relaxation in the medium through the boundaries. If \coo\ exists in the boundaries, relative permeability function at the boundary can be modified in addition to the transmissibilities. 
+The pressure behavior is very sensitive to the way the boundaries are defined. In reality, there are different aquifer systems. Some aquifers are large with very large pore volumes. To model these aquifers, we can use smaller model domains with open boundaries. However, some aquifers are medium and small in size. To model these aquifers, we can assume semi-closed and closed boundaries. For any aquifer system, we can define the boundary by exaggerating the pore volume of the cells along the model boundaries. The transmissibilities of the boundary cells can also be modified to represent the size of the aquifer system, controlling the amount of pressure relaxation in the medium through the boundaries. If \coo\ exists in the boundaries, relative permeability function at the boundary can be modified in addition to the transmissibilities. 
 
-The open boundaries in our study are considered to be fully open. This makes the pressure to relax through the boundaries and mainly, the results of our pressure study are influenced by this choice. While we have observed a considerable number of cases with extreme pressures due to heterogeneity effects, the pressures reported in our study are moderate compared to models with not fully opened boundaries. The sensitivity analysis is based on comparing cases for their pressure values. Therefore, the outcome of sensitivity analysis should be valid regardless of the boundary choices. 
+The open boundaries in our study are considered completely open. This assumption allows pressure to relax through the boundaries. However, the results of our pressure study are influenced by this choice. While we have observed a many cases with extreme pressures due to heterogeneity effects, the pressures reported in our study are moderate compared to partially closed boundaries. The sensitivity analysis is based on comparing the pressure values of the different cases. Therefore, the outcome of the sensitivity analysis should be valid regardless of the boundary choices. The size limitation in the SAIGUP models resulted in an extension to the current study, which is called IGEMS \cite{syversveenstudy}. 
 
-The size limitation in the SAIGUP models resulted in an extension to the current study in a project, called IGEMS \cite{syversveenstudy}. The IGEMS models have larger size compared to the SAIGUP models. 
+The IGEMS models are larger compared to the SAIGUP models. There is only one major structural trap in the SAIGUP models that allows for most of the injected \coo\ to accumulate under the cap-rock. This is not sufficient for studying the effect of variations in the top-surface topography on \coo\ movement in the medium. The IGEMS study has focused on the structural trapping due to deformations in the top-surface morphology and faults. The results show that structural trapping can be important in controlling the extent of \coo\ storage due to structural trapping and controlling the speed of the plume migrating under the top sealing cap-rock.  
 
-The \coo\ storage due to structural trapping in the SAIGUP models is limited to a major fault that allows for most of the injected \coo\ to accumulate under the cap-rock. This is not sufficient for studying the effect of variations in the top-surface topography on the \coo\ movement in the medium. The IGEMS study has focused on the structural trapping due to deformations in the top-surface morphology and faults. The results show that the structural trapping can be important in the amount of storage and it can control the speed of plume migrating under the top sealing cap-rock.   
+In the vertical direction, the SAIGUP models can be improved with a higher grid resolution. Variations in the vertical direction exist at considerably smaller scales than in the horizontal. In particular, this is more important for the long-term \coo\ migration in which a thin plume of \coo\ migrates beneath a sealing layer due to buoyancy forces.
 
-In the vertical scale the SAIGUP models can be improved by using a higher grid resolution. Variation in the vertical direction exists in considerably smaller scales than the lateral direction. In particular, this is more crucial for long-term migration of \coo\, where  a thin plume of \coo\ migrates beneath a sealing layer due to buoyancy forces.
-
-Another issue to be mentioned is the assumption for geological uncertainties that are used in the stochastic analysis. We consider near uniform distribution for the probability of uncertain parameter values. While there is no loss of generality, these are possible improvements of our analysis:
+Another issue to be mentioned is the geological uncertainty assumption used in the stochastic analysis. We consider nearly uniform distributions for the probabilities of uncertain parameter values. While there is no loss of generality, there are two comments that could improve our analysis:
 
 \begin{itemize}
-\item In general, the uncertainty probability can be different than uniform distribution. These information are very case dependent and can change from one location to another.
-\item One advantage of the aPC method is the flexibility to apply arbitrary forms of uncertainty data. Choosing various distributions for the geological parameters would be more demonstrative of the aPC method strength. 
+\item In general, the uncertainty probability may not directly follow a uniform distribution. Actually, this information is very case dependent and can change from one location to another.
+\item One advantage of the aPC method is its flexibility to be applied for arbitrary forms of uncertainty data. Choosing various distributions for the geological parameters would better demonstrate the strength of the aPC method. 
 \end{itemize}
 
-Choosing uniform uncertainty distributions for our study is due to our limitation to use the SAIGUP models that are made based on equi-probable values for the geological uncertain parameters. A general stochastic process using the aPC must be considered in the following steps:
+Because we are limited to the SAIGUP models that are based on equally probably values for the geological parameters, uniform uncertainty distributions are chosen. A general stochastic process using the aPC must be considered in the following steps:
 
 \begin{itemize}
-\item Use the techniques from the aPC to derive appropriate sample points
-    for geological parameters.
+\item Use the techniques from the aPC method to derive appropriate sample points for the geological parameters.
 \item Construct geological models at these sample points.
 \item Perform flow simulations for each sample point.
 \item Construct the proxy model.
 \item Perform global sensitivity analysis using the Sobol indexes method and the proxy model. 
-\item Perform the Monte-Carlo process using the aPC study to assess the uncertainty and risk.
+\item Perform the Monte Carlo simulations using the aPC study to assess the uncertainty and risk.
 \end{itemize}
 
-One thing to notice in Figure  \ref{fig:encl} is the link between designing geological realizations and implementation of the aPCE method. The sensitivity analysis and risk assessment procedure
-must start from the 'aPCE' box in Figure  \ref{fig:encl}, by finding the collocation points from the given geological
-uncertainty, and then based on those collocation points, we design the
-geological realizations. However, for the availability of a large set of SAIGUP realizations that were generated before this study, our start point was from the 'Geological Realization' box in Figure \ref{fig:encl}. This change in start point resulted in assuming a given geological uncertainty knowledge that suits the SAIGUP geological design. Nevertheless, we practice the procedure in thescope of geological modeling and flow analysis that is novel in its kind and can be consulted for further extensive studies.
+The link between designing geological realizations and the implementation of the aPCE method is depicted in Figure \ref{fig:encl}. The sensitivity analysis and risk assessment procedure must start from the ’aPCE’ box in Figure \ref{fig:encl}. The collocation points from the given geological uncertainty are first found, and then, based on those collocation points, we design the geological realizations. However, due to the availability of a large set of SAIGUP realizations generated before this study, our starting point was from the ’Geological Realization’ box in Figure \ref{fig:encl}. This change resulted in assuming a given geological uncertainty knowledge that suits the SAIGUP geological design. Nevertheless, we practice the procedure in a geological modeling and flow analysis scope that is novel and can be consulted for further extensive studies.
