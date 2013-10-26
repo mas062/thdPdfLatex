@@ -17,8 +17,7 @@ II:
 	bibtex thesis-II.aux
 	pdflatex thesis-II.tex
 	pdflatex thesis-II.tex
-	
-	
+
 cont:
 	#latexmk -pvc -view=dvi thesis.tex
 #	latexmk -pdfdvi -pvc -view=pdf thesis.tex

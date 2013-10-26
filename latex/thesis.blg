@@ -12,45 +12,45 @@ A level-1 auxiliary file: appendixA.aux
 The style file: acm.bst
 Database file #1: thesis.bib
 Warning--empty journal in iaeScenario
-You've used 74 entries,
+You've used 72 entries,
             2293 wiz_defined-function locations,
-            975 strings with 17856 characters,
-and the built_in function-call counts, 23539 in all, are:
-= -- 2187
-> -- 1158
+            968 strings with 17574 characters,
+and the built_in function-call counts, 22899 in all, are:
+= -- 2129
+> -- 1119
 < -- 0
-+ -- 493
-- -- 404
-* -- 1890
-:= -- 3862
-add.period$ -- 221
-call.type$ -- 74
-change.case$ -- 412
++ -- 477
+- -- 390
+* -- 1845
+:= -- 3755
+add.period$ -- 215
+call.type$ -- 72
+change.case$ -- 399
 chr.to.int$ -- 0
-cite$ -- 75
-duplicate$ -- 823
-empty$ -- 1995
-format.name$ -- 404
-if$ -- 4805
+cite$ -- 73
+duplicate$ -- 804
+empty$ -- 1944
+format.name$ -- 390
+if$ -- 4675
 int.to.chr$ -- 0
-int.to.str$ -- 74
-missing$ -- 77
-newline$ -- 372
-num.names$ -- 148
-pop$ -- 487
+int.to.str$ -- 72
+missing$ -- 76
+newline$ -- 362
+num.names$ -- 144
+pop$ -- 470
 preamble$ -- 1
-purify$ -- 346
+purify$ -- 335
 quote$ -- 0
-skip$ -- 415
+skip$ -- 401
 stack$ -- 0
-substring$ -- 1365
-swap$ -- 147
+substring$ -- 1339
+swap$ -- 143
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 280
+type$ -- 272
 warning$ -- 1
-while$ -- 225
-width$ -- 76
-write$ -- 722
+while$ -- 219
+width$ -- 74
+write$ -- 703
 (There was 1 warning)
