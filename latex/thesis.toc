@@ -34,9 +34,9 @@
 \contentsline {section}{\numberline {2.2}Summary of papers}{54}{section.2.2}
 \contentsline {chapter}{\numberline {3}Scientific results}{59}{chapter.3}
 \contentsline {section}{\numberline {3.1}Impact of geological heterogeneity on early-stage CO$_2$\ plume migration: CO$_2$\ spatial distribution sensitivity study}{61}{section.3.1}
-\contentsline {section}{\numberline {3.2}Geological storage of CO$_2$: heterogeneity impact on pressure behavior}{77}{section.3.2}
-\contentsline {section}{\numberline {3.3}Geological storage of CO$_2$: Application, feasibility and efficiency of global sensitivity analysis and risk assessment using the arbitrary polynomial chaos.}{97}{section.3.3}
-\contentsline {chapter}{\numberline {A}Additional supporting material}{115}{appendix.A}
-\contentsline {section}{\numberline {A.1}Impact of geological heterogeneity on early-stage $\unhbox \voidb@x \hbox {CO}_2$ plume migration}{117}{section.A.1}
-\contentsline {section}{\numberline {A.2}Impact of geological heterogeneity on early-stage $\unhbox \voidb@x \hbox {CO}_2$ plume migration: sensitivity study}{127}{section.A.2}
-\contentsline {section}{\numberline {A.3}Field-case simulation of CO$_2$\ plume migration using vertical-equilibrium models.}{143}{section.A.3}
+\contentsline {section}{\numberline {3.2}Geological storage of CO$_2$: heterogeneity impact on pressure behavior}{87}{section.3.2}
+\contentsline {section}{\numberline {3.3}Geological storage of CO$_2$: Application, feasibility and efficiency of global sensitivity analysis and risk assessment using the arbitrary polynomial chaos.}{113}{section.3.3}
+\contentsline {chapter}{\numberline {A}Additional supporting material}{131}{appendix.A}
+\contentsline {section}{\numberline {A.1}Impact of geological heterogeneity on early-stage $\unhbox \voidb@x \hbox {CO}_2$ plume migration}{133}{section.A.1}
+\contentsline {section}{\numberline {A.2}Impact of geological heterogeneity on early-stage $\unhbox \voidb@x \hbox {CO}_2$ plume migration: sensitivity study}{143}{section.A.2}
+\contentsline {section}{\numberline {A.3}Field-case simulation of CO$_2$\ plume migration using vertical-equilibrium models.}{159}{section.A.3}
