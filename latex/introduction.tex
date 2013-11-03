@@ -323,7 +323,7 @@ oilfield recovery estimates
 Sedimentological variability is modeled in small and large scales and combined
 to provide realistic variations of reservoir heterogeneities.  All models are considered in a progradational sedimentary environment. A regular grid is used for all of the realizations in two gridding resolutions, fine and coarse, and the total bulk volume is the same in all cases. Each geological realization contains about $1.5$ million cells in the fine model. Figure \ref{fig:finAct} shows the fine grid model for a selected realization with medium level of heterogeneity. A major fault in the model breaks the structure and makes large vertical depth difference in the two parts of the model (from about $1500$ m to $3000$ m).  Thickness of the model is much smaller than these depth differences. To make it easier to see the property variations on the grid in the vertical direction, we map the properties on a flat uniform geometry (Figure \ref{fig:finUnf}).
 
-Figure \ref{fig:facies} shows the spatial distribution of the six modelled facies in the selected realization, and Figure \ref{fig:kxh} shows the histogram of lateral transmissibility within each facies and the total model in the logarithmic scale. Each facies is modeled separately in some levels of upscaling starting from the lamina scales, before populating on the fine grid. Flow based upscaling techniques are used, and the suitability of the methods depends on the balance of
+Figure \ref{fig:facies} shows the spatial distribution of the six modelled facies in the selected realization, and Figure \ref{fig:kxh} shows the histogram of lateral transmissibility within each facies in the logarithmic scale. Each facies is modeled separately in some levels of upscaling starting from the lamina scales, before populating on the fine grid. Flow based upscaling techniques are used, and the suitability of the methods depends on the balance of
 forces. When the medium is conductive due to high permeability, the viscous dominated steady state method is used. In the rocks with lower transmissibility where the capillary forces are dominant, the capillary equilibrium is assumed \cite{manzocchi2008sensitivity}.
 
 On the last step, the fine populated grid is mapped on to the coarse grid that is to be used for the flow solver. Since the grid size in the fine model is too expensive computationally for flow simulations, the lateral dimension is doubled in each cell while every four layers are lumped into one layer in the vertical direction. Figure \ref{fig:upsat} shows the top view of lateral transmissibility in logarithmic scale for four consecutive layers of a selected case, and their corresponding upscaled layer in the coarse grid. Table \ref{tab:grids} shows the grid specifications in the coarse and fine SAIGUP models.
@@ -582,7 +582,7 @@ function of fluid specific gravity and elevation in vertical direction.
 \begin{figure}[thb] 
   \centering{}
   \includegraphics[scale=0.3]{./figurer/BCPB}
-  \caption{Flow domain and boundaries.}
+  \caption{The flow problem is solved over domain $\Omega$ that is bounded by $\Gamma_i$. The injection well is modeled as source point $q$. Geological heterogeneities can be in the form of discontinuity $\gamma_i$.}
   \label{fig:prsDmn}
 \end{figure}
 
@@ -668,7 +668,7 @@ equations for two phases in the system, i.e., $\mbox{CO}_2$ and water.
 \begin{figure}
  \centering{}
  \includegraphics[width=0.35\linewidth]{./figurer/wettability}
- \caption{Wettability and interfacial tension in water-$\mbox{CO}_2$ system. Water is the wetting phase in this example.}
+ \caption{In a multiphase system, phases wet the medium with diffrent degrees of preference. Wettability is defined by the angle between two phases' interface and the solid surface ($\Theta$). The wetting phase makes an acute angle with the solid phase. Water is the wetting phase in this example.}
  \label{fig:wetting}
 \end{figure}
 
@@ -688,7 +688,7 @@ medium. For water-$\mbox{CO}_2$ system, normally water is the wetting phase.
 \begin{figure}
  \centering{}
  \includegraphics[width=0.35\linewidth]{./figurer/K2}
-  \caption{Multi-phase flow in the pore scale.}
+  \caption{The \coo\ (yellow parts) is the non-wetting phase and it flows through the water (blue parts) that wets the rock grains (brown parts) easier than \coo. The cross section of the medium is illustrated here. }
  \label{fig:mphf}
 \end{figure}
 
@@ -706,7 +706,7 @@ water saturation in the regions invaded by $\mbox{CO}_2$.
 \begin{figure} 
   \centering{}
   \includegraphics[width= 0.45 \linewidth]{./figurer/Kr}
-  \caption{Two-phase flow and relative permeability.}
+  \caption{Relative permeability is an indication of how easy it is for the two phases to flow together through the medium. Relative permeability depends on the wettability of phases and the reltive volumes occupied by each phase (phase saturation).}
   \label{fig:kr}
 \end{figure}
 
@@ -762,7 +762,7 @@ wetting phase pressure.
   \includegraphics[width= 0.45 \linewidth]{./figurer/Pc}
   \caption{Capillary pressure can be expressed as a function of wetting
 saturation. The plot is a typical curve of capillary pressure function with a
-maximum of $P_{c\mbox{max}}$}
+maximum of $P_{cmax}$.}
   \label{fig:pc}
 \end{figure}
 
@@ -801,14 +801,14 @@ and the phase saturation distribution over the medium can be found (Figure
 \begin{figure}
  \centering{}
  \includegraphics[width=0.35\linewidth]{./figurer/pipe}
- \caption{Capillary pressure distribution in the transition zone.}
+ \caption{Capillary force is caused by the interaction of fluid phases with the pore walls. Capillary pressure is calculated from the force balance at the interface and depends on the curvature of the interface and the pore radius.}
  \label{fig:PC}
 \end{figure}
 
 \begin{figure}[thb]
  \centering{}
  \includegraphics[width=0.35\linewidth]{./figurer/pch}
- \caption{Saturation distribution in the capillary transition zone.}
+ \caption{Water saturation ($S_w$) distribution in the capillary transition zone. In the hydrostatic equilibrium condition, phases exist at different depths with saturations that depend on the balance between capillary and gravity forces.}
  \label{fig:TZ}
 \end{figure}
 
@@ -888,14 +888,14 @@ equations.
 A popular approach for formulating the set of flow equations is the fractional
 flow method \cite{binning1999practical}. In this method the total multiphase
 flow problem is treated as a
-single-phase flux of multi-phase mixture. Therefore, individual phases are
+single-phase flux of multiphase mixture. Therefore, individual phases are
 described as a function of total flow. This leads to separate equations for
 pressure and saturation. 
  
 Pressure is defined for the total flow either globally or pseudo-globally and relates to the phase pressure and saturation with auxiliary
 equations. The fractional flow approach keeps the governing equations in the
 form of single flow equations, and numerical schemes for single-phase flow can
-be revised into efficient schemes for multi-phase problems.
+be revised into efficient schemes for multiphase problems.
  
 Pressure and saturation equations have different mathematical nature: pressure
 has a diffusive character of an elliptical nature, which is numerically more
@@ -1175,16 +1175,16 @@ P_\alpha-\rho_\alpha g z \right]
 component $\mbox{c}$ in phase $\alpha$ \cite{elenius2010co2}. 
 
 \begin{figure}[tbp!]%
-  \hspace{0.2cm}
+  \hspace{0.0cm}
+  \center
   \subfloat
   [Injection and early migration flow
-regime.]{\label{fig:injF}\includegraphics[width= 0.41
-\linewidth]{./figurer/forceBalance_injection}} 
-  \hspace{0.1cm}
+regime.]{\label{fig:injF}\includegraphics[width= 0.8
+\linewidth]{./figurer/forceBalance_injection}}\\
   \subfloat
-  [Long-term migration flow regime.]{\label{fig:migF}\includegraphics[width= 0.5
+  [Long-term migration flow regime.]{\label{fig:migF}\includegraphics[width= 0.8
 \linewidth]{./figurer/forceBalance_longMigration}}
-  \caption{Flow regimes in geological $\mbox{CO}_2$ storage.}
+  \caption{Flow regimes in geological $\mbox{CO}_2$ storage; (a) During injection, the main physical processes are the flow advection due to the imposed pressure by the injection, the gravity segregation due to the phase density differences, and the dissolution of \coo\ into water. (b) During the long-term \coo\ migration, the main physical processes in the medium are the gravity segregation, the molecular diffusion, the \coo\ dissolution in water, the water capillary imibibition, and the convection mixing due to gravity instabilities.}
  \label{fig:Frc}
 \end{figure}
 
@@ -1384,7 +1384,7 @@ neighboring cell $b$ is as follows:
 \begin{figure}
  \centering{}
  \includegraphics[width=0.4\linewidth]{./figurer/trans}
- \caption{Transmissibility calculation for two cells $\mbox{a}$ and $\mbox{b}$.}
+ \caption{Transmissibility between two cells $\mbox{a}$ and $\mbox{b}$ depends on the interface area perpendicular to the flow ($A_{ab}$) and transmissibilities between the center and the cell side within each cell ($T_a$ and $T_b$).}
  \label{fig:tran}
 \end{figure}
 
@@ -1436,7 +1436,7 @@ medium.
 \begin{figure}
  \centering{}
  \includegraphics[width=0.4\linewidth]{./figurer/WModel}
- \caption{Well modeling inside a simulation cell.}
+ \caption{Injection operation causes pressure increase near the well-bore. The red color in the figure demonstrates the regions with pressure build-up. The well-bore pressure is calculated by a relation that models the pressure distribution around the well. The black curve in the figure shows a schematic incline of the pressure near the injector.}
  \label{fig:WM}
 \end{figure}
 
@@ -1529,9 +1529,8 @@ the medium, the higher will be the risk of leakage.
 
 \begin{figure}
  \centering{}
- \includegraphics[width=0.6\linewidth]{./figurer/boundaries.pdf}
- \caption{Top, bottom, and upper side boundaries are closed and the rest
-are open to the flow.}
+ \includegraphics[width=0.8\linewidth]{./figurer/boundaries.pdf}
+ \caption{In the models used for flow simulation, the top, bottom, and upper side boundaries are closed and the rest are open to the flow. Arrows point to the boundaries and their color indicates if the boundary is open (green) or closed (red). Colors on the grid show the depth of different locations.}
  \label{fig:BDRY}
 \end{figure}
 
@@ -1556,7 +1555,7 @@ pressure on the boundary of the model.
   \centering
   \includegraphics[width=0.65 \linewidth]{./figurer/bkw} 
   %
-  \caption{External pressure drive.}
+  \caption{The aquifer can be connected to neighboring aquifer systems and the flow from those aquifers (red arrows in the plot) is modeled by imposing external pressure on the open sides of the model. The dotted box in the figure schematically indicates a domain considered for study. Aquifer layers outside the frame are considered external. The yellow color demonstrates the injected \coo\ in the aquifer.}
   \label{fig:bkw}
 %
 \end{figure}
@@ -1594,7 +1593,7 @@ increases the residual trapped CO$_2$.
   \centering
   \includegraphics[width=0.65 \linewidth]{./figurer/MobRes} 
   %
-  \caption{Mobile and residual CO$_2$ volume.}
+  \caption{Mobile and residual CO$_2$ volumes; the injected \coo\ plume travels upward within the geological formation and leaves behind a volume of residual \coo\ that is trapped due to capillarity.}
   \label{fig:MobRes}
 %
 \end{figure}
@@ -1687,9 +1686,9 @@ Results are discussed by comparing all cases in plots. However, the conclusions 
 \hline
 Case & Fault&Lobosity&Barrier&Aggradation Angle&Progradation Direction\\
 \hline
-A&unfaulted&medium&medium&medium&down-dip\\
+A&unfaulted&one lobe&$50\%$&$45^{\circ}$&down-dip\\
 \hline
-B&unfaulted&high&medium&low&up-dip\\
+B&unfaulted&two lobe&$50\%$&$10^{\circ}$&up-dip\\
 \hline
 \end{tabular}
 \label{tab:AaB}
@@ -1699,7 +1698,7 @@ B&unfaulted&high&medium&low&up-dip\\
 \begin{figure}
 \begin{tabular}{cc}
 \includegraphics[width=0.45\textwidth]{./figurer/C02222_LogKz_pers}&
-\includegraphics[width=0.45\textwidth]{./figurer/C03211_LogKz_pers} \\ \hline  
+\includegraphics[width=0.45\textwidth]{./figurer/C03211_LogKz_pers} \\ 
 (a) Perspective view of model A&(b) Perspective view of model B\\
 \includegraphics[width=0.45\textwidth]{./figurer/C02222_LogKz_slcx}&
 \includegraphics[width=0.45\textwidth]{./figurer/C03211_LogKz_slcx}

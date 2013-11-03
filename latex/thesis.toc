@@ -13,30 +13,30 @@
 \contentsline {section}{\numberline {1.6}Flow equations}{17}{section.1.6}
 \contentsline {subsection}{\numberline {1.6.1}Single phase flow}{17}{subsection.1.6.1}
 \contentsline {subsection}{\numberline {1.6.2}Two-phase flow}{19}{subsection.1.6.2}
-\contentsline {section}{\numberline {1.7}Flow regimes}{23}{section.1.7}
+\contentsline {section}{\numberline {1.7}Flow regimes}{24}{section.1.7}
 \contentsline {subsection}{\numberline {1.7.1}Injection and early migration}{24}{subsection.1.7.1}
 \contentsline {subsection}{\numberline {1.7.2}Long term migration}{26}{subsection.1.7.2}
 \contentsline {section}{\numberline {1.8}Flow modeling}{27}{section.1.8}
 \contentsline {subsection}{\numberline {1.8.1}Numerical scheme}{27}{subsection.1.8.1}
-\contentsline {subsection}{\numberline {1.8.2}Flow scenarios}{29}{subsection.1.8.2}
-\contentsline {subsection}{\numberline {1.8.3}Flow responses}{31}{subsection.1.8.3}
-\contentsline {subsection}{\numberline {1.8.4}ECLIPSE input file}{33}{subsection.1.8.4}
-\contentsline {section}{\numberline {1.9}Sensitivity and risk analysis}{43}{section.1.9}
-\contentsline {subsection}{\numberline {1.9.1}Stochastic analysis}{44}{subsection.1.9.1}
-\contentsline {subsection}{\numberline {1.9.2}Arbitrary polynomial chaos expansion}{44}{subsection.1.9.2}
-\contentsline {subsection}{\numberline {1.9.3}Sensitivity analysis}{46}{subsection.1.9.3}
-\contentsline {subsection}{\numberline {1.9.4}Risk analysis}{49}{subsection.1.9.4}
-\contentsline {section}{\numberline {1.10}General summary}{49}{section.1.10}
-\contentsline {subsection}{\numberline {1.10.1}Implementation of the work-flow}{50}{subsection.1.10.1}
-\contentsline {subsection}{\numberline {1.10.2}Generic application of results}{50}{subsection.1.10.2}
-\contentsline {chapter}{\numberline {2}Introduction to the papers}{53}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction}{54}{section.2.1}
-\contentsline {section}{\numberline {2.2}Summary of papers}{54}{section.2.2}
-\contentsline {chapter}{\numberline {3}Scientific results}{59}{chapter.3}
-\contentsline {section}{\numberline {3.1}Impact of geological heterogeneity on early-stage CO$_2$\ plume migration: CO$_2$\ spatial distribution sensitivity study}{61}{section.3.1}
-\contentsline {section}{\numberline {3.2}Geological storage of CO$_2$: heterogeneity impact on pressure behavior}{87}{section.3.2}
-\contentsline {section}{\numberline {3.3}Geological storage of CO$_2$: Application, feasibility and efficiency of global sensitivity analysis and risk assessment using the arbitrary polynomial chaos.}{113}{section.3.3}
-\contentsline {chapter}{\numberline {A}Additional supporting material}{131}{appendix.A}
-\contentsline {section}{\numberline {A.1}Impact of geological heterogeneity on early-stage $\unhbox \voidb@x \hbox {CO}_2$ plume migration}{133}{section.A.1}
-\contentsline {section}{\numberline {A.2}Impact of geological heterogeneity on early-stage $\unhbox \voidb@x \hbox {CO}_2$ plume migration: sensitivity study}{143}{section.A.2}
-\contentsline {section}{\numberline {A.3}Field-case simulation of CO$_2$\ plume migration using vertical-equilibrium models.}{159}{section.A.3}
+\contentsline {subsection}{\numberline {1.8.2}Flow scenarios}{30}{subsection.1.8.2}
+\contentsline {subsection}{\numberline {1.8.3}Flow responses}{32}{subsection.1.8.3}
+\contentsline {subsection}{\numberline {1.8.4}ECLIPSE input file}{34}{subsection.1.8.4}
+\contentsline {section}{\numberline {1.9}Sensitivity and risk analysis}{45}{section.1.9}
+\contentsline {subsection}{\numberline {1.9.1}Stochastic analysis}{45}{subsection.1.9.1}
+\contentsline {subsection}{\numberline {1.9.2}Arbitrary polynomial chaos expansion}{45}{subsection.1.9.2}
+\contentsline {subsection}{\numberline {1.9.3}Sensitivity analysis}{48}{subsection.1.9.3}
+\contentsline {subsection}{\numberline {1.9.4}Risk analysis}{50}{subsection.1.9.4}
+\contentsline {section}{\numberline {1.10}General summary}{50}{section.1.10}
+\contentsline {subsection}{\numberline {1.10.1}Implementation of the work-flow}{51}{subsection.1.10.1}
+\contentsline {subsection}{\numberline {1.10.2}Generic application of results}{51}{subsection.1.10.2}
+\contentsline {chapter}{\numberline {2}Introduction to the papers}{55}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{56}{section.2.1}
+\contentsline {section}{\numberline {2.2}Summary of papers}{56}{section.2.2}
+\contentsline {chapter}{\numberline {3}Scientific results}{61}{chapter.3}
+\contentsline {section}{\numberline {3.1}Impact of geological heterogeneity on early-stage CO$_2$\ plume migration: CO$_2$\ spatial distribution sensitivity study}{63}{section.3.1}
+\contentsline {section}{\numberline {3.2}Geological storage of CO$_2$: heterogeneity impact on pressure behavior}{89}{section.3.2}
+\contentsline {section}{\numberline {3.3}Geological storage of CO$_2$: Application, feasibility and efficiency of global sensitivity analysis and risk assessment using the arbitrary polynomial chaos.}{115}{section.3.3}
+\contentsline {chapter}{\numberline {A}Additional supporting material}{133}{appendix.A}
+\contentsline {section}{\numberline {A.1}Impact of geological heterogeneity on early-stage $\unhbox \voidb@x \hbox {CO}_2$ plume migration}{135}{section.A.1}
+\contentsline {section}{\numberline {A.2}Impact of geological heterogeneity on early-stage $\unhbox \voidb@x \hbox {CO}_2$ plume migration: sensitivity study}{145}{section.A.2}
+\contentsline {section}{\numberline {A.3}Field-case simulation of CO$_2$\ plume migration using vertical-equilibrium models.}{161}{section.A.3}
