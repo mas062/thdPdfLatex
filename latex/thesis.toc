@@ -9,9 +9,9 @@
 \contentsline {section}{\numberline {1.4}Uncertainty Sources}{6}{section.1.4}
 \contentsline {section}{\numberline {1.5}Geological modeling}{7}{section.1.5}
 \contentsline {subsection}{\numberline {1.5.1}Geological description}{7}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Geological parameters}{9}{subsection.1.5.2}
-\contentsline {section}{\numberline {1.6}Flow equations}{16}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}Single phase flow}{16}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.5.2}Geological parameters}{10}{subsection.1.5.2}
+\contentsline {section}{\numberline {1.6}Flow equations}{17}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Single phase flow}{17}{subsection.1.6.1}
 \contentsline {subsection}{\numberline {1.6.2}Two-phase flow}{19}{subsection.1.6.2}
 \contentsline {section}{\numberline {1.7}Flow regimes}{23}{section.1.7}
 \contentsline {subsection}{\numberline {1.7.1}Injection and early migration}{24}{subsection.1.7.1}

@@ -3,31 +3,31 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Green-house gases act like a blanket trapping part of the heat received from the sun.\relax }}{3}{figure.caption.7}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces The injected CO$_2$\ in the aquifer (parts with yellow color in the figure) can be stored under the sealing geological structures (parts colored in brown).\relax }}{4}{figure.caption.8}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Modeling procedure diagram.\relax }}{5}{figure.caption.9}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Heterogeneities in fluvial and beach depositions. Arrow in Figure (b) shows that the deposition mass is less heterogeneous than the fluvial systems.\relax }}{8}{figure.caption.10}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Stratigraphic heterogeneity levels in lateral and vertical directions. Modified from \cite {manzocchi2008sensitivity}.\relax }}{11}{figure.caption.12}
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Unfaulted fine grid perspective view. Colors depict rock types, see Figures \ref {fig:finUnf} and \ref {fig:facies}.\relax }}{11}{figure.caption.13}
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Perspective view of the rock type variations for a selected case mapped on a uniform grid.\relax }}{12}{figure.caption.14}
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Six different rock types used in modeling the stratigraphic heterogeneities. Compare to Figure \ref {fig:finUnf}\relax }}{12}{figure.caption.15}
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Histogram of lateral transmissibility for different facies and the entire fine model for a selected case. Scales are logarithmic in units cP$.$m$^3$/day/bar.\relax }}{13}{figure.caption.16}
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Logarithmic of lateral transmissibility plotted for four layers in fine grid versus their representative layer in the coarse grid. Plots are top view and units are cP$.$m$^3$/day/bar.\relax }}{14}{figure.caption.17}
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Top view illustration of faults used in the faulted grids. The fault plotted in red corresponds to the upper boundary of the model on the crest.\relax }}{14}{figure.caption.18}
-\contentsline {figure}{\numberline {1.12}{\ignorespaces Lobosity levels are defined based on the shoreline shape, which is caused by the interplay between fluvial and wave forces.\relax }}{15}{figure.caption.19}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Lob1.}}}{15}{subfigure.12.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Lob2.}}}{15}{subfigure.12.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Lob3.}}}{15}{subfigure.12.3}
-\contentsline {figure}{\numberline {1.13}{\ignorespaces Barrier levels caused by periodic floods.\relax }}{16}{figure.caption.20}
-\contentsline {figure}{\numberline {1.14}{\ignorespaces Aggradation angle levels.\relax }}{16}{figure.caption.21}
-\contentsline {figure}{\numberline {1.15}{\ignorespaces Progradation levels.\relax }}{17}{figure.caption.22}
-\contentsline {figure}{\numberline {1.16}{\ignorespaces Flow domain and boundaries.\relax }}{17}{figure.caption.23}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Green-house gases act like a blanket trapping part of the heat received from the sun. The low frequency radiations from the earth surface can not pass through the layer of green-house gas on the upper part of the atmosphere (shown by a red line in the figure).\relax }}{3}{figure.caption.7}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces The injected CO$_2$\ (the yellow part) in the aquifer (the dark blue part) can be stored under the sealing geological structures (the brown part).\relax }}{4}{figure.caption.8}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Modeling procedure diagram. The tasks are shown in yellow boxes and they fall in three main categories that are indicated by big cyan boxes. Arrows depict the flow of the procedure based on the sequence order of the tasks.\relax }}{5}{figure.caption.9}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Schematic plots of heterogeneities in fluvial and beach depositions. The top view is illustrated in Figure (a) and Figure (b) shows the side view. The arrow in Figure (b) shows that the deposition mass is less heterogeneous than the fluvial systems.\relax }}{8}{figure.caption.10}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Stratigraphic heterogeneity levels in lateral and vertical directions. Arrows direction indicates the increase in the heterogeneity level. Modified from \cite {manzocchi2008sensitivity}.\relax }}{12}{figure.caption.12}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Fine grid perspective view. Colors depict rock types; see Figures \ref {fig:finUnf} and \ref {fig:facies}. The geological structure is divided in two parts due to a faulting process. The eleveated part is considered in the study.\relax }}{12}{figure.caption.13}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Perspective view of the rock type variations for a selected case mapped on a uniform grid.\relax }}{13}{figure.caption.14}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Six different rock types used in modeling the stratigraphic heterogeneities. Compare with Figure \ref {fig:finUnf}\relax }}{13}{figure.caption.15}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Histogram of lateral transmissibility for different facies in a selected case. Scales are logarithmic in units cP$.$m$^3$/day/bar. Only the x-axis is logarithmic.\relax }}{14}{figure.caption.16}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Logarithmic of lateral transmissibility plotted for four layers in fine grid versus their representative layer in the coarse grid. The top view is plotted in all figures and units are cP$.$m$^3$/day/bar.\relax }}{15}{figure.caption.17}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Top view illustration of faults used in the faulted grids. The fault plotted in red divides the medium in two parts (compare with Figure \ref {fig:finAct}) and only the part below the red line in the top view is considered in the study.\relax }}{15}{figure.caption.18}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Lobosity levels are defined based on the shoreline shape, which is caused by the interplay between fluvial and wave forces. From Figure (a) to (c) the system changes from wave to fluvial dominated.\relax }}{16}{figure.caption.19}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Flat shoreface.}}}{16}{subfigure.12.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {One lobe shoreface.}}}{16}{subfigure.12.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Two lobe shoreface.}}}{16}{subfigure.12.3}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Periodic floods and flactuations in fluvial system can result in shale draped surfaces. These surfaces act as barriers to flow in both vertical and horizontal directions. The barries are modeled in the SAIGUP study by modifiying the transmissibility of cells across the barrier (red surface in the plot). Barrier level variations are specified by areal coverage of zero transmissibility multipliers (indicated by blue color).\relax }}{16}{figure.caption.20}
+\contentsline {figure}{\numberline {1.14}{\ignorespaces The change in the fluvial flux results in a shift in the depositional rock types from the river to the sea. The shift varies from very extensive in amount resulting in near horizontal layers of facies stocked on top of each other (low aggradation angles) to slight shifts resulting in near vertical rock type patterns (high aggradation angles).\relax }}{17}{figure.caption.21}
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Techtonic activies in shallow marine systems can result in various orientations of river to sea depostions that is considered as progradation direction in the SAIGUP study.\relax }}{17}{figure.caption.22}
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Flow domain and boundaries.\relax }}{18}{figure.caption.23}
 \contentsline {figure}{\numberline {1.17}{\ignorespaces Permeability is an indication of how easy it is for the fluids to flow trough the medium.\relax }}{18}{figure.caption.24}
 \contentsline {figure}{\numberline {1.18}{\ignorespaces Wettability and interfacial tension in water-$\unhbox \voidb@x \hbox {CO}_2$ system. Water is the wetting phase in this example.\relax }}{19}{figure.caption.25}
-\contentsline {figure}{\numberline {1.19}{\ignorespaces Multi-phase flow in the pore scale.\relax }}{19}{figure.caption.26}
+\contentsline {figure}{\numberline {1.19}{\ignorespaces Multi-phase flow in the pore scale.\relax }}{20}{figure.caption.26}
 \contentsline {figure}{\numberline {1.20}{\ignorespaces Two-phase flow and relative permeability.\relax }}{20}{figure.caption.27}
 \contentsline {figure}{\numberline {1.21}{\ignorespaces Capillary pressure can be expressed as a function of wetting saturation. The plot is a typical curve of capillary pressure function with a maximum of $P_{c\unhbox \voidb@x \hbox {max}}$\relax }}{21}{figure.caption.28}
-\contentsline {figure}{\numberline {1.22}{\ignorespaces Capillary pressure distribution in the transition zone.\relax }}{21}{figure.caption.29}
+\contentsline {figure}{\numberline {1.22}{\ignorespaces Capillary pressure distribution in the transition zone.\relax }}{22}{figure.caption.29}
 \contentsline {figure}{\numberline {1.23}{\ignorespaces Saturation distribution in the capillary transition zone.\relax }}{22}{figure.caption.30}
 \contentsline {figure}{\numberline {1.24}{\ignorespaces Flow regimes in geological $\unhbox \voidb@x \hbox {CO}_2$ storage.\relax }}{27}{figure.caption.33}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Injection and early migration flow regime.}}}{27}{subfigure.24.1}
