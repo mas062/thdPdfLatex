@@ -551,14 +551,14 @@ phase flowing in the domain:
 \end{equation}
 
 \begin{equation}
-  \int_{\Omega}\frac{\partial}{\partial t}(\phi\rho)d\tau+\int_{\Gamma}(\rho v
-\cdot n)d\sigma=\int_{\Omega}qd\tau
+  \frac{d}{dt}\int_{\Omega}\phi\rho d\tau+\int_{\Gamma}\rho v
+\cdot n d\sigma=\int_{\Omega}qd\tau
   \label{eq:main_o}
 \end{equation}
 % \begin{tabular}{cc}
 
 In Equation \ref{eq:main_o}, $\phi$ is the rock porosity, $\rho$ is the fluid
-density, $v$ is the flow velocity, and $n$ is the normal vector to the boundary.
+density, $v$ is the Darcy flux, and $n$ is the normal vector to the boundary.
 The term $q$ denotes the mass source or sink in the system. Integrations are
 taken over arbitrary domain $\Omega$ with boundary $\Gamma$ (Figure
 \ref{fig:prsDmn}). Flow velocity is considered at the representative elementary
@@ -567,17 +567,19 @@ volume (REV) scale for porous media \cite{bear1988dynamics}.
 The resistance of a porous medium against flow results in a velocity that can be
 calculated from pressure and gravity gradient and fluid properties in the
 medium.
-This is governed by Darcy's law for single phase flow:
+This is governed by Darcy's law for incompressible single phase flow:
  
 \begin{equation}
-  v=-\frac{K}{\mu}\cdot (\nabla{P}+\nabla{D}).
+  v=-\frac{K\rho g}{\mu}\cdot (\frac{\nabla{P}}{\rho g}+\nabla{Z}).
   \label{eq:darcy}
 \end{equation} In Equation \ref{eq:darcy}, $K$ is the permeability of the
-medium.
-Permeability is a function of pore size distribution and connectivity and in the
-macro scale, it is a measure of medium conductivity when a fluid is flowing
-through the medium ( Figure \ref{fig:snglK}). $D$ is the gravity term that is a
-function of fluid specific gravity and elevation in vertical direction. 
+medium. $Z$ is the elevation in vertical direction and $g$ is the gravitational acceleration. Here, we assume that the third coordinate axis aligns with the vertical direction; otherwise the equation should be modified to honor the gravitational acceleration vector projection on the coordinate axes (see \cite{celia2011geological}). Permeability is a function of pore size distribution and connectivity and in the macro scale, it is a measure of medium conductivity when a fluid is flowing
+through the medium ( Figure \ref{fig:snglK}). In general, density varies with pressure and Darcy equation takes the following form:
+
+\begin{equation}
+  v=-\frac{K}{\mu}\cdot (\nabla{P}+\rho g\nabla{Z}).
+  \label{eq:darcy_c}
+\end{equation} 
 
 \begin{figure}[thb] 
   \centering{}
@@ -597,24 +599,24 @@ trough the medium.}
 Substituting velocity term from Equation \ref{eq:darcy} into Equation
 \ref{eq:main_o} gives:
 \begin{equation}
-  \int_{\Omega}\frac{\partial}{\partial t}(\phi\rho)d\tau-\int_{\Gamma}(\rho
-(\frac{K}{\mu}\cdot (\nabla{P}+\nabla{D})) \cdot n)d\sigma=\int_{\Omega}qd\tau.
+  \frac{d}{dt}\int_{\Omega}\phi\rho d\tau-\int_{\Gamma}\rho
+\left(\frac{K}{\mu}\cdot (\nabla{P}+\nabla{D})\right) \cdot n d\sigma=\int_{\Omega}qd\tau.
   \label{eq:main}
 \end{equation} As a primary unknown in Equation \ref{eq:main}, the pressure depends upon the boundary conditions (as the second term in the left hand side of
 Equation \ref{eq:main} is an integration over the boundaries of the domain). Also, any geological discontinuities in the medium
 ($\gamma_i$ in Figure \ref{fig:prsDmn}) appears in Equation \ref{eq:main} through the $K$ tensor and can influence pressure behavior in the domain.
 
-The second term in Equation \ref{eq:main} can be converted into an integration
+The second term in Equation \ref{eq:main_o} can be converted into an integration
 over domain $\Omega$, using divergence theorem resulting in the following:
 \begin{equation}
-  \int_{\Omega}[\frac{\partial}{\partial t}(\phi\rho)+\nabla \cdot (\rho
+  \int_{\Omega}[\frac{d}{d t}(\phi\rho)+\nabla \cdot (\rho
 v)]d\tau=\int_{\Omega}qd\tau.
   \label{eq:div}
 \end{equation} Equation \ref{eq:div} is valid for arbitrary domain $\Omega$,
 hence the equality is valid for the integrands \textit{almost everywhere} in
 domain $\Omega$ in the \textit{general} situation:
 \begin{equation}
- \frac{\partial}{\partial t}(\phi\rho)+\nabla \cdot (\rho v)=q.
+ \frac{d}{d t}(\phi\rho)+\nabla \cdot (\rho v)=q.
  \label{eq:diff}
 \end{equation}
 Fluid and rock change in volume with pressure variations. These dependencies are
@@ -633,12 +635,7 @@ combination of rock and fluid compressibilities:
   \label{eq:Cf}
 \end{equation} In Equation \ref{eq:Cp}, $C_{rock}$ can be assumed constant in
 moderate pressure changes depicting a linear relation between pressure and
-porosity. Also, Equation \ref{eq:Cf} can be expanded resulting in the following
-\cite{muskatflow}:
-\begin{equation}
- \rho=\rho_0 (\frac{P}{P_0})^m exp[C_{fluid}(P-P_0)].
- \label{eq:Cexp}
-\end{equation} Assuming slight compression gives \cite{sahimi2011flow}:
+porosity. Assuming slight compression gives \cite{sahimi2011flow}:
 \begin{equation}
  \rho \simeq \rho_0 + C_{fluid} \rho_0 (P-P_0).
  \label{eq:Cslg}
@@ -1849,7 +1846,7 @@ parameter levels used in that case. Figure~\ref{fig:codes} shows some of the cod
   \includegraphics[width=0.65 \linewidth]{./figurer/codes} 
   %
   \caption{Marker codes used to plot the simulation results of all cases
-together.}
+together. Aggradation is shown by different colors. Faults are shown by marker thickness; the thickest marker shows a case with close fault, medium thickness represents a case with open faults, and the thin markers indicate a case with no faults. All cases plotted in triples for the three degrees of faults. Therefor, plots contain 54 number of cases in the x-axis. The first 27 case numbers represent the up-dip progradation, and case numbers $28$ to $54$ have down-dip progradation.}
   \label{fig:codes}
 %
 \end{figure}
