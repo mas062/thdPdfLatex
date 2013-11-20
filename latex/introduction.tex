@@ -712,7 +712,7 @@ as shown in Figure \ref{fig:mphf}. If $\mbox{CO}_2$ saturation decreases in the
 medium, it reaches a critical level under which it can not make a continuous
 phase flowing through the pore-network. Tiny drops of $\mbox{CO}_2$ are trapped
 in the middle of the pore space and only very large pressure difference across
-the pore can move it out of the pore. This level of $\mbox{CO}_2$ saturation  is
+the pore can move them out of the pore. This level of $\mbox{CO}_2$ saturation  is
 called the residual saturation. Higher residual saturation is more interesting
 for the purpose of immobilizing more volumes of injected $\mbox{CO}_2$ in the
 aquifer, which reduces the risk of $\mbox{CO}_2$ leaking through any breakings
@@ -758,8 +758,7 @@ wetting phase pressure.
   \centering{}
   \includegraphics[width= 0.45 \linewidth]{./figurer/Pc}
   \caption{Capillary pressure can be expressed as a function of wetting
-saturation. The plot is a typical curve of capillary pressure function with a
-maximum of $P_{cmax}$.}
+saturation. The plot shows a typical Van Genuchten curve for capillary pressure. The scale in the vertical axis is only for demonstration. For application, see for example \cite{luckner1989consistent} and \cite{ippisch2006validity}.}
   \label{fig:pc}
 \end{figure}
 
@@ -820,13 +819,13 @@ saturation ($ S_{\alpha}$). Also the velocity is the phase velocity
 $v_{\alpha}$, and the source/sink term must be written for the phase mass rate
 $q_{\alpha}$.
 
-For phase $\alpha=\{water, \mbox{CO}_2\},$ we have:
+For phase $\alpha=\{w~\mbox{for water}, \mbox{CO}_2\},$ we have:
 \begin{equation}
-  \int_{\Omega}\frac{\partial}{\partial t}(\phi\rho_{\alpha}
-S_{\alpha})d\tau+\int_{\Gamma}(\rho_{\alpha} v_{\alpha} \cdot
-n)d\sigma=\int_{\Omega}qd\tau.
+  \frac{d}{dt}\int_{\Omega}\phi\rho_{\alpha}
+S_{\alpha}d\tau+\int_{\Gamma}\rho_{\alpha} v_{\alpha} \cdot
+n d\sigma=\int_{\Omega}qd\tau.
   \label{eq:2phs}
-\end{equation} Darcy equation for two phases $\alpha=\{water, \mbox{CO}_2\}$
+\end{equation} Darcy equation for two phases $\alpha=\{w~\mbox{for water}, \mbox{CO}_2\}$
 can be written in the following form: 
 \begin{equation}
   v_{\alpha}=-\frac{K_{e\alpha}}{\mu_{\alpha}}\cdot
@@ -845,9 +844,9 @@ gravity.
 
 
 Similar to Equation \ref{eq:diff}, differential form of mass balance equation
-for each of phases $\alpha=\{water,\mbox{CO}_2\}$ is as follows:
+for each of phases $\alpha=\{w~\mbox{for water},\mbox{CO}_2\}$ is as follows:
 \begin{equation}
- \frac{\partial}{\partial t}(\phi\rho_{\alpha}S_{\alpha})+\nabla \cdot
+ \frac{d}{dt}(\phi\rho_{\alpha}S_{\alpha})+\nabla \cdot
 (\rho_{\alpha} v_{\alpha})=q_{\alpha}.
  \label{eq:dif2p}
 \end{equation}
@@ -855,7 +854,7 @@ for each of phases $\alpha=\{water,\mbox{CO}_2\}$ is as follows:
 
  The phase saturations are related by the following equation:
 \begin{equation}
-  S_{water}+S_{co_2} = 1.
+  S_w+S_{co_2} = 1.
    \label{eq:sat}
 \end{equation} Fluid properties change by pressure and temperature. Density is
 mainly a function of pressure and viscosity depends upon temperature. These
@@ -984,27 +983,32 @@ evaluations\cite{rosado2007analysis,allen1986theoretical,alkan2010impact}.
 
 The flow equations can be normalized to a dimensionless version that is used in
 many studies discussing the capillary and gravity influence on the flow.
-Herein, we give the method reported in \cite{fayers1959effect}. If we assume incompressible flow in a one-dimensional domain $\Omega$
+Herein, we give the method reported in \cite{fayers1959effect}. If we assume incompressible flow (i.e., constant phase density) and medium (i.e., constant porosity) in a one-dimensional domain $\Omega$
 without any source/sink, Equation \ref{eq:dif2p} reduces to the following for
 the wetting phase:
 
  \begin{equation}
-  \phi \frac{\partial s_{w}}{\partial t}+ \frac {\partial v_w} {\partial x}=0,
+  \phi \frac{ds_{w}}{dt}+ \frac {dv_w} {dx}=0,
   \label{eq:2p1d}
  \end{equation} and Darcy equation for one
 dimension
 flow becomes:
  \begin{equation}
-  v_w=-K\frac{k_{rw}}{\mu_w}(\frac{\partial P_w}{\partial t} + \rho_w g z).
+  v_w=-K\frac{k_{rw}}{\mu_w}(\frac{dP_w}{dx} + \rho_w g z).
   \label{eq:D1d}
- \end{equation} Here, $z$ is the elevation and $g$ is the gravitational
+ \end{equation} Here, $x$ is the spatial direction in domain $\Omega$, $z$ is the vertical elevation and $g$ is the gravitational
 acceleration. The system is closed by Equations \ref{eq:sat} and \ref{eq:pcJump}
 . We can define the dimensionless variables as follows:
  \begin{equation}
   X^*=\frac{x}{L};~T^*=\frac{tv_t}{L\phi};~\mbox{ and }P^*_c=\frac{p_c}{\pi_c},
   \label{eq:var*}
- \end{equation} where $L$ is a length constant in the problem and $\pi_c$ is a
-capillary pressure normalizing constant. After reformulating Equation
+ \end{equation} where $L$ is a length constant in the problem, $v_t$ is the total flux, and $\pi_c$ is a
+capillary pressure normalizing constant. For incompressible fluids and a constant total flow rate, the total flux $v_t$ equals the summation of phase fluxes:
+\begin{equation}
+v_t=v_{w}+v_{nw}.
+\label{eq:totalFlux}
+\end{equation}
+ After reformulating Equation
 \ref{eq:2p1d}, fractional flow can be written in the following form:
  \begin{equation}
   f_w=G(S_w)+C(S_w)\frac{\partial S_w}{\partial X^*},
@@ -1018,32 +1022,44 @@ have:
   \label{eq:GrCont}
  \end{equation}
  \begin{equation}
-  C(S_w)=N_{nw}F_wk_{rnw}\frac{dP_{c}}{dS_w},
+  C(S_w)=N_{C}F_wk_{rnw}\frac{dP_{c}}{dS_w},
   \label{eq:PcCont}
  \end{equation} wherein: 
  \begin{equation}
-  F_w=(1+\frac{k_{rnw}}{\mu_{nw}}\frac{\mu_w}{k_{rw}})^{-1},
+  F_w=\frac{\lambda_{w}}{\lambda_{w}+\lambda_{nw}},
   \label{eq:Fn}
- \end{equation}
- \begin{equation}
-  N_c=\frac{k\pi_c}{\mu_{nw}Lv_t},
+  \end{equation}
+\begin{equation}
+  N_C=\frac{K\pi_c}{\mu_{nw}Lv_t},~
   \label{eq:Nc}
  \end{equation}
+ and 
  \begin{equation}
-  N_G=(k\frac{k(\rho_w-\rho_{nw})gz}{\mu_{nw}v_t}).
+  N_G=\frac{K(\rho_w-\rho_{nw})gz}{\mu_{nw}v_t}.
   \label{eq:Fn}
- \end{equation} Having these definitions, Equation \ref{eq:2p1d} reshapes into:
+ \end{equation} 
+ Here,
+  \begin{equation}
+   \lambda_{w}=\frac{k_{rw}}{\mu_{w}},
+   \label{eq:MobW}
+ \end{equation}
+ and 
  \begin{equation}
-  \frac{\partial S_w}{\partial T^*}+\frac{dG(S_w)}{dS_w}\frac{\partial
-S_w}{\partial X^*}+\frac{\partial}{\partial X^*}\left( C(S_w)\frac{\partial
-S_w}{\partial X^*}\right)=0.
+   \lambda_{nw}=\frac{k_{rnw}}{\mu_{nw}}.
+   \label{eq:MobnW}
+ \end{equation}
+ Having these definitions, Equation \ref{eq:2p1d} reshapes into:
+ \begin{equation}
+  \frac{dS_w}{d T^*}+\frac{dG(S_w)}{dS_w}\frac{d
+S_w}{d X^*}+\frac{d}{d X^*}\left( C(S_w)\frac{d
+S_w}{d X^*}\right)=0.
   \label{eq:2p1dN}
  \end{equation} Applying specific type of capillary pressure and relative
 permeability function may lead to simplified forms of Equation \ref{eq:2p1dN}
 with the possibility of having an analytical
 solution \cite{yortsos1983analytical}. 
 
-Some important conclusions in the literature from sensitivity studies on
+Some important conclusions in the literature \cite{fayers1959effect,dong1999effect,rosado2007analysis,bentsen1993effect,yortsos1983analytical} from sensitivity studies on
 capillary, gravity and viscous forces are summarized here and inferred for
 $\mbox{CO}_2$ injection application:
 
@@ -1143,7 +1159,7 @@ safety. This time depends on the Rayleigh number in the medium:
  Ra = \frac{Kg\Delta \rho H}{D_c \phi \mu}.
  \label{Ra}
 \end{equation} Here, $\Delta \rho$ is the density difference between the water and
-$\mbox{CO}_2$ phases and $D_c$ is the diffusion coefficient of $\mbox{CO}_2$
+$\mbox{CO}_2$ phases, $H$ is the formation thickness, and $D_c$ is the molecular diffusion coefficient of $\mbox{CO}_2$
 into water phase. The higher density sitting on top of lower density makes an
 unstable system and the medium must have a minimum Rayleigh number to
 have a growing instability for a small perturbation in the medium.
@@ -1158,7 +1174,7 @@ speed up the process up to five times \cite{eleniuseffects}.
 The flow equations for convective mixing are a set of mass and momentum balances for component $c=\{\mbox{Water},\mbox{CO}_2\}$ within phase
 $\alpha=\{\mbox{Wetting},\mbox{Non-Wetting}\}$:
 \begin{equation}
-\frac{\partial}{\partial t} \underset{\alpha}{\sum}\phi S_\alpha \rho_\alpha
+\frac{d}{d t} \underset{\alpha}{\sum}\phi S_\alpha \rho_\alpha
 X_{\alpha}^c + \nabla \cdot \underset{\alpha}{\sum} \rho_\alpha X_{\alpha}^c
 v_\alpha = 0,   
 %  \phi\frac{\partial c}{\partial t}+ \left[\nabla c v_c -D_c \nabla c \right],
@@ -1169,9 +1185,9 @@ v_\alpha = 0,
 P_\alpha-\rho_\alpha g z \right]
  \label{eq:darcyCo2}
 \end{equation} where $X_{\alpha}^c$ is the mole fraction of
-component $\mbox{c}$ in phase $\alpha$ \cite{elenius2010co2}. 
+component $\mbox{c}$ in phase $\alpha$ and $v_{\alpha}$ is the flux of phase $\alpha$ \cite{elenius2010co2}. 
 
-\begin{figure}[tbp!]%
+\begin{figure}[tbp]%
   \hspace{0.0cm}
   \center
   \subfloat
@@ -1390,9 +1406,9 @@ Figure \ref{fig:tran}) is
 calculated by harmonic average of transmissibilities from the center of each
 cell to the center of the common face between the two cells:
 \begin{equation}
- T_{ab}=\frac{1}{\frac{1}{T_a}+\frac{1}{T_b}}.
+ T_{ab}=(\frac{1}{T_a}+\frac{1}{T_b})^{-1}.
  \label{eq:Thav}
-\end{equation} Each half transmissibility $T_{a}$ or $T_{b}$ is calculated by an inner product
+\end{equation} Each half transmissibility, for example $T_{a}$, is calculated by an inner product
 between the permeability of the cell $K_a $, the mutual area $A_{ab}$ between cells, and the distance from cell center to the mutual face center $d_a$:
 \begin{equation}
   T_a = K_a \cdot d_a \cdot A_{ab}.
@@ -1411,8 +1427,8 @@ formation volume factor of phase $\alpha$, which is defined as :
  B_\alpha=\frac{\mbox{Volume at surface condition}}{\mbox{Volume at formation
 condition}}=\frac{V_{s\alpha}}{V_{r\alpha}}.  
 \end{equation} This definition is connected to compressibility
-of the fluid, i.e., to changes in volume at the surface and at the geological formation condition, but it is defined in this way in the simulator to consider cases where a
-fluid, such as oil loses its dissolved gas while being produced at surface pressure.
+of the fluid, i.e., to changes in volume at the surface and at the geological formation condition. It is defined in this way in the simulator to consider cases where a
+fluid, such as oil, loses its dissolved gas while being produced at surface pressure.
 Since we assume no mass exchange between phases in our study, here the formation
 volume factor works like compressibility of the fluid. Formation volume factor
 is a function of pressure. Slight compressibility is considered for phases in our study, and phase density
@@ -1421,7 +1437,7 @@ is defined as a function of pressure:
  \rho_\alpha(P) =\frac{\rho_{0\alpha}}{B_\alpha(P)}.
  \label{eq:rho}
 \end{equation} Here, $\rho_{0\alpha}$ is the density of phase $\alpha$ at
-surface conditions.
+reference conditions.
 
 Wells are defined as sources or sinks in Equation \ref{eq:dif2p}. In reality, wells
 are a void space drilled in the porous medium and the flow into the
