@@ -2078,7 +2078,7 @@ inputs.
 \subsection{Arbitrary polynomial chaos expansion}
 
 Our research continues by employing stochastic response surface method that approximates the flow responses by projecting them on high-dimensional
-polynomials. In particular, we use arbitrary polynomial chaos (aPC) expansions, which consists of orthogonal polynomial bases that are constructed  according
+polynomials. In particular, we use arbitrary polynomial chaos (aPC) expansions, which consists of orthogonal polynomial basis that are constructed  according
 to the uncertainties in the input parameters. The approach is flexible with
 respect to the quantification of probabilities for uncertain parameters and can
 be applied in studies with limited knowledge of probabilities. 
@@ -2092,7 +2092,7 @@ Statistical accuracy of a Monte Carlo process is highly sensitive to the
 resolution of variational inputs. The response surface method assisting the
 Monte Carlo procedure must be constructed on a dense Cartesian grid, which will
 be computationally demanding. As a result, we explore an alternative method, which is a polynomial chaos expansion (PCE). This method only
-requires a minimum number of model evaluations to construct the approximating response surface. The approach we use is based on the aPC as described in \cite{oladyshkin2011concept}. The main idea is to construct the approximating response surface by projecting the response on orthogonal polynomial bases within the uncertain parameter space. Therefore, uncertainty in input parameters is involved in the process from the initial steps of the work-flow. This approach is an advanced statistical regression method that offers an efficient and accurate way of including nonlinear effects in stochastic analysis \cite{Zhang_Lu_2004_JCP,foo_pcm_JCP2010, 
+requires a minimum number of model evaluations to construct the approximating response surface. The approach we use is based on the aPC as described in \cite{oladyshkin2011concept}. The main idea is to construct the approximating response surface by projecting the response on orthogonal polynomial basis within the uncertain parameter space. Therefore, uncertainty in input parameters is involved in the process from the initial steps of the work-flow. This approach is an advanced statistical regression method that offers an efficient and accurate way of including nonlinear effects in stochastic analysis \cite{Zhang_Lu_2004_JCP,foo_pcm_JCP2010, 
 Fajraoui_al_2011_WRR}. One attractive
 feature of PCE is the high-order approximation of error propagation as well as its computational speed \cite{oladyshkinintegrative} when compared to Monte Carlo processes.
 
@@ -2143,7 +2143,7 @@ representation.
 % non-linear forms.
 
 The response of the system can be expanded into the
-space of approximating polynomial bases. This expression is specified by constant coefficients $c_i$:
+space of approximating polynomial basis. This expression is specified by constant coefficients $c_i$:
 %
 \begin{equation}
 \Gamma\approx\underset{i=1}{\overset{n_c}{\sum}}c_{i}\Pi_{i}(\Theta).
@@ -2164,19 +2164,13 @@ and the number of considered parameters $n$:
 
 %##################################
 
-Polynomials $\Pi_i$ in the Expansion \ref{eq:exp} consist of polynomial bases
-$P_l$, with $l$ ranging from zero up to the approximation degree $d$. These
-bases are orthogonal, i.e., every pair of non-identical bases fulfill the
-following condition:
+Polynomials $\Pi_i$ in the Expansion \ref{eq:exp} are orthogonal, i.e., every pair of them fulfill the following condition:
 
 \begin{equation}
-\int_{I\in\Omega}\omega
-P_{l}P_{m}d\tau(\Theta)=\delta_{lm},\label{eq:orth}\end{equation} where $\omega$
-is a weight function, $\delta$ is the Kronecker delta function, and $\tau$ is
-the measure for input variable space. We choose the weight to be one, i.e.,
-$\omega\equiv1$. 
+\int_{I\in\Omega}\Pi_{l}\Pi_{m}d\tau(\Theta)=\delta_{lm},\label{eq:orth}\end{equation} where $\delta$ is the Kronecker delta function and $\tau$ is
+the measure for input variable space. Constructing the orthogonal basis can result in expressions based on statistical moments of data. For simplicity, we proceed with describing the procedure for one dimensional orthogonal basis, since the high-dimensional basis can be obtained using tensor products on one-dimensional basis.  
 
-The orthogonal polynomial basis satisfying Equation~(\ref{eq:orth}) can be obtained from the solution of the following linear system of equations \cite{oladyshkin2011concept}: 
+ Provided that the coefficient of leading terms with the highest degree is one, the orthogonal polynomial basis satisfying Equation~(\ref{eq:orth}) can be obtained from the solution of the following linear system of equations \cite{oladyshkin2011concept}: 
 %
 \begin{equation}
 \left[\begin{array}{cccc}
@@ -2201,10 +2195,8 @@ Here, $\mu_{k}$ is the $k^{th}$ non-central (raw) statistical moment of the rand
 \mu_{k}=\int_{\Theta\in\Omega}\Theta^{k}d\tau(\Theta).\label{eq:mnt}
 \end{equation}
 %
-Thus, arbitrary polynomial chaos expansion base on Equation~\ref{eq:orthsys}
-only
-demands the existence of a finite number of moments, and does not require the
-exact knowledge or even existence of probability density functions. An
+With basis without coefficient one in the leading term, it is possible to work with orthonormal basis calculated from them. Thus, arbitrary polynomial chaos expansion base on Equation~\ref{eq:orthsys}
+only demands the existence of a finite number of moments, and does not require the exact knowledge or even existence of probability density functions. An
 interesting aspect is that only moments up to twice the order of the expansion
 are important. This means that there is no need for any kind of assumption for data
 probability distribution leading to subjectivity artifacts as discussed earlier.
@@ -2292,7 +2284,7 @@ to the parameters' scope of influence.
 
 Variance-based methods are very popular among different types of sensitivity
 analysis methods. Variance-based methods provide global sensitivity and are suitable for general non-linear problems. When the response is decomposed into simpler
-components (for instance, polynomial bases), it is easier to decompose the
+components (for instance, polynomial basis), it is easier to decompose the
 unconditional variance in the output into terms due to individual parameters
 and the interaction between them. It is possible then to rank the input
 parameters based on their contribution to the output variance
