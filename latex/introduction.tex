@@ -606,17 +606,17 @@ Substituting velocity term from Equation \ref{eq:darcy} into Equation
 Equation \ref{eq:main} is an integration over the boundaries of the domain). Also, any geological discontinuities in the medium
 ($\gamma_i$ in Figure \ref{fig:prsDmn}) appears in Equation \ref{eq:main} through the $K$ tensor and can influence pressure behavior in the domain.
 
-The second term in Equation \ref{eq:main_o} can be converted into an integration
+We assume that $(\phi \rho)$ satisfies the Leibniz integration rule conditions. Then, the derivative in the first term of Equation \ref{eq:main_o} can enter the integral. The second term in Equation \ref{eq:main_o} can be converted into an integration
 over domain $\Omega$, using divergence theorem resulting in the following:
 \begin{equation}
-  \int_{\Omega}[\frac{d}{d t}(\phi\rho)+\nabla \cdot (\rho
+  \int_{\Omega}[\frac{\partial}{\partial t}(\phi\rho)+\nabla \cdot (\rho
 v)]d\tau=\int_{\Omega}qd\tau.
   \label{eq:div}
 \end{equation} Equation \ref{eq:div} is valid for arbitrary domain $\Omega$,
 hence the equality is valid for the integrands \textit{almost everywhere} in
 domain $\Omega$ in the \textit{general} situation:
 \begin{equation}
- \frac{d}{d t}(\phi\rho)+\nabla \cdot (\rho v)=q.
+ \frac{\partial}{\partial t}(\phi\rho)+\nabla \cdot (\rho v)=q.
  \label{eq:diff}
 \end{equation}
 Fluid and rock change in volume with pressure variations. These dependencies are
@@ -846,7 +846,7 @@ gravity.
 Similar to Equation \ref{eq:diff}, differential form of mass balance equation
 for each of phases $\alpha=\{w~\mbox{for water},\mbox{CO}_2\}$ is as follows:
 \begin{equation}
- \frac{d}{dt}(\phi\rho_{\alpha}S_{\alpha})+\nabla \cdot
+ \frac{\partial}{\partial t}(\phi\rho_{\alpha}S_{\alpha})+\nabla \cdot
 (\rho_{\alpha} v_{\alpha})=q_{\alpha}.
  \label{eq:dif2p}
 \end{equation}
@@ -988,13 +988,13 @@ without any source/sink, Equation \ref{eq:dif2p} reduces to the following for
 the wetting phase:
 
  \begin{equation}
-  \phi \frac{ds_{w}}{dt}+ \frac {dv_w} {dx}=0,
+  \phi \frac{\partial s_{w}}{\partial t}+ \frac {\partial v_w} {\partial x}=0,
   \label{eq:2p1d}
  \end{equation} and Darcy equation for one
 dimension
 flow becomes:
  \begin{equation}
-  v_w=-K\frac{k_{rw}}{\mu_w}(\frac{dP_w}{dx} + \rho_w g z).
+  v_w=-K\frac{k_{rw}}{\mu_w}(\frac{\partial P_w}{\partial x} + \rho_w g z).
   \label{eq:D1d}
  \end{equation} Here, $x$ is the spatial direction in domain $\Omega$, $z$ is the vertical elevation and $g$ is the gravitational
 acceleration. The system is closed by Equations \ref{eq:sat} and \ref{eq:pcJump}
@@ -1022,7 +1022,7 @@ have:
   \label{eq:GrCont}
  \end{equation}
  \begin{equation}
-  C(S_w)=N_{C}F_wk_{rnw}\frac{dP_{c}}{dS_w},
+  C(S_w)=N_{C}F_wk_{rnw}\frac{\partial P_{c}}{\partial S_w},
   \label{eq:PcCont}
  \end{equation} wherein: 
  \begin{equation}
@@ -1050,9 +1050,8 @@ have:
  \end{equation}
  Having these definitions, Equation \ref{eq:2p1d} reshapes into:
  \begin{equation}
-  \frac{dS_w}{d T^*}+\frac{dG(S_w)}{dS_w}\frac{d
-S_w}{d X^*}+\frac{d}{d X^*}\left( C(S_w)\frac{d
-S_w}{d X^*}\right)=0.
+  \frac{\partial S_w}{\partial T^*}+\frac{\partial G(S_w)}{\partial S_w}\frac{\partial S_w}{\partial X^*}+\frac{\partial}{\partial X^*}\left( C(S_w)\frac{\partial
+S_w}{\partial X^*}\right)=0.
   \label{eq:2p1dN}
  \end{equation} Applying specific type of capillary pressure and relative
 permeability function may lead to simplified forms of Equation \ref{eq:2p1dN}
@@ -1174,7 +1173,7 @@ speed up the process up to five times \cite{eleniuseffects}.
 The flow equations for convective mixing are a set of mass and momentum balances for component $c=\{\mbox{Water},\mbox{CO}_2\}$ within phase
 $\alpha=\{\mbox{Wetting},\mbox{Non-Wetting}\}$:
 \begin{equation}
-\frac{d}{d t} \underset{\alpha}{\sum}\phi S_\alpha \rho_\alpha
+\frac{\partial}{\partial t} \underset{\alpha}{\sum}\phi S_\alpha \rho_\alpha
 X_{\alpha}^c + \nabla \cdot \underset{\alpha}{\sum} \rho_\alpha X_{\alpha}^c
 v_\alpha = 0,   
 %  \phi\frac{\partial c}{\partial t}+ \left[\nabla c v_c -D_c \nabla c \right],
@@ -2160,17 +2159,15 @@ and the number of considered parameters $n$:
  \label{eq:np}
 \end{equation}
 %
-%---------------------------
-
-%##################################
-
-Polynomials $\Pi_i$ in the Expansion \ref{eq:exp} are orthogonal, i.e., every pair of them fulfill the following condition:
+For simplicity, we proceed with describing the procedure for one dimensional orthogonal basis. The high-dimensional basis can be obtained using tensor products on one-dimensional basis. Therefore, we consider the polynomial $P^{(k)}$ of degree $k$ in the random variable $\theta$:
+\begin{equation}
+P^{(k)}(\theta)=\underset{j=0}{\overset{k}{\sum}}p_{j}^{(k)}\theta^{j}.
+\end{equation}
+where $k$ can vary between $0$ and $d$. Polynomials $P^{(k)}$ are orthogonal, if every pair of them fulfill the following condition:
 
 \begin{equation}
-\int_{I\in\Omega}\Pi_{l}\Pi_{m}d\tau(\Theta)=\delta_{lm},\label{eq:orth}\end{equation} where $\delta$ is the Kronecker delta function and $\tau$ is
-the measure for input variable space. Constructing the orthogonal basis can result in expressions based on statistical moments of data. For simplicity, we proceed with describing the procedure for one dimensional orthogonal basis, since the high-dimensional basis can be obtained using tensor products on one-dimensional basis.  
-
- Provided that the coefficient of leading terms with the highest degree is one, the orthogonal polynomial basis satisfying Equation~(\ref{eq:orth}) can be obtained from the solution of the following linear system of equations \cite{oladyshkin2011concept}: 
+\int_{I\in\Omega}P^{(l)}P^{(m)}d\tau(\theta)=\delta_{lm},\label{eq:orth}\end{equation} where $\delta$ is the Kronecker delta function and $\tau$ is
+the measure for input variable space. If we modify the polynomials $P^{(k)}$ such that the coefficient of leading terms with the highest degree becomes one (i.e., $p_k^{(k)}=1$), the orthogonal polynomial basis satisfying Equation~(\ref{eq:orth}) can be obtained from the solution of the following linear system of equations \cite{oladyshkin2011concept}: 
 %
 \begin{equation}
 \left[\begin{array}{cccc}
@@ -2192,14 +2189,12 @@ P_{k}^{(k)}\end{array}\right]=\left[\begin{array}{c}
 Here, $\mu_{k}$ is the $k^{th}$ non-central (raw) statistical moment of the random input variable, which is defined as:
 %
 \begin{equation}
-\mu_{k}=\int_{\Theta\in\Omega}\Theta^{k}d\tau(\Theta).\label{eq:mnt}
+\mu_{k}=\int_{\theta\in\Omega}\theta^{k}d\tau(\theta).\label{eq:mnt}
 \end{equation}
 %
-With basis without coefficient one in the leading term, it is possible to work with orthonormal basis calculated from them. Thus, arbitrary polynomial chaos expansion base on Equation~\ref{eq:orthsys}
-only demands the existence of a finite number of moments, and does not require the exact knowledge or even existence of probability density functions. An
-interesting aspect is that only moments up to twice the order of the expansion
-are important. This means that there is no need for any kind of assumption for data
-probability distribution leading to subjectivity artifacts as discussed earlier.
+Thus, arbitrary polynomial chaos expansion based on Equation~\ref{eq:orthsys}
+only demands the existence of a finite number of moments, and does not require the exact knowledge or even existence of probability density functions. If the moments of $\theta$ are evaluated directly from a data set of limited size or from a discrete probability distribution featuring a finite number of possible outcomes, there need to be
+$k$ or more distinct values in the data set or distribution. An interesting aspect is that only moments up to twice the order of the expansion are important. This means that there is no need for any kind of assumption for data probability distribution leading to subjectivity artifacts as discussed earlier. 
 
 The PCE techniques are divided into intrusive
 \cite{Ghanem1993,Matthies2005,Xiu2003} and non-intrusive
@@ -2367,7 +2362,7 @@ $\theta_1$, $\theta_2$, and $\theta_3$:
 {\theta_1}^2+{\theta_2}^4+{\theta_1}{\theta_2}+{\theta_2}{\theta_3}^4.
 \label{eq:SobExmple}\end{equation} The Sobol indices can be calculated from
 functions $F$ that are defined based on orthogonality condition used to
-decompose the solution and for input with Gaussian distribution $\Phi_n$ in
+decompose the solution and for $n$-dimensional input with Gaussian distribution $\Phi_n$ in
 uncertainty domain $R^n$. They are as follows:
 \begin{equation}
 F_0=\int_{R^n}\Gamma(\Theta) \Phi_n(\Theta) d\Theta,
@@ -2388,13 +2383,13 @@ parameters~$\Theta$.
 
 Let us denote the variances by $D$:
 \begin{equation}
-D=\mbox{V}[F(\Theta)]=\int F^2(\Theta) d\Theta-F_0,
+D=\mbox{V}[F(\Theta)]=\int_{R^{n}} F^2(\Theta) d\Theta-F_0^2,
 \label{eq:SobD}\end{equation} that can be decomposed into: 
 \begin{equation}
-D_i=\int{F_i}^2(\theta_i) d\theta_i,
+D_i=\int_{R^{1}}{F_i}^2(\theta_i) d\theta_i,
 \label{eq:SobDi}\end{equation} and
 \begin{equation} 
-D_{i,j}=\int{F_{ij}}^2(\theta_{i},\theta_{j}) d\theta_{i}d\theta_{j}.
+D_{i,j}=\int_{R^{2}}{F_{ij}}^2(\theta_{i},\theta_{j}) d\theta_{i}d\theta_{j}.
 \label{eq:SobDij}\end{equation} Then the Sobol indices can be found from:
 \begin{equation} 
 S_i=\frac{D_i}{D},
@@ -2426,7 +2421,7 @@ $S_{T1}= 0.0012$ & $S_{T2}= 0.9996$ & $S_{T3}= 0.5708$
 measure to rank parameters
 for their influence on the results variation. In this example, we can see the ranking that the total Sobol indices suggests is consistent with what can
 be inferred directly from the simple expression in Equation \ref{eq:SobExmple}:
-$\theta_2$ is the most influential parameters, because it appears in three terms,
+$\theta_2$ is the most influential parameter, because it appears in three terms,
 and in one of them with a forth degree. Interactions are represented by two
 indices, and $S_{13}$ is zero, because there exist no term in Equation
 \ref{eq:SobExmple} that contains both $\theta_1$ and $\theta_3$.
