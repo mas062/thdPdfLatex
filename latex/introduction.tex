@@ -570,7 +570,7 @@ medium.
 This is governed by Darcy's law for incompressible single phase flow:
  
 \begin{equation}
-  v=-\frac{K\rho g}{\mu}\cdot (\frac{\nabla{P}}{\rho g}+\nabla{Z}).
+  v=-\frac{K\rho g}{\mu}\cdot \nabla{(\frac{P}{\rho g}+Z)}.
   \label{eq:darcy}
 \end{equation} In Equation \ref{eq:darcy}, $K$ is the permeability of the
 medium. $Z$ is the elevation in vertical direction and $g$ is the gravitational acceleration. Here, we assume that the third coordinate axis aligns with the vertical direction; otherwise the equation should be modified to honor the gravitational acceleration vector projection on the coordinate axes (see \cite{celia2011geological}). Permeability is a function of pore size distribution and connectivity and in the macro scale, it is a measure of medium conductivity when a fluid is flowing
@@ -596,11 +596,11 @@ trough the medium.}
  \label{fig:snglK}
 \end{figure}
 
-Substituting velocity term from Equation \ref{eq:darcy} into Equation
+Substituting $v$ from Equation \ref{eq:darcy_c} into Equation
 \ref{eq:main_o} gives:
 \begin{equation}
   \frac{d}{dt}\int_{\Omega}\phi\rho d\tau-\int_{\Gamma}\rho
-\left(\frac{K}{\mu}\cdot (\nabla{P}+\nabla{D})\right) \cdot n d\sigma=\int_{\Omega}qd\tau.
+\left(\frac{K}{\mu}\cdot (\nabla{P}+\rho g\nabla{Z})\right) \cdot n d\sigma=\int_{\Omega}qd\tau.
   \label{eq:main}
 \end{equation} As a primary unknown in Equation \ref{eq:main}, the pressure depends upon the boundary conditions (as the second term in the left hand side of
 Equation \ref{eq:main} is an integration over the boundaries of the domain). Also, any geological discontinuities in the medium
@@ -642,12 +642,12 @@ porosity. Assuming slight compression gives \cite{sahimi2011flow}:
 \end{equation}
 
 By substituting from Equations \ref{eq:Ct}, \ref{eq:Cf}, \ref{eq:Cp}, and
-Equation \ref{eq:darcy} into Equation \ref{eq:diff}, density vanishes and by
+Equation \ref{eq:darcy_c} into Equation \ref{eq:diff}, assuming the spatial density variation to be zero (i.e., $\nabla \rho=0$), and by
 defining volumetric source/sink $\eta$, we have the single-phase diffusivity
 equation:
 \begin{equation}
  C_T \frac{\partial P}{\partial t}-\nabla \cdot [\frac{K}{\mu} (\nabla P -
-\nabla D)] = \eta.
+\rho g\nabla Z)] = \eta.
  \label{eq:vol}
 \end{equation}
 
@@ -829,7 +829,7 @@ n d\sigma=\int_{\Omega}qd\tau.
 can be written in the following form: 
 \begin{equation}
   v_{\alpha}=-\frac{K_{e\alpha}}{\mu_{\alpha}}\cdot
-(\nabla{P_{\alpha}}+\nabla{D_{\alpha}}).
+(\nabla{P_{\alpha}}+\rho_{\alpha} g\nabla{Z}).
   \label{eq:D2phs}
 \end{equation} Here, $K_{e\alpha}$ is the effective permeability for phase
 $\alpha$ and can be calculated from:
@@ -838,8 +838,7 @@ $\alpha$ and can be calculated from:
  \label{eq:Ke}
 \end{equation} where $K_{abs}$ is the absolute rock permeability and
 $K_{r\alpha}$ is the relative permeability of phase $\alpha$. $P_{\alpha}$ is
-the phase pressure and $D_{\alpha}$ is the gravity term for the phase specific
-gravity.
+the phase pressure, $\rho_{\alpha}$ is the phase density, $g$ is the gravitational acceleration, and $Z$ is the elevation.
 
 
 
