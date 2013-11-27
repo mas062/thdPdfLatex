@@ -564,7 +564,7 @@ taken over arbitrary domain $\Omega$ with boundary $\Gamma$ (Figure
 \ref{fig:prsDmn}). Flow velocity is considered at the representative elementary
 volume (REV) scale for porous media \cite{bear1988dynamics}.
 
-The resistance of a porous medium against flow results in a velocity that can be
+The resistance of a porous medium against flow results in a flux that can be
 calculated from pressure and gravity gradient and fluid properties in the
 medium.
 This is governed by Darcy's law for incompressible single phase flow:
@@ -646,7 +646,7 @@ Equation \ref{eq:darcy_c} into Equation \ref{eq:diff}, assuming the spatial dens
 defining volumetric source/sink $\eta$, we have the single-phase diffusivity
 equation:
 \begin{equation}
- C_T \frac{\partial P}{\partial t}-\nabla \cdot [\frac{K}{\mu} (\nabla P -
+ C_T \frac{\partial P}{\partial t}-\nabla \cdot [\frac{K}{\mu} (\nabla P +
 \rho g\nabla Z)] = \eta.
  \label{eq:vol}
 \end{equation}
@@ -815,7 +815,7 @@ have seen for single-phase flow. The equations must be written for each phase.
 In
 Equation \ref{eq:main}, the accumulation term must be considered only for one
 phase mass calculated by multiplying the total accumulation mass by phase
-saturation ($ S_{\alpha}$). Also the velocity is the phase velocity
+saturation ($ S_{\alpha}$). Also the flux is the phase flux
 $v_{\alpha}$, and the source/sink term must be written for the phase mass rate
 $q_{\alpha}$.
 
@@ -897,7 +897,7 @@ has a diffusive character of an elliptical nature, which is numerically more
 stable than the saturation equation. Saturation equation is of
 convection-diffusion form with hyperbolic character in the convection part. The
 convection operator in saturation equation can be highly non-linear due to
-strong coupling of saturation and phase velocity. This nonlinearity can lead to
+strong coupling of saturation and phase flux. This nonlinearity can lead to
 shocks and discontinuities in the saturation solution.
  
 As an example of fractional flow formulation, global pressure $P_t$ is defined
@@ -909,10 +909,10 @@ based on phase pressures:
  \label{eq:GP}
 \end{equation} where water fractional flow $f_w$ is defined as:
 \begin{equation}
- f_w(S_w)=\frac{\frac{K_{rw}}{\mu_w}}{\frac{K_{rw}}{\mu_co_2}+\frac{K_{rco_2}}{
-\mu_co_2}}.
+ f_w(S_w)=\frac{\frac{K_{rw}}{\mu_w}}{\frac{K_{rw}}{\mu_{w}}+\frac{K_{r{co_2}}}{
+\mu_{co_2}}}.
  \label{eq:fw}
-\end{equation} The total velocity is defined as:
+\end{equation} The total flux is defined as:
 \begin{equation}
  v_t=v_w+v_{co_2}.
  \label{eq:VT}
@@ -941,7 +941,7 @@ modeling can be justified at each stage with relevance to dominating forces in
 the medium.
 
 The following can be recognized as forces acting on the medium at the scale at
-which Darcy velocity is defined:
+which Darcy flux is defined:
 
 \begin{itemize}
 \item Forces due to pressure gradients, mostly imposed by injectors (and/or
@@ -1049,7 +1049,7 @@ have:
  \end{equation}
  Having these definitions, Equation \ref{eq:2p1d} reshapes into:
  \begin{equation}
-  \frac{\partial S_w}{\partial T^*}+\frac{\partial G(S_w)}{\partial S_w}\frac{\partial S_w}{\partial X^*}+\frac{\partial}{\partial X^*}\left( C(S_w)\frac{\partial
+  \frac{\partial S_w}{\partial T^*}+\frac{d G(S_w)}{d S_w}\frac{\partial S_w}{\partial X^*}+\frac{\partial}{\partial X^*}\left( C(S_w)\frac{\partial
 S_w}{\partial X^*}\right)=0.
   \label{eq:2p1dN}
  \end{equation} Applying specific type of capillary pressure and relative
