@@ -3,16 +3,7 @@
 \pagebreak
 \section{Introduction}
 
-The main scientific part of this thesis consists of three papers. They come in a
-sequence to show the research progress within this PhD program. Paper
-I includes a detailed study on the flow responses and effect of relative
-permeability on the flow and it is submitted to the International Journal of
-Greenhouse Gas Control (IJGGC). Pressure is an important model response during
-injection operations. Therefore, a special study is dedicated to pressure
-analysis in the system. This is reported in Paper II, which is submitted to the
-IJGGC. Finally, Paper III reports modern stochastic techniques used to perform
-detailed quantitative sensitivity analysis and probabilistic risk assessments.
-This paper is accepted for publication in the IJGGC. This paper was submitted for publication earlier than other papers.
+The main scientific part of this thesis consists of three papers. They come in a sequence to show the research progress within this PhD program. Paper I includes a detailed study of how variations in geological parameters impact the evolution of the injected \coo\ plume. Knowing the migration path of the plume is essential if one wants to assess  the risk for \coo\ leaving the aquifer through imperfections in the caprock or through open lateral boundaries. Second, to determine the fasibility of the injection process and reduce the potential for introducing fracturing during the injection process, it is crucial to know the pressure buildup. Likewise, it is important to know how far pressure pulses induced during injection propagate beyond the zones invaded by the injected \coo. Therefore, a special study is dedicated to pressure analysis in the system. This is reported in Paper II, which is submitted to the International Journal of Greenhouse Gas Control (IJGGC). Finally, Paper III reports modern stochastic techniques used to perform detailed quantitative sensitivity analysis and probabilistic risk assessments. This paper is accepted for publication in the IJGGC. This paper was submitted for publication earlier than the second paper.
 
 \section{Summary of papers}
 
@@ -48,14 +39,6 @@ to allow for all ranges of pressure, including those that are unrealistic.
 Moreover, we define an additional model output that is related to the risk of
 CO$_2$ leakage through any breakings in the cap-rock.
 
-We examine the influence of simplifying assumptions considered in our works
-regarding linearity of relative permeability function. We perform a detailed
-flow analysis on various geological realizations using two different relative
-permeability relations: linear and quadratic functions. The non-linearity in
-relative permeability hinders the flow in the lower saturation values of the
-displaced phase, i.e., water phase. We discuss the influence of curvature on
-$\mbox{CO}_2$ flow dynamics within the aquifer. 
-
 Finally, we perform a quantitative sensitivity analysis by using the flow simulation results. The sensitivity analysis results suggest that aggradation angle, fault criteria, and progradation direction are the most influential geological parameter in our study.
 
 In this work, we clearly see the range of variations in the flow responses that demonstrates how important it is to model the geological features accurately. 
@@ -63,7 +46,7 @@ In this work, we clearly see the range of variations in the flow responses that 
 \vspace{0.5cm}
 \noindent\textbf{Comments:}
 %--1
-This work initially was presented at the ACM conference in Edinburgh,  2010. More details of the work are reported in proceedings for the CMWR conference in Barcelona, 2010 (Section \ref{paperi}) and in the ECMOR conference in Oxford, 2010 (Section \ref{paperii}). The final version is submitted to the International Journal of Greenhouse Gas Control (IJGGC). 
+This work initially was presented at the ACM conference in Edinburgh,  2010. More details of the work are reported in proceedings for the CMWR conference in Barcelona, 2010 and in the ECMOR conference in Oxford, 2010. The final version is submitted to the Goundwater. 
 
 The following comments are important to be considered here:
 
@@ -92,35 +75,12 @@ physics in the modeling will add the computational costs specially when the flow
 modeling is used in a sensitivity analysis or risk assessment process.
 Therefore, we used simple fluid models for PVT. 
 
-To accelerate the flow simulation, we used linear relative permeability curves. This
-increases the flow mobility in the low saturation values. However, in \coo-water system the relative permeability curves are closer to a quadratic function. Hysteresis effects are
-modeled by changing the endpoints in the relative permeability curves and no
-scanning-curves is considered here. During injection, the main process is
-drainage. After injection, the imbibition process starts and mostly is a
-replacement of \coo\ by water due to gravity segregation. This justifies
-the usage of simple hysteresis model, and more detailed study can be done to
-investigate this influence in a quantitative manner. 
-
 \item \textit{Uncertainty considerations}
 
 Our main motivation for using the SAIGUP data was the extensive work that was put into building realistic geological realizations. The geological parameters are changed in value between low and high levels. These values are assumed with the same probability. In general, this probability might not be uniform, depending to the regional geology of the storage site. 
 
 \end{itemize}
 %--3
-Results show that using linear relative permeability function ends up in
-conservative conclusions with respect to \coo\ distributions in the
-domain in terms of storage safety. Since computational costs are much lower for
-linear relative permeability scenario than quadratic relative permeability, it
-sounds a good strategy to perform sensitivity analysis by using linear relative
-permeability function on flow responses that are based on $\mbox{CO}_2$
-distribution in the domain.
-
-However, dramatic pressure build-up can happen in the medium during injection
-in the quadratic relative permeability scenario. This suggests that for
-pressure studies we must use more realistic relative permeability functions.
- Following this work, a detailed pressure study with more realistic relative
-permeability curves is performed, which is reported in the next paper.
-
 Within one geological realization, injection location can dramatically impact the injectivity of the well. In fact, this is an uncertain parameter in the \coo\ storage operations. Choosing to inject in the river channels or in the permeable homogeneous parts near the shore will enhance the injectivity and the \coo\ sweep efficiency in the medium. On the other hand, injecting in locations with low permeabilities and pore-volumes can significantly increase the injection pressure, while limiting the transport of \coo\ in the medium. Studying the impact of injection location can be performed by injecting in many different points in one realization and comparing the corresponding flow responses. However, this will considerably increase the number of detailed simulations in the study. 
 
 For the allowed time, we limited our study to a fixed point by injecting via one well in the flank part of the SAIGUP models. This location is selected after qualitative analysis of a detailed study on a homogeneous case. There, we aimed to fulfill the criterion of maximizing the \coo\ storage capacity via increasing the vertical travel path toward the structural trap location under the cap-rock. One mitigating strategy for minimizing the effect of injection location can be to inject via several wells in different locations in the medium.  
@@ -136,10 +96,6 @@ The idea of using realizations from the SAIGUP project to study how variations i
 \paperitem{II}
 {Geological storage of CO$_2$: heterogeneity impact on pressure behavior}
 {\textbf{Summary:}
-
-After observing the influence of relative permeability curvature on pressure
-response for \coo\ injection studies, in this paper we perform a
-detailed pressure study on the chosen geological realizations.
 
 Pressure build-up is an important criterion that can determine the success and failure of
 $\mbox{CO}_2$ storage operations. Over-pressurized injections can induce
@@ -164,7 +120,16 @@ Pressure response sensitivity study with respect to different geological
 features indicates the significance of aggradation angle, progradation
 direction, and faults during injection. A probabilistic pressure analysis is
 also performed based on the $160$ simulations on the available realizations.
-}
+
+\vspace{0.5cm}
+\noindent\textbf{Comments:}
+
+The results reported in this paper can vary by choosing different boundary conditions for the model and different model size. We choose open boundaries on three sides of the model. In general, pressure values can be larger than those that are simulated here.
+
+Well location is chosen to be fixed in our study. Choosing different location of injection in the model can result in a dramatically different pressure behavior. We use one injector in the study to simplify the pressure analysis. To investigate the effect of well location on the results, one can inject via many injectors. Other option is to study the impact of changing the well location in a single injector model.
+
+Finally, the early pressure build up that happens around the well is due to the low \coo\ saturations existing near the injector in the beginning of injection.
+ This build-up is sensitive to the grid resolution around the injector. The simulated pressures can be less if we use finer grid near the injector. In some experiments that is not reported in the paper, we concluded that, with the grid used in our study, this difference is not very dramatic.}
 
 \paperitem{III}
 {Geological storage of $\mbox{CO}_2$: global sensitivity analysis and risk
