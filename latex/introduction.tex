@@ -1565,14 +1565,6 @@ through the boundaries of the system due to external aquifer activities. We
 consider the external support by imposing a higher pressure than the hydrostatic
 pressure on the boundary of the model.
 
-\begin{figure}[thb]
-  \centering
-  \includegraphics[width=0.65 \linewidth]{./figurer/bkw} 
-  %
-  \caption{The aquifer can be connected to neighboring aquifer systems and the flow from those aquifers (red arrows in the plot) is modeled by imposing external pressure on the open sides of the model. The dotted box in the figure schematically indicates a domain considered for study. Aquifer layers outside the frame are considered external. The yellow color demonstrates the injected \coo\ in the aquifer.}
-  \label{fig:bkw}
-%
-\end{figure}
 
 
 \subsection{Flow responses}
@@ -1603,14 +1595,7 @@ critical saturation value of 0.2 for both water and CO$_2$. During injection tim
 flow process is mainly drainage but after injection, imbibition also happens and
 increases the residual trapped CO$_2$. 
 
-\begin{figure}[thb]
-  \centering
-  \includegraphics[width=0.65 \linewidth]{./figurer/MobRes} 
-  %
-  \caption{Mobile and residual CO$_2$ volumes; the injected \coo\ plume travels upward within the geological formation and leaves behind a volume of residual \coo\ that is trapped due to capillarity.}
-  \label{fig:MobRes}
-%
-\end{figure}
+%% FIG 1.29 was here
 
 \textbf{\textit{Total number of $\mbox{CO}_2$ plumes and largest plume:}} To
 estimate the risk of leakage from the cap-rock, we assume that all mobile
@@ -1677,11 +1662,27 @@ Summing up the values of the topmost cells, we assign a single number to the
 case, which we call leakage risk of the case. One may weight the case risk value
 with the average pressure in the system, such that higher pressure gives a
 bigger weight.
-\vskip 0.5cm
 
+%\vskip 0.5cm
 \begin{figure}
   \centering
-  \includegraphics[width=0.65 \linewidth]{./figurer/LR_2} 
+  \includegraphics[width=0.56 \linewidth]{./figurer/bkw} 
+  %
+  \caption{The aquifer can be connected to neighboring aquifer systems and the flow from those aquifers (red arrows in the plot) is modeled by imposing external pressure on the open sides of the model. The dotted box in the figure schematically indicates a domain considered for study. Aquifer layers outside the frame are considered external. The yellow color demonstrates the injected \coo\ in the aquifer.}
+  \label{fig:bkw}
+%
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.65 \linewidth]{./figurer/MobRes} 
+  %
+  \caption{Mobile and residual CO$_2$ volumes; the injected \coo\ plume travels upward within the geological formation and leaves behind a volume of residual \coo\ that is trapped due to capillarity.}
+  \label{fig:MobRes}
+%
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6 \linewidth]{./figurer/LR_2} 
   %
   \caption{We use a $2\mbox{D}$ Gaussian distribution for leakage probability
 on the cap-rock.}
@@ -1689,11 +1690,12 @@ on the cap-rock.}
 %
 \end{figure}
 
+\clearpage
 Results are discussed by comparing all cases in plots. However, the conclusions are made based on detailed flow study in some picked cases. For example, Figures \ref{fig:Kz} to \ref{fig:FOSEOI} show the rock properties and \coo\ distribution in the domain at end of injection (i.e., after $30$ years from the simulation start) and end of simulation (i.e., after $100$ years from the simulation start) in two different cases. The heterogeneity description of the selected cases, called A and B, is given in Table \ref{tab:AaB}.
 
-\coo\ distribution in Figures \ref{fig:COEOI} and \ref{fig:COEOS} show that heterogeneity in case B has enhanced the lateral flow compared to case A. Direction of the flow can be seen in Figure \ref{fig:FOSEOI}. It is clear that heterogeneity can influence the imbibition and drainage process during and after injection. This, in turn, impacts the residual trapping process. The \coo\ plume can follow different paths through heterogeneities. In Figure \ref{fig:FOSEOI}a, the up-dip migration of \coo\ toward the crest pushes some volumes to move down-dip.
+\coo\ distribution in Figures \ref{fig:COEOI} and \ref{fig:COEOS} show that heterogeneity in case B has enhanced the lateral flow compared to case A. Direction of the flow can be seen in Figure \ref{fig:FOSEOI}. It is clear that heterogeneity can influence the imbibition and drainage process during and after injection. This, in turn, impacts the residual trapping process. The \coo\ plume can follow various paths through heterogeneities. In Figure \ref{fig:FOSEOI}a, the up-dip migration of \coo\ toward the crest pushes some volumes to move down-dip through high transmissibility channels.
 
-\begin{table}
+\begin{table}[t]
 \center
 \caption{Geological heterogeneities for two selected cases.}
 \begin{tabular}{|c|c|c|c|c|c|}
@@ -1707,19 +1709,19 @@ B&unfaulted&two lobe&$50\%$&$10^{\circ}$&up-dip\\
 \end{tabular}
 \label{tab:AaB}
 \end{table}
-%===> 
+
 
 \begin{figure}
 \begin{tabular}{cc}
-\includegraphics[width=0.45\textwidth]{./figurer/C02222_LogKz_pers}&
-\includegraphics[width=0.45\textwidth]{./figurer/C03211_LogKz_pers} \\ 
+\includegraphics[width=0.4\textwidth]{./figurer/C02222_LogKz_pers}&
+\includegraphics[width=0.4\textwidth]{./figurer/C03211_LogKz_pers} \\ 
 (a) Perspective view of model A&(b) Perspective view of model B\\
-\includegraphics[width=0.45\textwidth]{./figurer/C02222_LogKz_slcx}&
-\includegraphics[width=0.45\textwidth]{./figurer/C03211_LogKz_slcx}
+\includegraphics[width=0.4\textwidth]{./figurer/C02222_LogKz_slcx}&
+\includegraphics[width=0.4\textwidth]{./figurer/C03211_LogKz_slcx}
 \\(c) The X slice at the injection point (see (a)).&
 (d) The X slice at the injection point (see (b)).\\
-\includegraphics[width=0.45\textwidth]{./figurer/C02222_LogKz_slcy}&
-\includegraphics[width=0.45\textwidth]{./figurer/C03211_LogKz_slcy}
+\includegraphics[width=0.4\textwidth]{./figurer/C02222_LogKz_slcy}&
+\includegraphics[width=0.4\textwidth]{./figurer/C03211_LogKz_slcy}
 \\(e) The Y slice at the injection point (see (a)).&
 (f) The Y slice at the injection point (see (b)).
 \end{tabular}
@@ -1798,6 +1800,7 @@ B&unfaulted&two lobe&$50\%$&$10^{\circ}$&up-dip\\
 \caption{Flow sign in the X direction at the end of injection for two selected cases. The left plots correspond to case A in Table \ref{tab:AaB}, and the right plots belong to case B. Red color corresponds to down-dip direction, blue to up-dip direction, and green represents the stagnant fluid.}
 \label{fig:FOSEOI}
 \end{figure}
+%\clearpage
 
 Figure \ref{fig:COplume} demonstrates the plume evolution during simulation in two different cases, i.e., case A and B. The mobile \coo\ is plotted here and it shows that the injected \coo\ moves more in the vertical direction in case A, ending up in a big mass accumulated under the cap-rock. On the contrary, the heterogeneity in case B enhances the lateral movement of the plume, resulting in a laterally spread plume within the medium.
 
@@ -1850,7 +1853,7 @@ Figure \ref{fig:Pplume} shows the development of pressure in the same cases. We 
 \caption{Pressure development during injection and early migration. Pressure differences from hydrostatic pressure are shown for two selected cases. Values are in bar. Cases A and B are described in Table \ref{tab:AaB}. Compare with Figures \ref{fig:Kz} and \ref{fig:Ky} for transmissibility values in different directions.}
 \label{fig:Pplume}
 \end{figure}
-
+\clearpage
 
 One way to report the described responses and their relations to the uncertain
 parameters in one graph is to use scatter plots. Each case will then be
@@ -1867,7 +1870,7 @@ together. Aggradation is shown by different colors. Faults are shown by marker t
   \label{fig:codes}
 %
 \end{figure}
-
+\clearpage
 
 \subsection{ECLIPSE input file}
 \label{eclDataFile}
